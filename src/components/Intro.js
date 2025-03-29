@@ -24,27 +24,24 @@ const Intro = () => {
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <h2 className="text-4xl text-blue-900 font-bold">
-              Professional Renovation and Remodeling Services in Atlanta, GA
+            <h2 className="my-2 text-3xl text-blue-900 uppercase font-bold">
+              About Us
             </h2>
             <div>
               <p className="my-3 text-xl text-gray-600 font-semibold">
-                Swaminarayan Construction is recognized as Georgia’s most
-                skilled and detail-oriented kitchen installation expert. Based
-                in Atlanta, GA, our team of carpenters brings over 5 years of
-                combined experience to every project. Founded by a dedicated
-                husband-and-wife team, we are a fully licensed, bonded, and
-                insured remodeling contractor specializing in kitchen
-                remodeling, bathroom remodeling, and flooring. For years, we’ve
-                been transforming homes with stunning kitchen and bathroom
-                designs that exceed expectations. At Swaminarayan Construction, we pride ourselves
-                on offering exceptional prices and top-notch installation
-                services for cabinets, countertops, and flooring.
+                Our enthusiasm has led us to become a top IT company in USA for
+                delivering various industry-led mobility solutions in web and
+                mobile application development domains leveraging futuristic
+                technologies like Internet of Things (IoT), AI-ML, AR-VR, Voice
+                assistants and Voice Skills, DevOps & Cloud computing, etc.
               </p>
-
-              <h3 className="text-3xl text-blue-900 font-bold">
-                Luxurious Comfort Meets Modern Design
-              </h3>
+              <p className="my-3 text-xl text-gray-600 font-semibold">
+                We feel empowered with our certified tech experts and our R&D
+                team who have always challenged themselves to help global
+                clientele with a plethora of IT services and solutions.
+                Engagement with our team guarantees our clients to save huge
+                money on project development with faster delivery.{" "}
+              </p>
             </div>
             <Link
               to="/contact"
@@ -64,7 +61,7 @@ const Intro = () => {
                 ></path>
               </svg>
             </Link>
-          </div>          
+          </div>
         </div>
       </div>
     </>

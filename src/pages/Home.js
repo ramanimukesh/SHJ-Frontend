@@ -4,8 +4,9 @@ import Cta from '../components/Cta';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Intro from '../components/Intro';
-import Portfolio from '../components/Portfolio';
+import Testimonials from '../components/Technology';
 import Services from '../components/Services';
+import Technology from '../components/Technology';
 
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
             <Hero />
             <Intro />
             <Services />
-            <Portfolio />
+            <Technology />
             {/* <Clients /> */} {/* This component is commented out for now */}
             <Cta/>
             <Footer />

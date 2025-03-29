@@ -1,7 +1,7 @@
 import axios from 'axios';
 // For local change this to http://localhost:5000
 export const invokeApi = axios.create({
-    baseURL: "https://varni-backend.onrender.com",
+    baseURL: "http://localhost:5000",
     headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'

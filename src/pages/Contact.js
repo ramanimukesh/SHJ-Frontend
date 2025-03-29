@@ -15,13 +15,8 @@ const Contact = () => {
     lastname: "",
     email: "",
     phone: "",
-    address: "",
-    zip: "",
     message: "",
-    service: "",
-    project: "",
-    media: "",
-    captcha: "" // Store CAPTCHA response
+    captcha: ""  // Store CAPTCHA response
   });
 
   const [errors, setErrors] = useState({
@@ -29,11 +24,6 @@ const Contact = () => {
     lastname: "",
     email: "",
     phone: "",
-    address: "",
-    zip: "",
-    service: "",
-    project: "",
-    media: "",
     message: "",
     captcha: "" 
   });
@@ -62,27 +52,11 @@ const Contact = () => {
         const phoneRegex = /^[0-9]{10}$/;
         newErrors.phone = !value ? "Phone number is required" : !phoneRegex.test(value) ? "Enter a valid 10-digit phone number" : "";
         break;
-      case "zip":
-        const zipRegex = /^[0-9]{5}$/;
-        newErrors.zip = !value ? "Zip code is required" : !zipRegex.test(value) ? "Enter a valid 5-digit zip code" : "";
-        break;
       case "name":
         newErrors.name = !value ? "First Name is required" : "";
         break;
       case "lastname":
         newErrors.lastname = !value ? "Last Name is required" : "";
-        break;
-      case "address":
-        newErrors.address = !value ? "Address is required" : "";
-        break;
-      case "service":
-        newErrors.service = !value ? "Please select a service" : "";
-        break;
-      case "project":
-        newErrors.project = !value ? "Please specify your project start time" : "";
-        break;
-      case "media":
-        newErrors.media = !value ? "Please select how you heard about us" : "";
         break;
       case "message":
         newErrors.message = !value ? "Message is required" : "";
@@ -130,13 +104,8 @@ const Contact = () => {
           lastname: "",
           email: "",
           phone: "",
-          address: "",
-          zip: "",
           message: "",
-          service: "",
-          project: "",
-          media: "",
-          captcha: "" // Reset captcha after successful form submission
+          captcha: ""  // Reset captcha after successful form submission
         });
       } else {
         throw new Error(response.data.message || "An error occurred");
@@ -179,84 +148,6 @@ const Contact = () => {
                     {errors[field] && <p className="text-red-500 text-sm">{errors[field]}</p>}
                   </div>
                 ))}
-              </div>
-
-              <div className="grid grid-cols-1 gap-5 mt-5">
-                {["service", "project"].map((field) => (
-                  <div key={field}>
-                    <label htmlFor={field} className="block text-gray-700">
-                      {field === "service" ? "Select a Service" : "When are you planning to start your project?"}
-                      <span className="required-asterisk"> *</span>
-                    </label>
-                    <select
-                      id={field}
-                      name={field}
-                      className="w-full bg-gray-100 text-gray-400 mt-2 p-3 rounded-lg focus:outline-none"
-                      value={formData[field]}
-                      onChange={handleChange}
-                    >
-                      <option value=""></option>
-                      {field === "service" && (
-                        <>
-                          <option value="Kitchen Remodeling">Kitchen Remodeling</option>
-                          <option value="Bathroom Remodeling">Bathroom Remodeling</option>
-                          <option value="Laundry Room Remodeling">Laundry Room Remodeling</option>
-                          <option value="Flooring">Flooring</option>
-                          <option value="Quartz">Quartz</option>
-                        </>
-                      )}
-                      {field === "project" && (
-                        <>
-                          <option value="0 - 3 Months">0 - 3 Months</option>
-                          <option value="3 - 6 Months">3 - 6 Months</option>
-                          <option value="+6 Months">+6 Months</option>
-                        </>
-                      )}
-                    </select>
-                    {errors[field] && <p className="text-red-500 text-sm">{errors[field]}</p>}
-                  </div>
-                ))}
-              </div>
-
-              <div className="grid grid-cols-1 gap-5 mt-5">
-                {["address", "zip"].map((field) => (
-                  <div key={field}>
-                    <label htmlFor={field} className="block text-gray-700">
-                      {field === "address" ? "Home Address" : "Zip Code"}
-                      <span className="required-asterisk"> *</span>
-                    </label>
-                    <input
-                      id={field}
-                      name={field}
-                      className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none"
-                      type={field === "zip" ? "number" : "text"}
-                      value={formData[field]}
-                      onChange={handleChange}
-                    />
-                    {errors[field] && <p className="text-red-500 text-sm">{errors[field]}</p>}
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-5">
-                <label htmlFor="media" className="block text-gray-700">
-                  How did you hear about us? <span className="required-asterisk"> *</span>
-                </label>
-                <select
-                  id="media"
-                  name="media"
-                  className="w-full bg-gray-100 text-gray-400 mt-2 p-3 rounded-lg focus:outline-none"
-                  value={formData.media}
-                  onChange={handleChange}
-                >
-                  <option value=""></option>
-                  <option value="Social Media">Social Media</option>
-                  <option value="Google">Google Search</option>
-                  <option value="Referral">Referral</option>
-                  <option value="Magazine">Magazine</option>
-                  <option value="Others">Others</option>
-                </select>
-                {errors.media && <p className="text-red-500 text-sm">{errors.media}</p>}
               </div>
 
               <div className="mt-5">

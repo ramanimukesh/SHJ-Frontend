@@ -20,6 +20,7 @@ import Vendor from './pages/Vendor';
 import Basement from './pages/Services/Basement';
 import Deck from './pages/Services/Deck';
 import Roof from './pages/Services/Roof';
+import Reactjs from './pages/Technology/webtech/React';
 
 function App() {
   useEffect(() => {
@@ -54,6 +55,8 @@ function App() {
             <Route path= "/laundry" element={<Laundry/>}/>
             <Route path= "/flooring" element={<Flooring/>}/>
             <Route path= "/quartz" element={<Quartz/>}/>
+            <Route path= "/react" element={<Reactjs/>}/>
+
           </Routes>
         </ScrollToTop>
       </Router>
