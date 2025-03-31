@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../../../components/Navbar/NavBar";
-import img1 from "../../../images/Kitchen/kitchen1.jpeg";
+import img1 from "../../../images/Web/Angular/slide.png";
+import img2 from "../../../images/Web/Angular/about.jpg";
 import Footer from "../../../components/Footer";
-const Reactjs = () => {
+
+const Angularjs = () => {
   return (
     <>
-      <div className="hero w-full h-screen relative" id="react">
+      <div className="hero w-full h-screen relative" id="angular">
         <NavBar />
         <img
           alt="Hero Image"
@@ -15,11 +17,11 @@ const Reactjs = () => {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
           <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
-            Transform Your Web Experience with Expert React.js Development
+            Transform Your Web Experience with Expert angular Development
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ is a premier React.js development company serving a diverse
-            range of businesses, from startups to enterprises.
+            SHJ is a premier Angular development company, delivering tailored
+            solutions to businesses ranging from startups to enterprises.
           </div>
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
             <Link
@@ -52,7 +54,7 @@ const Reactjs = () => {
             <img
               alt="card img"
               className="rounded-t w-full h-auto object-cover"
-              //   src={img}
+              src={img2}
               data-aos="fade-left"
               data-aos-delay="700"
             />
@@ -63,38 +65,31 @@ const Reactjs = () => {
             data-aos-delay="500"
           >
             <h3 className="text-3xl text-blue-900 font-bold">
-              Why Choose ReactJS for Your Web Development Needs?
+              Why Choose Angular for Your Web Development Needs?
             </h3>
             <ul className="my-3 text-xl text-gray-600 font-semibold text-left list-disc pl-5 ">
               <li>
-                <strong>Structured & Modular Code:</strong> React.js follows a
-                modular approach with an emphasis on asynchronous programming
-                and event-driven architecture, making applications scalable and
-                maintainable.
+                <strong>Cross-Platform Development:</strong> Angular facilitates
+                the creation of applications that function seamlessly across
+                various platforms, including web, mobile, and desktop, ensuring
+                a consistent user experience.
               </li>
               <li>
-                <strong>High-Speed Development:</strong> Utilizing non-blocking
-                operations, an event-driven framework, the powerful V8 engine,
-                and a rich ecosystem, React.js ensures high performance and
-                rapid development.
+                <strong>Code Consistency and Maintainability:</strong> Angular's
+                use of TypeScript enhances code consistency and maintainability,
+                reducing errors and improving overall code quality.
               </li>
               <li>
-                <strong>Custom Components for Flexibility:</strong> With modular
-                code organization, NPM packages, templating engines, and
-                middleware integration, developers can create reusable and
-                customizable components effortlessly.
+                <strong>Comprehensive Tooling:</strong> The Angular CLI offers a
+                suite of powerful tools for code scaffolding, testing, and
+                deployment, streamlining the development process and boosting
+                productivity.
               </li>
               <li>
-                <strong>Optimized Testing Process:</strong> React.js enhances
-                testing with fast execution, robust frameworks, asynchronous
-                capabilities, and built-in support for mocking and CI/CD
-                pipelines.
-              </li>
-              <li>
-                <strong>Enhanced User Experience:</strong> Whether for a
-                real-time chat app, a high-performance web platform, or a
-                single-page application, React.js ensures a seamless and
-                responsive user experience.
+                <strong>Strong Community Support:</strong> Backed by Google and
+                a robust community, Angular provides extensive resources,
+                regular updates, and a wealth of third-party tools and libraries
+                to support developers.
               </li>
             </ul>
           </div>
@@ -103,7 +98,7 @@ const Reactjs = () => {
 
       <div className="mt-10 mb-16 flex flex-col items-center text-center">
         <h2 className="my-4 text-3xl text-blue-900 uppercase font-bold">
-          ReactJS Development Workflow
+          Angular Development Workflow
         </h2>
         <div className="flex justify-center">
           <div className="w-24 border-b-4 border-blue-900 mb-4"></div>
@@ -184,9 +179,9 @@ const Reactjs = () => {
           </div>
         </div>
       </div>
-      <Footer/> 
+      <Footer />
     </>
   );
 };
 
-export default Reactjs;
+export default Angularjs;

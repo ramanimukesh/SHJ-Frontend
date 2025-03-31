@@ -120,7 +120,7 @@ const NavLinks = ({ scrollToTop }) => {
           <div className="space-y-2">
             {[{ label: "ReactJS", id: "webtech1", path: "/react" },
               { label: "Angular", id: "webtech2", path: "/angular" },
-              { label: "NodeJs", id: "webtech3", path: "/vue" },
+              { label: "NodeJs", id: "webtech3", path: "/node" },
               { label: "Java", id: "webtech4", path: "/next" },
               { label: "TypeScript", id: "webtech5", path: "/next" },
             ].map(({ label, id, path }) => (
