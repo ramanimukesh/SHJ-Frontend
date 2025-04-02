@@ -23,6 +23,9 @@ import Roof from './pages/Services/Roof';
 import Reactjs from './pages/Technology/Web/React';
 import Angularjs from './pages/Technology/Web/Angular';
 import Nodejs from './pages/Technology/Web/Node';
+import TypeScript from './pages/Technology/Web/Typescript';
+import ReactNative from './pages/Technology/Mobile/ReactNative';
+import Flutter from './pages/Technology/Mobile/Flutter';
 
 function App() {
   useEffect(() => {
@@ -60,6 +63,9 @@ function App() {
             <Route path= "/react" element={<Reactjs/>}/>
             <Route path= "/angular" element={<Angularjs/>}/>
             <Route path= "/node" element={<Nodejs/>}/>
+            <Route path= "/typescript" element={<TypeScript/>}/>
+            <Route path= "/react-native" element={<ReactNative/>}/>
+            <Route path= "/flutter" element={<Flutter/>}/>
 
           </Routes>
         </ScrollToTop>

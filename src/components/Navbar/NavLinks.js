@@ -122,7 +122,7 @@ const NavLinks = ({ scrollToTop }) => {
               { label: "Angular", id: "webtech2", path: "/angular" },
               { label: "NodeJs", id: "webtech3", path: "/node" },
               { label: "Java", id: "webtech4", path: "/next" },
-              { label: "TypeScript", id: "webtech5", path: "/next" },
+              { label: "TypeScript", id: "webtech5", path: "/typescript" },
             ].map(({ label, id, path }) => (
               <Link
                 key={id}

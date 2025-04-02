@@ -4,10 +4,10 @@ import NavBar from "../../../components/Navbar/NavBar";
 import img1 from "../../../images/Web/Node/slide.png";
 import img2 from "../../../images/Web/Node/about.jpg";
 import Footer from "../../../components/Footer";
-const Nodejs = () => {
+const Flutter = () => {
   return (
     <>
-      <div className="hero w-full h-screen relative" id="node">
+      <div className="hero w-full h-screen relative" id="flutter">
         <NavBar />
         <img
           alt="Hero Image"
@@ -16,11 +16,12 @@ const Nodejs = () => {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
           <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
-            Elevate Your Web Presence with Professional Node.js Development
+            Transform Your Mobile Experience with Expert Flutter Development
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ is a leading Node.js development company, catering to a wide
-            array of businesses, from startups to large enterprises.
+            SHJ specializes in high-performance Flutter development, helping
+            startups and enterprises build seamless, cross-platform
+            applications.
           </div>
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
             <Link
@@ -64,33 +65,33 @@ const Nodejs = () => {
             data-aos-delay="500"
           >
             <h3 className="text-3xl text-blue-900 font-bold">
-              Why Choose NodeJS for Your Web Development Needs?
+              Why Choose Flutter for Your Mobile App Development Needs?
             </h3>
-            <ul className="my-3 text-xl text-gray-600 font-semibold text-left list-disc pl-5 ">
+            <ul className="my-3 text-xl text-gray-600 font-semibold text-left list-disc pl-5">
               <li>
-                <strong>Asynchronous and Event-Driven Architecture:</strong>
-                Node.js utilizes a non-blocking, event-driven architecture,
-                allowing it to handle multiple concurrent connections
-                efficiently. This design is particularly beneficial for
-                applications requiring high throughput and scalability.
+                <strong>Unified Codebase:</strong> Flutter allows developers to
+                create apps for iOS, Android, and beyond using a single
+                codebase, reducing effort and maintenance costs.
               </li>
               <li>
-                <strong>High Performance:</strong> Built on Google's V8
-                JavaScript engine, Node.js compiles JavaScript directly to
-                native machine code, resulting in fast execution and improved
-                performance for web applications.
+                <strong>Fast Performance:</strong> Powered by the Dart language
+                and Skia graphics engine, Flutter delivers smooth animations and
+                native-like responsiveness.
               </li>
               <li>
-                <strong>Scalability:</strong> Node.js's lightweight and
-                efficient design makes it well-suited for building scalable
-                network applications, capable of handling numerous simultaneous
-                connections with minimal resource consumption.
+                <strong>Expressive UI:</strong> Flutter’s rich widget library
+                enables highly customizable and visually engaging designs
+                without compromising performance.
               </li>
               <li>
-                <strong>Active Community Support:</strong> A large and active
-                community contributes to continuous improvements, robust
-                documentation, and a wealth of resources, ensuring developers
-                have access to the latest tools and best practices.
+                <strong>Rapid Development:</strong> Features like hot reload
+                allow instant updates, making development faster and more
+                efficient with real-time UI changes.
+              </li>
+              <li>
+                <strong>Growing Ecosystem:</strong> Backed by Google, Flutter
+                has a strong developer community, extensive libraries, and
+                continuous updates, ensuring long-term reliability.
               </li>
             </ul>
           </div>
@@ -99,7 +100,7 @@ const Nodejs = () => {
 
       <div className="mt-10 mb-16 flex flex-col items-center text-center">
         <h2 className="my-4 text-3xl text-blue-900 uppercase font-bold">
-          NodeJS Development Workflow
+          Flutter App Development Workflow
         </h2>
         <div className="flex justify-center">
           <div className="w-24 border-b-4 border-blue-900 mb-4"></div>
@@ -109,13 +110,12 @@ const Nodejs = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3 min-h-max">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Requirement Analysis & Project Planning
+                  Requirement Analysis & UI Planning
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Engage with stakeholders to gather detailed requirements,
-                  define the project scope, and establish clear objectives. This
-                  foundational phase ensures alignment with business goals and
-                  user needs.
+                  Gather client requirements, define the app's core
+                  functionality, and design UI/UX with Flutter’s widget-based
+                  approach for a seamless experience.
                 </p>
               </div>
             </div>
@@ -123,13 +123,12 @@ const Nodejs = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Project Structure Design
+                  App Architecture & State Management
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Organize the codebase using a modular architecture, dividing
-                  functionalities into distinct modules or components to enhance
-                  maintainability. This approach facilitates scalability and
-                  collaborative development.
+                  Establish a clean architecture using Provider, Riverpod, or
+                  Bloc for efficient state management and scalable app
+                  development.
                 </p>
               </div>
             </div>
@@ -137,13 +136,12 @@ const Nodejs = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  API Development & Integration
+                  API Integration & Backend Connectivity
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Design and implement RESTful APIs or GraphQL endpoints,
-                  ensuring seamless communication between the frontend and
-                  backend systems. Efficient API integration is vital for
-                  responsive and dynamic applications.
+                  Connect the app to RESTful APIs or GraphQL, implement
+                  real-time data handling using Firebase Firestore, and ensure
+                  smooth network requests.
                 </p>
               </div>
             </div>
@@ -151,27 +149,12 @@ const Nodejs = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Database Integration
+                  Performance Optimization
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Choose an appropriate database (e.g., MongoDB, PostgreSQL) and
-                  integrate it with the application, establishing schemas and
-                  data models as needed. Proper database design ensures data
-                  integrity and performance.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Middleware Implementation
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Develop and integrate middleware functions to handle tasks
-                  such as authentication, logging, and error handling, thereby
-                  enhancing application functionality. Middleware streamlines
-                  request processing and security.
+                  Optimize Flutter apps using efficient rendering techniques,
+                  lazy loading, and minimizing unnecessary widget rebuilds for
+                  smooth performance.
                 </p>
               </div>
             </div>
@@ -182,10 +165,9 @@ const Nodejs = () => {
                   Testing & Debugging
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Conduct comprehensive testing, including unit and integration
-                  tests, to identify and resolve issues, ensuring the
-                  application operates as intended. Robust testing frameworks
-                  contribute to software reliability.
+                  Use Flutter’s built-in testing framework for unit, widget, and
+                  integration tests, and debug effectively with DevTools and
+                  Flutter Inspector.
                 </p>
               </div>
             </div>
@@ -193,23 +175,22 @@ const Nodejs = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Deployment & Monitoring
+                  Deployment & Maintenance
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Deploy the application to a production environment using
-                  platforms like AWS or Heroku, and implement monitoring tools
-                  to track performance and user engagement. Continuous
-                  monitoring ensures optimal application health and user
-                  satisfaction.
+                  Publish apps to Google Play and App Store using Flutter’s
+                  build tools. Continuously monitor app performance with
+                  Firebase Crashlytics and analytics.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
 };
 
-export default Nodejs;
+export default Flutter;

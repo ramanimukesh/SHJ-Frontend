@@ -4,10 +4,10 @@ import NavBar from "../../../components/Navbar/NavBar";
 import img1 from "../../../images/Web/Node/slide.png";
 import img2 from "../../../images/Web/Node/about.jpg";
 import Footer from "../../../components/Footer";
-const Nodejs = () => {
+const ReactNative = () => {
   return (
     <>
-      <div className="hero w-full h-screen relative" id="node">
+      <div className="hero w-full h-screen relative" id="react-native">
         <NavBar />
         <img
           alt="Hero Image"
@@ -16,11 +16,13 @@ const Nodejs = () => {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
           <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
-            Elevate Your Web Presence with Professional Node.js Development
+            Enhance Your Mobile App Experience with Expert React Native
+            Development
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ is a leading Node.js development company, catering to a wide
-            array of businesses, from startups to large enterprises.
+            SHJ is a top-tier React Native development company, serving a
+            diverse range of businesses, from startups to established
+            enterprises.
           </div>
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
             <Link
@@ -64,33 +66,30 @@ const Nodejs = () => {
             data-aos-delay="500"
           >
             <h3 className="text-3xl text-blue-900 font-bold">
-              Why Choose NodeJS for Your Web Development Needs?
+              Why Choose React Native for Your Mobile App Development Needs?
             </h3>
-            <ul className="my-3 text-xl text-gray-600 font-semibold text-left list-disc pl-5 ">
+            <ul className="my-3 text-xl text-gray-600 font-semibold text-left list-disc pl-5">
               <li>
-                <strong>Asynchronous and Event-Driven Architecture:</strong>
-                Node.js utilizes a non-blocking, event-driven architecture,
-                allowing it to handle multiple concurrent connections
-                efficiently. This design is particularly beneficial for
-                applications requiring high throughput and scalability.
+                <strong>Cross-Platform Compatibility:</strong> React Native
+                allows you to build applications for both iOS and Android
+                platforms with a single codebase, significantly reducing
+                development time and costs.
               </li>
               <li>
-                <strong>High Performance:</strong> Built on Google's V8
-                JavaScript engine, Node.js compiles JavaScript directly to
-                native machine code, resulting in fast execution and improved
-                performance for web applications.
+                <strong>Performance Optimization:</strong> React Native uses
+                native components, offering a seamless user experience with high
+                performance on mobile devices.
               </li>
               <li>
-                <strong>Scalability:</strong> Node.js's lightweight and
-                efficient design makes it well-suited for building scalable
-                network applications, capable of handling numerous simultaneous
-                connections with minimal resource consumption.
+                <strong>Hot Reloading:</strong> React Native's hot reloading
+                feature enables developers to instantly see changes without
+                rebuilding the entire app, boosting productivity.
               </li>
               <li>
-                <strong>Active Community Support:</strong> A large and active
-                community contributes to continuous improvements, robust
-                documentation, and a wealth of resources, ensuring developers
-                have access to the latest tools and best practices.
+                <strong>Large Developer Community:</strong> React Native boasts
+                a vast and active developer community, providing extensive
+                resources, libraries, and third-party integrations to accelerate
+                development.
               </li>
             </ul>
           </div>
@@ -99,7 +98,7 @@ const Nodejs = () => {
 
       <div className="mt-10 mb-16 flex flex-col items-center text-center">
         <h2 className="my-4 text-3xl text-blue-900 uppercase font-bold">
-          NodeJS Development Workflow
+          React Native Development Workflow
         </h2>
         <div className="flex justify-center">
           <div className="w-24 border-b-4 border-blue-900 mb-4"></div>
@@ -109,13 +108,12 @@ const Nodejs = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3 min-h-max">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Requirement Analysis & Project Planning
+                  Requirement Analysis & Project Planning{" "}
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Engage with stakeholders to gather detailed requirements,
-                  define the project scope, and establish clear objectives. This
-                  foundational phase ensures alignment with business goals and
-                  user needs.
+                  Gather requirements, define project scope, and set clear
+                  objectives to align with business goals. Establish key
+                  milestones and choose the tech stack.
                 </p>
               </div>
             </div>
@@ -126,24 +124,9 @@ const Nodejs = () => {
                   Project Structure Design
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Organize the codebase using a modular architecture, dividing
-                  functionalities into distinct modules or components to enhance
-                  maintainability. This approach facilitates scalability and
-                  collaborative development.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  API Development & Integration
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Design and implement RESTful APIs or GraphQL endpoints,
-                  ensuring seamless communication between the frontend and
-                  backend systems. Efficient API integration is vital for
-                  responsive and dynamic applications.
+                  Organize the codebase with modular architecture and reusable
+                  components. Set up navigation, state management, and essential
+                  libraries for scalability.
                 </p>
               </div>
             </div>
@@ -154,10 +137,9 @@ const Nodejs = () => {
                   Database Integration
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Choose an appropriate database (e.g., MongoDB, PostgreSQL) and
-                  integrate it with the application, establishing schemas and
-                  data models as needed. Proper database design ensures data
-                  integrity and performance.
+                  Choose databases like Firebase, SQLite, or PostgreSQL for data
+                  storage. Design schemas to optimize performance, security, and
+                  scalability.
                 </p>
               </div>
             </div>
@@ -168,10 +150,9 @@ const Nodejs = () => {
                   Middleware Implementation
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Develop and integrate middleware functions to handle tasks
-                  such as authentication, logging, and error handling, thereby
-                  enhancing application functionality. Middleware streamlines
-                  request processing and security.
+                  Implement authentication, authorization, logging, and caching
+                  using JWT or Firebase Authentication. Enhance security and
+                  request processing.
                 </p>
               </div>
             </div>
@@ -182,10 +163,9 @@ const Nodejs = () => {
                   Testing & Debugging
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Conduct comprehensive testing, including unit and integration
-                  tests, to identify and resolve issues, ensuring the
-                  application operates as intended. Robust testing frameworks
-                  contribute to software reliability.
+                  Use Jest and React Native Testing Library for unit and
+                  integration tests. Debug efficiently with tools like Flipper
+                  and React Native Debugger.
                 </p>
               </div>
             </div>
@@ -196,11 +176,9 @@ const Nodejs = () => {
                   Deployment & Monitoring
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Deploy the application to a production environment using
-                  platforms like AWS or Heroku, and implement monitoring tools
-                  to track performance and user engagement. Continuous
-                  monitoring ensures optimal application health and user
-                  satisfaction.
+                  Deploy apps on Play Store/App Store using Expo or Fastlane.
+                  Monitor performance with Firebase Analytics and Sentry for
+                  continuous improvements.
                 </p>
               </div>
             </div>
@@ -212,4 +190,4 @@ const Nodejs = () => {
   );
 };
 
-export default Nodejs;
+export default ReactNative;
