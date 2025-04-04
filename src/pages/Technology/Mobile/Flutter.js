@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../../../components/Navbar/NavBar";
-import img1 from "../../../images/Web/Node/slide.png";
-import img2 from "../../../images/Web/Node/about.jpg";
+import img1 from "../../../images/Mobile/Flutter/slide.png";
+import img2 from "../../../images/Mobile/Flutter/about.jpeg";
 import Footer from "../../../components/Footer";
 const Flutter = () => {
   return (

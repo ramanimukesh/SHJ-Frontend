@@ -26,6 +26,14 @@ import Nodejs from './pages/Technology/Web/Node';
 import TypeScript from './pages/Technology/Web/Typescript';
 import ReactNative from './pages/Technology/Mobile/ReactNative';
 import Flutter from './pages/Technology/Mobile/Flutter';
+import Jenkins from './pages/Technology/Devops/Jenkins';
+import AWS from './pages/Technology/Devops/AWS';
+import Docker from './pages/Technology/Devops/Docker';
+import DynamoDB from './pages/Technology/Database/Dynamo';
+import MongoDB from './pages/Technology/Database/Mongo';
+import MySQL from './pages/Technology/Database/Mysql';
+import Figma from './pages/Technology/Design/Figma';
+import Photoshop from './pages/Technology/Design/Photoshop';
 
 function App() {
   useEffect(() => {
@@ -66,6 +74,14 @@ function App() {
             <Route path= "/typescript" element={<TypeScript/>}/>
             <Route path= "/react-native" element={<ReactNative/>}/>
             <Route path= "/flutter" element={<Flutter/>}/>
+            <Route path= "/jenkins" element={<Jenkins/>}/>
+            <Route path= "/aws" element={<AWS/>}/>
+            <Route path= "/docker" element={<Docker/>}/>
+            <Route path= "/dynamodb" element={<DynamoDB/>}/>
+            <Route path= "/mongodb" element={<MongoDB/>}/>
+            <Route path= "/mysql" element={<MySQL/>}/>
+            <Route path= "/photoshop" element={<Photoshop/>}/>
+            <Route path= "/figma" element={<Figma/>}/>
 
           </Routes>
         </ScrollToTop>

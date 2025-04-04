@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../../../components/Navbar/NavBar";
-import img1 from "../../../images/Mobile/React Native/slide.png";
-import img2 from "../../../images/Mobile/React Native/about.jpeg";
+import img1 from "../../../images/Devops/AWS/slide.png";
+import img2 from "../../../images/Devops/AWS/about.jpg";
 import Footer from "../../../components/Footer";
-const ReactNative = () => {
+const AWS = () => {
   return (
     <>
-      <div className="hero w-full h-screen relative" id="react-native">
+      <div className="hero w-full h-screen relative" id="flutter">
         <NavBar />
         <img
           alt="Hero Image"
@@ -16,14 +16,14 @@ const ReactNative = () => {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
           <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
-            Enhance Your Mobile App Experience with Expert React Native
-            Development
+            Elevate Your Cloud Infrastructure with Expert AWS Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ is a top-tier React Native development company, serving a
-            diverse range of businesses, from startups to established
-            enterprises.
+            SHJ specializes in scalable AWS solutions, empowering startups and
+            enterprises with secure, high-performance cloud computing and
+            seamless deployment.
           </div>
+
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
             <Link
               to="/contact"
@@ -66,30 +66,34 @@ const ReactNative = () => {
             data-aos-delay="500"
           >
             <h3 className="text-3xl text-blue-900 font-bold">
-              Why Choose React Native for Your Mobile App Development Needs?
+              Why Choose AWS for Your Cloud Infrastructure?
             </h3>
             <ul className="my-3 text-xl text-gray-600 font-semibold text-left list-disc pl-5">
               <li>
-                <strong>Cross-Platform Compatibility:</strong> React Native
-                allows you to build applications for both iOS and Android
-                platforms with a single codebase, significantly reducing
-                development time and costs.
+                <strong>Scalability & Flexibility:</strong> AWS provides
+                on-demand scalability, allowing businesses to efficiently scale
+                resources as their needs grow.
               </li>
               <li>
-                <strong>Performance Optimization:</strong> React Native uses
-                native components, offering a seamless user experience with high
-                performance on mobile devices.
+                <strong>High Performance:</strong> With a global network of data
+                centers and optimized computing power, AWS ensures fast,
+                reliable, and low-latency performance.
               </li>
               <li>
-                <strong>Hot Reloading:</strong> React Native's hot reloading
-                feature enables developers to instantly see changes without
-                rebuilding the entire app, boosting productivity.
+                <strong>Comprehensive Security:</strong> AWS offers
+                industry-leading security features, including encryption,
+                identity management, and compliance with top security standards.
               </li>
               <li>
-                <strong>Large Developer Community:</strong> React Native boasts
-                a vast and active developer community, providing extensive
-                resources, libraries, and third-party integrations to accelerate
-                development.
+                <strong>Cost-Effective Solutions:</strong> AWS’s pay-as-you-go
+                model helps businesses optimize costs by only paying for the
+                resources they use.
+              </li>
+              <li>
+                <strong>Vast Ecosystem & Innovation:</strong> With continuous
+                updates, AI-driven services, and an extensive range of
+                integrations, AWS supports cutting-edge cloud solutions for
+                businesses of all sizes.
               </li>
             </ul>
           </div>
@@ -98,7 +102,7 @@ const ReactNative = () => {
 
       <div className="mt-10 mb-16 flex flex-col items-center text-center">
         <h2 className="my-4 text-3xl text-blue-900 uppercase font-bold">
-          React Native Development Workflow
+          AWS Cloud Deployment Workflow
         </h2>
         <div className="flex justify-center">
           <div className="w-24 border-b-4 border-blue-900 mb-4"></div>
@@ -108,12 +112,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3 min-h-max">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Requirement Analysis & Project Planning{" "}
+                  Requirement Analysis & Cloud Strategy
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Gather requirements, define project scope, and set clear
-                  objectives to align with business goals. Establish key
-                  milestones and choose the tech stack.
+                  Identify business needs, select the right AWS services, and
+                  define an architecture strategy to ensure scalability,
+                  security, and cost efficiency.
                 </p>
               </div>
             </div>
@@ -121,12 +125,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Project Structure Design
+                  Infrastructure Design & Provisioning
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Organize the codebase with modular architecture and reusable
-                  components. Set up navigation, state management, and essential
-                  libraries for scalability.
+                  Utilize AWS CloudFormation or Terraform to define and deploy
+                  scalable, automated infrastructure, ensuring high availability
+                  and resilience.
                 </p>
               </div>
             </div>
@@ -134,12 +138,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Database Integration
+                  API Integration & Serverless Computing
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Choose databases like Firebase, SQLite, or PostgreSQL for data
-                  storage. Design schemas to optimize performance, security, and
-                  scalability.
+                  Deploy scalable APIs using AWS API Gateway and Lambda
+                  functions, ensuring seamless integration with databases,
+                  microservices, and external systems.
                 </p>
               </div>
             </div>
@@ -147,12 +151,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Middleware Implementation
+                  Performance Optimization & Cost Efficiency
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Implement authentication, authorization, logging, and caching
-                  using JWT or Firebase Authentication. Enhance security and
-                  request processing.
+                  Optimize AWS resources using Auto Scaling, Load Balancers, and
+                  cost-management tools to improve performance and minimize
+                  expenses.
                 </p>
               </div>
             </div>
@@ -160,12 +164,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Testing & Debugging
+                  Security & Compliance
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Use Jest and React Native Testing Library for unit and
-                  integration tests. Debug efficiently with tools like Flipper
-                  and React Native Debugger.
+                  Implement IAM roles, encryption, and security groups to
+                  protect cloud resources while ensuring compliance with
+                  industry regulations.
                 </p>
               </div>
             </div>
@@ -176,18 +180,19 @@ const ReactNative = () => {
                   Deployment & Monitoring
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Deploy apps on Play Store/App Store using Expo or Fastlane.
-                  Monitor performance with Firebase Analytics and Sentry for
-                  continuous improvements.
+                  Use AWS CodeDeploy and CI/CD pipelines for automated
+                  deployments. Monitor applications with CloudWatch and maintain
+                  reliability with AWS Health Dashboard.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
 };
 
-export default ReactNative;
+export default AWS;

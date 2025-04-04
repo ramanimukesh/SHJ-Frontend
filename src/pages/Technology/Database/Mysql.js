@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../../../components/Navbar/NavBar";
-import img1 from "../../../images/Mobile/React Native/slide.png";
-import img2 from "../../../images/Mobile/React Native/about.jpeg";
+import img1 from "../../../images/Database/Mysql/slide.svg";
+import img2 from "../../../images/Database/Mysql/about.png";
 import Footer from "../../../components/Footer";
-const ReactNative = () => {
+const MySQL = () => {
   return (
     <>
-      <div className="hero w-full h-screen relative" id="react-native">
+      <div className="hero w-full h-screen relative" id="flutter">
         <NavBar />
         <img
           alt="Hero Image"
@@ -16,14 +16,14 @@ const ReactNative = () => {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
           <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
-            Enhance Your Mobile App Experience with Expert React Native
-            Development
+            Power Your Data with Robust MySQL Database Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ is a top-tier React Native development company, serving a
-            diverse range of businesses, from startups to established
-            enterprises.
+            SHJ delivers scalable MySQL solutions, helping startups and
+            enterprises manage structured data efficiently with high
+            availability, security, and performance.
           </div>
+
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
             <Link
               to="/contact"
@@ -66,30 +66,33 @@ const ReactNative = () => {
             data-aos-delay="500"
           >
             <h3 className="text-3xl text-blue-900 font-bold">
-              Why Choose React Native for Your Mobile App Development Needs?
+              Why Choose MySQL for Your Database Management?
             </h3>
             <ul className="my-3 text-xl text-gray-600 font-semibold text-left list-disc pl-5">
               <li>
-                <strong>Cross-Platform Compatibility:</strong> React Native
-                allows you to build applications for both iOS and Android
-                platforms with a single codebase, significantly reducing
-                development time and costs.
+                <strong>Scalability & Flexibility:</strong> MySQL efficiently
+                scales from small applications to large enterprise-level
+                databases, supporting growing data needs.
               </li>
               <li>
-                <strong>Performance Optimization:</strong> React Native uses
-                native components, offering a seamless user experience with high
-                performance on mobile devices.
+                <strong>High Performance:</strong> Optimized query execution,
+                indexing, and caching ensure fast data retrieval and efficient
+                processing.
               </li>
               <li>
-                <strong>Hot Reloading:</strong> React Native's hot reloading
-                feature enables developers to instantly see changes without
-                rebuilding the entire app, boosting productivity.
+                <strong>Robust Security:</strong> MySQL offers advanced security
+                features like encryption, access controls, and authentication to
+                protect data integrity.
               </li>
               <li>
-                <strong>Large Developer Community:</strong> React Native boasts
-                a vast and active developer community, providing extensive
-                resources, libraries, and third-party integrations to accelerate
-                development.
+                <strong>Cost-Effective & Open-Source:</strong> As an open-source
+                database, MySQL provides a powerful, cost-effective solution
+                with enterprise-grade capabilities.
+              </li>
+              <li>
+                <strong>Reliability & Compatibility:</strong> MySQL supports
+                ACID compliance, high availability, and seamless integration
+                with various programming languages and frameworks.
               </li>
             </ul>
           </div>
@@ -98,7 +101,7 @@ const ReactNative = () => {
 
       <div className="mt-10 mb-16 flex flex-col items-center text-center">
         <h2 className="my-4 text-3xl text-blue-900 uppercase font-bold">
-          React Native Development Workflow
+          MySQL Database Deployment Workflow
         </h2>
         <div className="flex justify-center">
           <div className="w-24 border-b-4 border-blue-900 mb-4"></div>
@@ -108,12 +111,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3 min-h-max">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Requirement Analysis & Project Planning{" "}
+                  Requirement Analysis & Database Planning
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Gather requirements, define project scope, and set clear
-                  objectives to align with business goals. Establish key
-                  milestones and choose the tech stack.
+                  Identify data storage needs, design the relational schema, and
+                  define indexing strategies to ensure scalability, efficiency,
+                  and performance.
                 </p>
               </div>
             </div>
@@ -121,12 +124,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Project Structure Design
+                  Database Setup & Configuration
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Organize the codebase with modular architecture and reusable
-                  components. Set up navigation, state management, and essential
-                  libraries for scalability.
+                  Deploy MySQL on-premises or in the cloud (AWS RDS, Azure, or
+                  Google Cloud), configure storage options, and optimize
+                  settings for performance.
                 </p>
               </div>
             </div>
@@ -134,12 +137,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Database Integration
+                  Data Modeling & Indexing
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Choose databases like Firebase, SQLite, or PostgreSQL for data
-                  storage. Design schemas to optimize performance, security, and
-                  scalability.
+                  Design efficient tables, normalize database schemas, and
+                  implement indexing strategies to enhance query performance and
+                  data retrieval speed.
                 </p>
               </div>
             </div>
@@ -147,12 +150,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Middleware Implementation
+                  Performance Optimization & Query Tuning
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Implement authentication, authorization, logging, and caching
-                  using JWT or Firebase Authentication. Enhance security and
-                  request processing.
+                  Optimize database queries, use caching techniques, and
+                  leverage MySQL's query optimizer to ensure high-speed
+                  transactions and low latency.
                 </p>
               </div>
             </div>
@@ -160,12 +163,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Testing & Debugging
+                  Security & Backup Management
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Use Jest and React Native Testing Library for unit and
-                  integration tests. Debug efficiently with tools like Flipper
-                  and React Native Debugger.
+                  Implement user roles, encryption, and regular backups using
+                  MySQL replication and automated backup tools to ensure data
+                  security and disaster recovery.
                 </p>
               </div>
             </div>
@@ -176,18 +179,19 @@ const ReactNative = () => {
                   Deployment & Monitoring
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Deploy apps on Play Store/App Store using Expo or Fastlane.
-                  Monitor performance with Firebase Analytics and Sentry for
-                  continuous improvements.
+                  Deploy databases with CI/CD pipelines, monitor performance
+                  using MySQL Enterprise Monitor, and ensure uptime with
+                  failover strategies and health checks.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
 };
 
-export default ReactNative;
+export default MySQL;

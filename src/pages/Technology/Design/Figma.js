@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../../../components/Navbar/NavBar";
-import img1 from "../../../images/Mobile/React Native/slide.png";
-import img2 from "../../../images/Mobile/React Native/about.jpeg";
+import img1 from "../../../images/Design/Figma/slide.jpg";
+import img2 from "../../../images/Design/Figma/about.avif";
 import Footer from "../../../components/Footer";
-const ReactNative = () => {
+const Figma = () => {
   return (
     <>
-      <div className="hero w-full h-screen relative" id="react-native">
+      <div className="hero w-full h-screen relative" id="flutter">
         <NavBar />
         <img
           alt="Hero Image"
@@ -16,14 +16,14 @@ const ReactNative = () => {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
           <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
-            Enhance Your Mobile App Experience with Expert React Native
-            Development
+            Transform Your UI/UX Workflow with Figma’s Cutting-Edge Tools
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ is a top-tier React Native development company, serving a
-            diverse range of businesses, from startups to established
-            enterprises.
+            SHJ specializes in intuitive Figma-based design solutions, enabling
+            startups and enterprises to collaborate seamlessly, streamline
+            prototyping, and build pixel-perfect user experiences.
           </div>
+
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
             <Link
               to="/contact"
@@ -66,30 +66,31 @@ const ReactNative = () => {
             data-aos-delay="500"
           >
             <h3 className="text-3xl text-blue-900 font-bold">
-              Why Choose React Native for Your Mobile App Development Needs?
+              Why Choose Figma for UI/UX Design?
             </h3>
             <ul className="my-3 text-xl text-gray-600 font-semibold text-left list-disc pl-5">
               <li>
-                <strong>Cross-Platform Compatibility:</strong> React Native
-                allows you to build applications for both iOS and Android
-                platforms with a single codebase, significantly reducing
-                development time and costs.
+                <strong>Seamless Team Collaboration:</strong> Work with
+                designers, developers, and stakeholders in real time—no need for
+                file transfers.
               </li>
               <li>
-                <strong>Performance Optimization:</strong> React Native uses
-                native components, offering a seamless user experience with high
-                performance on mobile devices.
+                <strong>Powerful Auto Layout:</strong> Design flexible,
+                responsive components that automatically adjust based on content
+                changes.
               </li>
               <li>
-                <strong>Hot Reloading:</strong> React Native's hot reloading
-                feature enables developers to instantly see changes without
-                rebuilding the entire app, boosting productivity.
+                <strong>Plugins & Integrations:</strong> Extend Figma’s
+                capabilities with plugins for icons, illustrations,
+                accessibility checks, and more.
               </li>
               <li>
-                <strong>Large Developer Community:</strong> React Native boasts
-                a vast and active developer community, providing extensive
-                resources, libraries, and third-party integrations to accelerate
-                development.
+                <strong>Version Control & History:</strong> Access past versions
+                of your designs without worrying about manual backups.
+              </li>
+              <li>
+                <strong>Design & Code Consistency:</strong> Use shared styles,
+                grids, and variables to maintain consistency across teams.
               </li>
             </ul>
           </div>
@@ -98,7 +99,7 @@ const ReactNative = () => {
 
       <div className="mt-10 mb-16 flex flex-col items-center text-center">
         <h2 className="my-4 text-3xl text-blue-900 uppercase font-bold">
-          React Native Development Workflow
+          Figma Design & Prototyping Workflow
         </h2>
         <div className="flex justify-center">
           <div className="w-24 border-b-4 border-blue-900 mb-4"></div>
@@ -108,12 +109,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3 min-h-max">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Requirement Analysis & Project Planning{" "}
+                  Requirement Gathering & Wireframing
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Gather requirements, define project scope, and set clear
-                  objectives to align with business goals. Establish key
-                  milestones and choose the tech stack.
+                  Understand project goals, define user personas, and create
+                  low-fidelity wireframes to establish the app's layout and
+                  structure.
                 </p>
               </div>
             </div>
@@ -121,12 +122,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Project Structure Design
+                  UI Design & Component Creation
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Organize the codebase with modular architecture and reusable
-                  components. Set up navigation, state management, and essential
-                  libraries for scalability.
+                  Design high-fidelity UI screens using Figma’s auto-layout,
+                  grids, and reusable components for a consistent and scalable
+                  design system.
                 </p>
               </div>
             </div>
@@ -134,12 +135,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Database Integration
+                  Prototyping & Interaction Design
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Choose databases like Firebase, SQLite, or PostgreSQL for data
-                  storage. Design schemas to optimize performance, security, and
-                  scalability.
+                  Create interactive prototypes, define user flows, and add
+                  micro-interactions to simulate real user experiences before
+                  development.
                 </p>
               </div>
             </div>
@@ -147,12 +148,11 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Middleware Implementation
+                  Design Collaboration & Feedback
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Implement authentication, authorization, logging, and caching
-                  using JWT or Firebase Authentication. Enhance security and
-                  request processing.
+                  Share designs with teams, collect feedback using Figma
+                  comments, and iterate based on usability testing insights.
                 </p>
               </div>
             </div>
@@ -160,12 +160,12 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Testing & Debugging
+                  Handoff to Developers
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Use Jest and React Native Testing Library for unit and
-                  integration tests. Debug efficiently with tools like Flipper
-                  and React Native Debugger.
+                  Use Figma’s inspect mode to provide developers with
+                  pixel-perfect specifications, assets, and design tokens for
+                  seamless implementation.
                 </p>
               </div>
             </div>
@@ -173,21 +173,21 @@ const ReactNative = () => {
             <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
               <div className="m-2 text-justify text-sm">
                 <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Deployment & Monitoring
+                  Design System & Maintenance
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Deploy apps on Play Store/App Store using Expo or Fastlane.
-                  Monitor performance with Firebase Analytics and Sentry for
-                  continuous improvements.
+                  Maintain a scalable design system with reusable components,
+                  global styles, and version control for long-term consistency.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
 };
 
-export default ReactNative;
+export default Figma;
