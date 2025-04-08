@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar/NavBar';
-import img1 from '../images/Kitchen/kitchen.jpeg'; // Ensure this file exists
+import img1 from '../images/Home/slide.webp'; 
 import img2 from '../images/Bathroom/image1.jpeg'; // Ensure this file exists
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -35,7 +35,7 @@ const Hero = () => {
                             <img 
                                 alt="card img" 
                                 className="w-full h-full object-cover" 
-                                src={img} 
+                                src={img1} 
                             />
                             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
                                 <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">

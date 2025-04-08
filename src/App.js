@@ -11,15 +11,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
-import Kitchen from './pages/Services/Kitchen';
-import Bathroom from './pages/Services/Bathroom';
-import Laundry from './pages/Services/Laundry';
-import Quartz from './pages/Services/Quartz';
-import Flooring from './pages/Services/Flooring';
 import Vendor from './pages/Vendor';
-import Basement from './pages/Services/Basement';
-import Deck from './pages/Services/Deck';
-import Roof from './pages/Services/Roof';
 import Reactjs from './pages/Technology/Web/React';
 import Angularjs from './pages/Technology/Web/Angular';
 import Nodejs from './pages/Technology/Web/Node';
@@ -39,6 +31,11 @@ import Ecommerce from './pages/Industries/E-commerce';
 import Education from './pages/Industries/Education';
 import Finance from './pages/Industries/Finance';
 import Manufacturer from './pages/Industries/Manufacturer';
+import DigitalProduct from './pages/Services/DigitalProduct';
+import SoftwareArchitect from './pages/Services/SoftwareArchitect';
+import Engineering from './pages/Services/Engineering';
+import MobileDev from './pages/Services/MobileDev';
+import Augmentation from './pages/Services/StaffAugmentation';
 
 function App() {
   useEffect(() => {
@@ -65,14 +62,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/vendor" element={<Vendor/>}/>
-            <Route path= "/kitchen" element={<Kitchen/>}/>
-            <Route path= "/basement" element={<Basement/>}/>
-            <Route path= "/deck" element={<Deck/>}/>
-            <Route path= "/roof" element={<Roof/>}/>
-            <Route path= "/bathroom" element={<Bathroom/>}/>
-            <Route path= "/laundry" element={<Laundry/>}/>
-            <Route path= "/flooring" element={<Flooring/>}/>
-            <Route path= "/quartz" element={<Quartz/>}/>
+            <Route path= "/staff-augment" element={<Augmentation/>}/>
+            <Route path= "/digital-product" element={<DigitalProduct/>}/>
+            <Route path= "/engineering" element={<Engineering/>}/>
+            <Route path= "/software-architect" element={<SoftwareArchitect/>}/>
+            <Route path= "/mobile-dev" element={<MobileDev/>}/>
             <Route path= "/react" element={<Reactjs/>}/>
             <Route path= "/angular" element={<Angularjs/>}/>
             <Route path= "/node" element={<Nodejs/>}/>

@@ -79,7 +79,6 @@ const NavLinks = ({ scrollToTop }) => {
         ABOUT
       </Link>
 
-      {/* Services Dropdown */}
       <div className="relative inline-block" ref={dropdownRef}>
         <button
           className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
@@ -90,42 +89,93 @@ const NavLinks = ({ scrollToTop }) => {
         </button>
 
         {isOpen && (
-          <ul className="absolute left-0 mt-2 w-72 bg-white border border-gray-200 rounded-lg shadow-2xl">
-            {[
-              { label: "Kitchen Remodeling", id: "service1", path: "/kitchen" },
-              {
-                label: "Bathroom Remodeling",
-                id: "service2",
-                path: "/bathroom",
-              },
-              {
-                label: "Laundry Room Remodeling",
-                id: "service3",
-                path: "/laundry",
-              },
-              {
-                label: "Basement Remodeling",
-                id: "service4",
-                path: "/basement",
-              },
-              { label: "Deck & Fencing", id: "service5", path: "/deck" },
-              { label: "Roof Replacement", id: "service6", path: "/roof" },
-              { label: "Flooring", id: "service7", path: "/flooring" },
-              { label: "Quartz", id: "service8", path: "/quartz" },
-            ].map(({ label, id, path }) => (
-              <li key={id}>
-                <Link
-                  className="block px-6 py-2 text-lg font-medium text-gray-700 hover:bg-gray-200 transition"
-                  to={path}
-                  onClick={() => smoothScroll(id)}
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="fixed top-20 left-0 w-full bg-white border-t border-gray-300 shadow-xl z-50 p-8 overflow-auto">
+            <button
+              className="absolute top-4 right-8 text-2xl font-bold text-gray-700 hover:text-black"
+              onClick={() => setIsOpen(false)}
+            >
+              ✕
+            </button>
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-2 mt-2">
+              Services We Serve
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-10">
+              <Link to="/digital-product">
+                <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+                  <h3 className="text-xl font-bold mb-3 text-blue-900">
+                    Digital Product Design
+                  </h3>
+                  <p className="text-gray-700">
+                    We craft intuitive and visually compelling interfaces by
+                    combining user research, usability testing, and iterative
+                    design. Our goal is to deliver seamless user experiences
+                    that align with your brand and business objectives.
+                  </p>
+                </div>
+              </Link>
+
+              <Link to="/software-architect">
+                <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+                  <h3 className="text-xl font-bold mb-3 text-blue-900">
+                    Software Architecture
+                  </h3>
+                  <p className="text-gray-700">
+                    Our architects design scalable, modular, and maintainable
+                    software solutions. By emphasizing clean architecture
+                    principles, we ensure your product is robust, flexible, and
+                    future-ready.
+                  </p>
+                </div>
+              </Link>
+
+              <Link to="/engineering">
+                <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+                  <h3 className="text-xl font-bold mb-3 text-blue-900">
+                    Engineering & DevOps
+                  </h3>
+                  <p className="text-gray-700">
+                    We integrate agile development with DevOps best practices to
+                    accelerate deployment cycles, improve collaboration, and
+                    ensure high system reliability. Continuous integration and
+                    delivery (CI/CD) pipelines power your product's evolution.
+                  </p>
+                </div>
+              </Link>
+
+              <Link to="/mobile-dev">
+                <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+                  <h3 className="text-xl font-bold mb-3 text-blue-900">
+                    Mobile App Development
+                  </h3>
+                  <p className="text-gray-700">
+                    From concept to launch, we build high-performance mobile
+                    applications for iOS and Android. Our process includes
+                    planning, UI/UX design, coding, testing, and
+                    deployment—ensuring quality at every step.
+                  </p>
+                </div>
+              </Link>
+
+              <Link to="/staff-augment">
+                <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+                  <h3 className="text-xl font-bold mb-3 text-blue-900">
+                    Staff Augmentation
+                  </h3>
+                  <p className="text-gray-700">
+                    Scale your team with top-tier IT talent. Our staff
+                    augmentation services help you quickly adapt to changing
+                    demands, reduce hiring overheads, and fill critical skill
+                    gaps with vetted developers, designers, and engineers.
+                  </p>
+                </div>
+              </Link>
+            </div>
+          </div>
         )}
       </div>
+
+    
 
       <div className="relative inline-block" ref={industriesDropdownRef}>
         <button
