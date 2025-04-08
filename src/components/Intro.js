@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../images/Kitchen/kitchen.jpeg";
 import { Link } from "react-router-dom";
 
 const Intro = () => {
@@ -14,7 +13,7 @@ const Intro = () => {
             <img
               alt="card img"
               className="rounded-t w-full h-auto object-cover"
-              src={img}
+              // src={img}
               data-aos="fade-left"
               data-aos-delay="700"
             />
