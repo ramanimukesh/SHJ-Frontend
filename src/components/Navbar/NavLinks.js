@@ -10,7 +10,8 @@ const NavLinks = ({ scrollToTop }) => {
   const dropdownRef = useRef(null);
   const techDropdownRef = useRef(null);
   const buttonRef = useRef(null);
-  const industryDropdownRef = useRef(null);
+  const industriesDropdownRef = useRef(null);
+  const industriesButtonRef = useRef(null);
   const techButtonRef = useRef(null);
   const industryButtonRef = useRef(null);
 
@@ -42,6 +43,14 @@ const NavLinks = ({ scrollToTop }) => {
         !techButtonRef.current.contains(event.target)
       ) {
         setIsTechOpen(false);
+      }
+      if (
+        industriesDropdownRef.current &&
+        !industriesDropdownRef.current.contains(event.target) &&
+        industriesButtonRef.current &&
+        !industriesButtonRef.current.contains(event.target)
+      ) {
+        setIsIndustryOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -118,11 +127,11 @@ const NavLinks = ({ scrollToTop }) => {
         )}
       </div>
 
-      <div className="relative inline-block" ref={industryDropdownRef}>
+      <div className="relative inline-block" ref={industriesDropdownRef}>
         <button
           className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
           onClick={() => setIsIndustryOpen((prev) => !prev)}
-          ref={industryButtonRef}
+          ref={industriesButtonRef}
         >
           INDUSTRIES ▼
         </button>
@@ -135,67 +144,84 @@ const NavLinks = ({ scrollToTop }) => {
             >
               ✕
             </button>
-            <h2 className="text-2xl font-bold text-center text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-6 mt-5">
               Industries We Serve
             </h2>
 
             {/* Industry Categories */}
-            <div className="flex flex-wrap gap-6 justify-center">
-              {[
-                {
-                  title: "Healthcare",
-                  links: [
-                    { label: "Hospital Management", path: "/hospital" },
-                    { label: "Telemedicine", path: "/telemedicine" },
-                  ],
-                },
-                {
-                  title: "Finance",
-                  links: [
-                    { label: "Banking", path: "/banking" },
-                    { label: "Investment", path: "/investment" },
-                  ],
-                },
-                {
-                  title: "E-Commerce",
-                  links: [
-                    { label: "Retail Stores", path: "/retail" },
-                    { label: "Online Shopping", path: "/online-shopping" },
-                  ],
-                },
-                {
-                  title: "Education",
-                  links: [
-                    { label: "E-Learning", path: "/elearning" },
-                    { label: "LMS", path: "/lms" },
-                  ],
-                },
-                {
-                  title: "Manufacturing",
-                  links: [
-                    { label: "Automobile", path: "/automobile" },
-                    { label: "Heavy Industries", path: "/heavy-industries" },
-                  ],
-                },
-              ].map(({ title, links }) => (
-                <div className="min-w-[300px]" key={title}>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                    {title}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-10">
+              <Link to="/healthcare">
+                <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+                  <h3 className="text-xl font-bold mb-3 text-blue-900">
+                    Healthcare
                   </h3>
-                  <div className="space-y-2">
-                    {links.map(({ label, path }) => (
-                      <Link
-                        key={path}
-                        className="block text-lg text-gray-700 hover:text-blue-600 transition"
-                        to={path}
-                        onClick={() => smoothScroll(label)}
-                      >
-                        {label}
-                      </Link>
-                    ))}
-                  </div>
+                  <p className="text-gray-700">
+                    The healthcare industry is a vital domain focused on
+                    improving lives through medical services, digital health
+                    solutions, and patient-centered technologies that enhance
+                    care delivery and accessibility.
+                  </p>
                 </div>
-              ))}
+              </Link>
+
+              <Link to="/finance">
+                <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+                  <h3 className="text-xl font-bold mb-3 text-blue-900">
+                    Finance
+                  </h3>
+                  <p className="text-gray-700">
+                    The finance sector drives economic stability and growth
+                    through banking, investment, insurance, and fintech
+                    innovations that ensure secure, efficient, and intelligent
+                    money management.
+                  </p>
+                </div>
+              </Link>
+
+              {/* E-commerce */}
+              <Link to="/ecommerce">
+                <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+                  <h3 className="text-xl font-bold mb-3 text-blue-900">
+                    E-commerce
+                  </h3>
+                  <p className="text-gray-700">
+                    E-commerce revolutionizes the way consumers shop by offering
+                    seamless, personalized online experiences, powered by
+                    scalable platforms, real-time logistics, and secure payment
+                    systems.
+                  </p>
+                </div>
+              </Link>
+
+              {/* Education */}
+              <Link to="/education">
+                <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+                  <h3 className="text-xl font-bold mb-3 text-blue-900">
+                    Education
+                  </h3>
+                  <p className="text-gray-700">
+                    The education industry is transforming with digital learning
+                    platforms, smart classrooms, and interactive content that
+                    make knowledge more accessible, engaging, and inclusive for
+                    all learners.
+                  </p>
+                </div>
+              </Link>
+
+              {/* Manufacturing */}
+              <Link to="/manufacturing">
+                <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+                  <h3 className="text-xl font-bold mb-3 text-blue-900">
+                    Manufacturing
+                  </h3>
+                  <p className="text-gray-700">
+                    Manufacturing integrates advanced automation, IoT, and
+                    supply chain optimization to boost productivity, reduce
+                    downtime, and enable smart, cost-effective production at
+                    scale.
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
         )}
@@ -219,15 +245,15 @@ const NavLinks = ({ scrollToTop }) => {
             >
               ✕
             </button>
-            <h2 className="text-2xl font-bold text-center text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-6 mt-10">
               Our Technology
             </h2>
 
             {/* Flexbox layout for technologies */}
-            <div className="flex flex-wrap gap-6 justify-center">
+            <div className="flex flex-wrap gap-6 justify-center mb-10">
               {/* Web Tech */}
               <div className=" min-w-[300px]">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                <h3 className="text-xl font-semibold text-gray-800 ">
                   Web Development
                 </h3>
                 <div className="space-y-2">
@@ -235,7 +261,11 @@ const NavLinks = ({ scrollToTop }) => {
                     { label: "ReactJS", id: "webtech1", path: "/react" },
                     { label: "Angular", id: "webtech2", path: "/angular" },
                     { label: "NodeJs", id: "webtech3", path: "/node" },
-                    { label: "TypeScript", id: "webtech5", path: "/typescript"},
+                    {
+                      label: "TypeScript",
+                      id: "webtech5",
+                      path: "/typescript",
+                    },
                   ].map(({ label, id, path }) => (
                     <Link
                       key={id}

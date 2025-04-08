@@ -34,6 +34,11 @@ import MongoDB from './pages/Technology/Database/Mongo';
 import MySQL from './pages/Technology/Database/Mysql';
 import Figma from './pages/Technology/Design/Figma';
 import Photoshop from './pages/Technology/Design/Photoshop';
+import Healthcare from './pages/Industries/Healthcare';
+import Ecommerce from './pages/Industries/E-commerce';
+import Education from './pages/Industries/Education';
+import Finance from './pages/Industries/Finance';
+import Manufacturer from './pages/Industries/Manufacturer';
 
 function App() {
   useEffect(() => {
@@ -82,6 +87,11 @@ function App() {
             <Route path= "/mysql" element={<MySQL/>}/>
             <Route path= "/photoshop" element={<Photoshop/>}/>
             <Route path= "/figma" element={<Figma/>}/>
+            <Route path= "/healthcare" element={<Healthcare/>}/>
+            <Route path= "/ecommerce" element={<Ecommerce/>}/>
+            <Route path= "/education" element={<Education/>}/>
+            <Route path= "/finance" element={<Finance/>}/>
+            <Route path= "/manufacter" element={<Manufacturer/>}/>
 
           </Routes>
         </ScrollToTop>
