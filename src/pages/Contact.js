@@ -128,8 +128,8 @@ const Contact = () => {
         <div className="container mx-auto px-4 lg:px-20">
           <form onSubmit={handleSubmit}>
             <div className="bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
-              <h1 className="font-bold text-center text-blue-900 uppercase text-4xl">Reach Out for a Free Estimate</h1>
-              <p className="my-3 text text-gray-600 font-semibold text-left text-justify">Thinking about remodeling your kitchen or bathroom? Leverage Swaminarayan Construction's years of expertise to bring your vision to life. Simply fill out our online form today to schedule a personalized in-home consultation and receive an accurate cost estimate.</p>
+              <h1 className="font-bold text-center text-blue-900 uppercase text-4xl">GET IN TOUCH</h1>
+              <p className="my-3 text-center text-gray-600 font-semibold text-left ">Please inform us about your project, and we'll get back to you as soon as possible.</p>
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
                 {["name", "lastname", "email", "phone"].map((field) => (
                   <div key={field}>

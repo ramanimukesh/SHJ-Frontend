@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../../components/Navbar/NavBar";
-// import img1 from "../../../images/Devops/Docker/slide.png";
-// import img2 from "../../../images/Devops/Docker/about.png";
+import img1 from "../../images/Softwareartitect/slide.jpg";
+import img2 from "../../images/Softwareartitect/about.jpg";
 import Footer from "../../components/Footer";
 const SoftwareArchitect = () => {
   return (
@@ -12,7 +12,7 @@ const SoftwareArchitect = () => {
         <img
           alt="Hero Image"
           className="w-full h-full object-cover"
-          // src={img1}
+          src={img1}
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
           <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
@@ -55,7 +55,7 @@ const SoftwareArchitect = () => {
             <img
               alt="card img"
               className="rounded-t w-full h-auto object-cover"
-              // src={img2}
+              src={img2}
               data-aos="fade-left"
               data-aos-delay="700"
             />
