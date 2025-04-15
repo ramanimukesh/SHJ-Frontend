@@ -40,9 +40,7 @@ const Footer = () => {
           </div>
 
           <div className="w-full sm:w-auto text-center">
-            <h6 className="text-[#013289] text-xl font-bold mb-4">
-              OUR SERVICES
-            </h6>
+            <h6 className="text-[#013289] text-xl font-bold mb-4">OUR PAGES</h6>
             <div className="grid grid-cols-2 gap-4">
               <ul className="text-md">
                 <li className="mb-2">
@@ -50,15 +48,15 @@ const Footer = () => {
                     to="/kitchen"
                     className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
                   >
-                    Kitchen Remodeling
+                    Portfolio
                   </Link>
                 </li>
                 <li className="mb-2">
                   <Link
-                    to="/bathroom"
+                    to="/service"
                     className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
                   >
-                    Bathroom Remodeling
+                    Services
                   </Link>
                 </li>
                 <li className="mb-2">
@@ -66,49 +64,15 @@ const Footer = () => {
                     to="/laundry"
                     className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
                   >
-                    Laundry Room Remodeling
+                    Industries
                   </Link>
                 </li>
                 <li className="mb-2">
                   <Link
-                    to="/deck"
+                    to="/technology"
                     className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
                   >
-                    Deck & Fencing
-                  </Link>
-                </li>
-              </ul>
-              <ul className="text-md">
-                <li className="mb-2">
-                  <Link
-                    to="/basement"
-                    className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
-                  >
-                    Basement Remodeling
-                  </Link>
-                </li>
-                <li className="mb-2">
-                  <Link
-                    to="/roof"
-                    className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
-                  >
-                    Roof Remodeling
-                  </Link>
-                </li>
-                <li className="mb-2">
-                  <Link
-                    to="/flooring"
-                    className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
-                  >
-                    Flooring
-                  </Link>
-                </li>
-                <li className="mb-2">
-                  <Link
-                    to="/quartz"
-                    className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
-                  >
-                    Quartz
+                    Technologies
                   </Link>
                 </li>
               </ul>

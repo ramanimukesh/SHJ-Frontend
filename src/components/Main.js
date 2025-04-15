@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavBar from '../components/Navbar/NavBar';
+import NavBar from './Navbar/NavBar';
 import img1 from '../images/Home/slide.webp'; 
 // import img2 from '../images/Bathroom/image1.jpeg'; // Ensure this file exists
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Hero = () => {
+const Main = () => {
     const settings = {
         dots: true,
         infinite: true,
@@ -59,4 +59,4 @@ const Hero = () => {
     )
 }
 
-export default Hero;
+export default Main;

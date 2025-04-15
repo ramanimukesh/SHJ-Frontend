@@ -36,6 +36,8 @@ import SoftwareArchitect from './pages/Services/SoftwareArchitect';
 import Engineering from './pages/Services/Engineering';
 import MobileDev from './pages/Services/MobileDev';
 import Augmentation from './pages/Services/StaffAugmentation';
+import Services from './components/Services';
+import Technology from './components/Technology';
 
 function App() {
   useEffect(() => {
@@ -60,6 +62,8 @@ function App() {
         <ScrollToTop>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/service" element={<Services/>} />
+            <Route path="/Technology" element={<Technology/>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/vendor" element={<Vendor/>}/>
             <Route path= "/staff-augment" element={<Augmentation/>}/>
