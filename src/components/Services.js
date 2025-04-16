@@ -1,26 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import service from "../images/Services/Service.jpg";
 import NavBar from "../components/Navbar/NavBar";
+import Digital from "../images/Services/digital.png";
+import Engi from "../images/Services/DevOps.png";
+import staff from "../images/Services/staff.jpg";
+import mobile from "../images/Services/Mobile-App.png";
+import Architect from "../images/Services/software.jpg";
 import Footer from "../components/Footer";
 
 const Services = () => {
   return (
     <>
-    <div className="hero w-full h-screen relative" id="flutter">
+      <div className="hero w-full h-screen relative" id="flutter">
         <NavBar />
         <img
           alt="Hero Image"
           className="w-full h-full object-cover"
-          // src={img1}
+          src={service}
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
           <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
-            Elevate User Experiences with Digital Product Design
+            Empowering Businesses with End-to-End Digital Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ crafts intuitive and engaging digital interfaces by blending
-            user research, usability testing, and iterative design—ensuring
-            products that resonate with users and drive business success.
+            At SHJ, we offer a comprehensive suite of services tailored to
+            modern digital needs. From design and development to cloud
+            infrastructure and team extension, we help businesses innovate,
+            scale, and succeed in an ever-evolving tech landscape. Our goal is
+            to deliver impactful results through creativity, technical
+            excellence, and collaborative partnerships.
           </div>
 
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
@@ -45,154 +54,125 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="w-full p-2 md:p-12 h-5/6" id="about">
-        <div
-          className="flex flex-col lg:flex-row py-8 justify-between lg:text-left"
-          data-aos="fade-up"
-        >
-          <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
+      <div className="w-full px-4 py-12 md:px-8 lg:px-16" id="services">
+        {/* 1. Image Right */}
+        <div className="flex flex-col lg:flex-row items-center gap-10 mb-16">
+          <div className="lg:w-1/2 space-y-4 text-center lg:text-left">
+            <h2 className="text-3xl font-bold text-blue-900">
+              Digital Product Design
+            </h2>
+            <p className="text-gray-600 text-lg">
+              We specialize in creating beautiful and functional digital
+              products. From wireframes to high-fidelity prototypes, our designs
+              are intuitive, responsive, and user-centered. Our goal is to craft
+              products that offer exceptional user experiences and visual
+              appeal.
+            </p>
+          </div>
+          <Link to="/digital-product">
             <img
-              alt="card img"
-              className="rounded-t w-full h-[500px] object-cover"
-              // src={img2}
-              data-aos="fade-left"
-              data-aos-delay="700"
+              src={Digital}
+              alt="Web"
+              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
             />
-          </div>
-          <div
-            className="flex-col my-4 text-center lg:text-left lg:my-0 lg:justify-end w-full lg:w-1/2 px-8"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <h3 className="text-3xl text-blue-900 font-bold">
-              Why Choose Digital Product Design?
-            </h3>
-            <ul className="my-3 text-xl text-gray-600 font-semibold text-left list-disc pl-5">
-              <li>
-                <strong>User-Centered Approach:</strong> Digital product design
-                focuses on understanding user needs and behaviors, ensuring the
-                final product provides a seamless, intuitive experience.
-              </li>
-              <li>
-                <strong>Enhanced Usability:</strong> By conducting thorough
-                usability testing, designers identify pain points and refine the
-                product for better navigation and user satisfaction.
-              </li>
-              <li>
-                <strong>Responsive & Scalable Design:</strong> Digital product
-                design ensures that the application is adaptable to various
-                devices and screen sizes, offering a consistent experience
-                across platforms.
-              </li>
-              <li>
-                <strong>Brand Consistency:</strong> By integrating brand
-                elements into the design, digital product design enhances your
-                brand’s identity, making your product visually appealing and
-                recognizable.
-              </li>
-              <li>
-                <strong>Faster Time to Market:</strong> A well-designed product
-                can accelerate development cycles, enabling faster releases and
-                quick iterations based on user feedback.
-              </li>
-            </ul>
-          </div>
+          </Link>
         </div>
-      </div>
 
-      <div className="mt-10 mb-16 flex flex-col items-center text-center">
-        <h2 className="my-4 text-3xl text-blue-900 uppercase font-bold">
-          Digital Product Design Workflow
-        </h2>
-        <div className="flex justify-center">
-          <div className="w-24 border-b-4 border-blue-900 mb-4"></div>
-        </div>
-        <div className="px-4" data-aos="fade-down" data-aos-delay="600">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3 min-h-max">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Research & Discovery
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Conduct in-depth user research and market analysis to
-                  understand user needs, pain points, and business objectives,
-                  laying the foundation for a successful design.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Wireframing & Prototyping
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-40">
-                  Create wireframes and interactive prototypes that showcase the
-                  structure and functionality of the product, ensuring it aligns
-                  with user needs and business goals.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Visual & UI Design
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Design visually engaging user interfaces with a focus on
-                  aesthetics, user flow, and usability, ensuring a seamless and
-                  intuitive experience.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Usability Testing & Feedback
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Perform usability testing to gather real-user feedback,
-                  identifying areas for improvement and validating design
-                  choices before final implementation.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Iterative Design & Refinement
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Continuously refine and iterate on designs based on user
-                  feedback and testing, ensuring the product evolves to meet
-                  both user expectations and business goals.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Final Handoff & Implementation
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Provide final designs with comprehensive guidelines for
-                  development, ensuring smooth implementation while maintaining
-                  design integrity.
-                </p>
-              </div>
-            </div>
+        {/* 2. Image Left */}
+        <div className="flex flex-col lg:flex-row-reverse items-center gap-10 mb-16">
+          <div className="lg:w-1/2 space-y-4 text-center lg:text-left">
+            <h2 className="text-3xl font-bold text-blue-900">
+              Software Architecture
+            </h2>
+            <p className="text-gray-600 text-lg">
+              We build scalable and maintainable software architectures that
+              support long-term growth. Our approach ensures clean codebases,
+              efficient performance, and easy extensibility. With a focus on
+              modularity and security, we lay the foundation for reliable
+              software systems.
+            </p>
           </div>
+          <Link to="/software-architect">
+            <img
+              src={Architect}
+              alt="Architecture"
+              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+            />
+          </Link>
+        </div>
+
+        {/* 3. Image Right */}
+        <div className="flex flex-col lg:flex-row items-center gap-10 mb-16">
+          <div className="lg:w-1/2 space-y-4 text-center lg:text-left">
+            <h2 className="text-3xl font-bold text-blue-900">
+              Engineering & DevOps
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Our engineering and DevOps services streamline development and
+              deployment workflows. We implement CI/CD pipelines, automated
+              testing, and scalable infrastructure using Docker, Jenkins, and
+              AWS. This ensures faster releases, reduced downtime, and improved
+              reliability.
+            </p>
+          </div>
+          <Link to="/engineering">
+            <img
+              src={Engi}
+              alt="DevOps"
+              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+            />
+          </Link>
+        </div>
+
+        {/* 4. Image Left */}
+        <div className="flex flex-col lg:flex-row-reverse items-center gap-10 mb-16">
+          <div className="lg:w-1/2 space-y-4 text-center lg:text-left">
+            <h2 className="text-3xl font-bold text-blue-900">
+              MobileApp Development
+            </h2>
+            <p className="text-gray-600 text-lg">
+              We create high-quality mobile applications for both Android and
+              iOS platforms using React Native and Flutter. Our apps are
+              optimized for performance, scalability, and user experience. We
+              follow a mobile-first approach to deliver feature-rich
+              applications that users love.
+            </p>
+          </div>
+          <Link to="/mobile-dev">
+            <img
+              src={mobile}
+              alt="Mobile Development"
+              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+            />
+          </Link>
+        </div>
+
+        {/* 5. Image Right */}
+        <div className="flex flex-col lg:flex-row items-center gap-10 mb-16">
+          <div className="lg:w-1/2 space-y-4 text-center lg:text-left">
+            <h2 className="text-3xl font-bold text-blue-900">
+              Staff Augmentation
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Scale your team instantly with our expert developers, designers,
+              and QA professionals. Whether you need short-term support or
+              long-term collaboration, we offer flexible staffing solutions. Our
+              team integrates seamlessly with your workflow to boost
+              productivity and project success.
+            </p>
+          </div>
+          <Link to="/staff-augment">
+            <img
+              src={staff}
+              alt="Staff Augmentation"
+              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+            />
+          </Link>
         </div>
       </div>
 
       <Footer />
     </>
-
   );
 };
 

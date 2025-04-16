@@ -30,7 +30,7 @@ import Healthcare from './pages/Industries/Healthcare';
 import Ecommerce from './pages/Industries/E-commerce';
 import Education from './pages/Industries/Education';
 import Finance from './pages/Industries/Finance';
-import Manufacturer from './pages/Industries/Manufacturer';
+import DigitalBank from './pages/Industries/Digitalbank';
 import DigitalProduct from './pages/Services/DigitalProduct';
 import SoftwareArchitect from './pages/Services/SoftwareArchitect';
 import Engineering from './pages/Services/Engineering';
@@ -38,6 +38,7 @@ import MobileDev from './pages/Services/MobileDev';
 import Augmentation from './pages/Services/StaffAugmentation';
 import Services from './components/Services';
 import Technology from './components/Technology';
+import Industries from './components/Industries';
 
 function App() {
   useEffect(() => {
@@ -64,6 +65,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/service" element={<Services/>} />
             <Route path="/Technology" element={<Technology/>} />
+            <Route path="/industries" element={<Industries/>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/vendor" element={<Vendor/>}/>
             <Route path= "/staff-augment" element={<Augmentation/>}/>
@@ -89,7 +91,7 @@ function App() {
             <Route path= "/ecommerce" element={<Ecommerce/>}/>
             <Route path= "/education" element={<Education/>}/>
             <Route path= "/finance" element={<Finance/>}/>
-            <Route path= "/manufacter" element={<Manufacturer/>}/>
+            <Route path= "/digital-banking" element={<DigitalBank/>}/>
 
           </Routes>
         </ScrollToTop>

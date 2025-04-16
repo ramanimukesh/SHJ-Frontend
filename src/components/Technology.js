@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import NavBar from "../components/Navbar/NavBar";
 import { Link } from "react-router-dom";
+import AWS from "../images/Devops/AWS/slide.png";
+import DynamoDB from "../images/Database/Dynamodb/Dynamo.jpeg";
+import tech from "../images/Tech/Technology.jpg";
 import Footer from "../components/Footer";
 
 const Technology = () => {
@@ -8,21 +11,21 @@ const Technology = () => {
 
   return (
     <>
-       <div className="hero w-full h-screen relative" id="flutter">
+      <div className="hero w-full h-screen relative" id="flutter">
         <NavBar />
         <img
           alt="Hero Image"
           className="w-full h-full object-cover"
-          // src={img1}
+          src={tech}
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
           <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
-            Elevate User Experiences with Digital Product Design
+            Innovative Technologies Powering Industry-Specific Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ crafts intuitive and engaging digital interfaces by blending
-            user research, usability testing, and iterative design—ensuring
-            products that resonate with users and drive business success.
+            SHJ leverages the latest technologies to build custom software
+            solutions that meet the unique needs of startups, enterprises, and
+            growing businesses.
           </div>
 
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
@@ -47,150 +50,267 @@ const Technology = () => {
           </div>
         </div>
       </div>
-      <div className="w-full p-2 md:p-12 h-5/6" id="about">
+
+      <div className="w-full p-2 md:p-12" id="services">
+        {/* 1. Web Development (Image Right) */}
         <div
-          className="flex flex-col lg:flex-row py-8 justify-between lg:text-left"
+          className="flex flex-col lg:flex-row py-8 justify-between items-center"
           data-aos="fade-up"
         >
-          <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
-            <img
-              alt="card img"
-              className="rounded-t w-full h-[500px] object-cover"
-              // src={img2}
-              data-aos="fade-left"
-              data-aos-delay="700"
-            />
-          </div>
           <div
-            className="flex-col my-4 text-center lg:text-left lg:my-0 lg:justify-end w-full lg:w-1/2 px-8"
+            className="w-full lg:w-1/2 px-8"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <h3 className="text-3xl text-blue-900 font-bold">
-              Why Choose Digital Product Design?
-            </h3>
-            <ul className="my-3 text-xl text-gray-600 font-semibold text-left list-disc pl-5">
-              <li>
-                <strong>User-Centered Approach:</strong> Digital product design
-                focuses on understanding user needs and behaviors, ensuring the
-                final product provides a seamless, intuitive experience.
-              </li>
-              <li>
-                <strong>Enhanced Usability:</strong> By conducting thorough
-                usability testing, designers identify pain points and refine the
-                product for better navigation and user satisfaction.
-              </li>
-              <li>
-                <strong>Responsive & Scalable Design:</strong> Digital product
-                design ensures that the application is adaptable to various
-                devices and screen sizes, offering a consistent experience
-                across platforms.
-              </li>
-              <li>
-                <strong>Brand Consistency:</strong> By integrating brand
-                elements into the design, digital product design enhances your
-                brand’s identity, making your product visually appealing and
-                recognizable.
-              </li>
-              <li>
-                <strong>Faster Time to Market:</strong> A well-designed product
-                can accelerate development cycles, enabling faster releases and
-                quick iterations based on user feedback.
-              </li>
-            </ul>
+            <h2 className="text-4xl text-blue-900 font-bold mb-4">
+              Web Development
+            </h2>
+            <p className="text-xl text-gray-600 font-semibold">
+              We create responsive, user-friendly websites using modern
+              technologies like React and Next.js to deliver high-performance
+              digital experiences.
+            </p>
+          </div>
+          <div
+            className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
+            data-aos="fade-left"
+            data-aos-delay="700"
+          >
+            <div className="grid grid-cols-2 gap-12 p-10 bg-gray-100 rounded-lg shadow-lg">
+              <a href="/react" title="React">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                  alt="React"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+              <a href="/node" title="Node.js">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+              <a href="/angular" title="Angular">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg"
+                  alt="Angular"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+              <a href="/typescript" title="TypeScript">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                  alt="TypeScript"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* 2. UI/UX Design (Image Left) */}
+        <div
+          className="flex flex-col lg:flex-row-reverse py-8 justify-between items-center"
+          data-aos="fade-up"
+        >
+          <div
+            className="w-full lg:w-1/2 px-8"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <h2 className="text-4xl text-blue-900 font-bold mb-4">
+              UI/UX Design
+            </h2>
+            <p className="text-xl text-gray-600 font-semibold">
+              We design engaging user interfaces with a focus on usability,
+              accessibility, and aesthetic appeal—ensuring an intuitive
+              experience for all users.
+            </p>
+          </div>
+          <div
+            className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
+            data-aos="fade-right"
+            data-aos-delay="700"
+          >
+            <div className="grid grid-cols-2 gap-12 p-10 bg-gray-100 rounded-lg shadow-lg">
+              {/* Figma */}
+              <a href="/figma" title="Figma">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg"
+                  alt="Figma"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+
+              {/* Photoshop */}
+              <a href="/photoshop" title="Photoshop">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                  alt="Photoshop"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* 3. Mobile App Development (Image Right) */}
+        <div
+          className="flex flex-col lg:flex-row py-8 justify-between items-center"
+          data-aos="fade-up"
+        >
+          <div
+            className="w-full lg:w-1/2 px-8"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <h2 className="text-4xl text-blue-900 font-bold mb-4">
+              Mobile App Development
+            </h2>
+            <p className="text-xl text-gray-600 font-semibold">
+              We develop high-quality mobile applications for Android and iOS
+              platforms, combining performance with sleek, intuitive user
+              experiences.
+            </p>
+          </div>
+          <div
+            className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
+            data-aos="fade-left"
+            data-aos-delay="700"
+          >
+            <div className="grid grid-cols-2 gap-12 p-10 bg-gray-100 rounded-lg shadow-lg">
+              {/* React Native */}
+              <a href="/react-native" title="React Native">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                  alt="React Native"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+
+              {/* Flutter */}
+              <a href="/flutter" title="Flutter">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg"
+                  alt="Flutter"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* 4. Cloud Solutions (Image Left) */}
+        <div
+          className="flex flex-col lg:flex-row-reverse py-8 justify-between items-center"
+          data-aos="fade-up"
+        >
+          <div
+            className="w-full lg:w-1/2 px-8"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <h2 className="text-4xl text-blue-900 font-bold mb-4">
+              DevOps Development
+            </h2>
+            <p className="text-xl text-gray-600 font-semibold">
+              We offer scalable cloud infrastructure solutions on AWS, Azure,
+              and GCP—ensuring performance, security, and business continuity.
+            </p>
+          </div>
+          <div
+            className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
+            data-aos="fade-left"
+            data-aos-delay="700"
+          >
+            <div className="grid grid-cols-3 gap-10 p-10 bg-gray-100 rounded-lg shadow-lg">
+              {/* Docker */}
+              <a href="/docker" title="Docker">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
+                  alt="Docker"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+
+              {/* Jenkins */}
+              <a href="/jenkins" title="Jenkins">
+                <img
+                  src="https://www.jenkins.io/images/logos/jenkins/jenkins.svg"
+                  alt="Jenkins"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+
+              {/* AWS */}
+              <a href="/aws" title="AWS">
+                <img
+                  src={AWS}
+                  alt="AWS"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* 5. DevOps & Automation (Image Right) */}
+        <div
+          className="flex flex-col lg:flex-row py-8 justify-between items-center"
+          data-aos="fade-up"
+        >
+          <div
+            className="w-full lg:w-1/2 px-8"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <h2 className="text-4xl text-blue-900 font-bold mb-4">
+              Database Developement
+            </h2>
+            <p className="text-xl text-gray-600 font-semibold">
+              Streamline your delivery pipelines with CI/CD, Docker, and
+              Kubernetes. We help automate infrastructure for faster, reliable
+              deployments.
+            </p>
+          </div>
+          <div
+            className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
+            data-aos="fade-left"
+            data-aos-delay="700"
+          >
+            <div className="grid grid-cols-3 gap-10 p-10 bg-gray-100 rounded-lg shadow-lg">
+              {/* MongoDB */}
+              <a href="/mongodb" title="MongoDB">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDB"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+
+              {/* DynamoDB */}
+              <a href="/dynamodb" title="DynamoDB">
+                <img
+                  src={DynamoDB}
+                  alt="DynamoDB"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+
+              {/* MySQL */}
+              <a href="/mysql" title="MySQL">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                  className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="mt-10 mb-16 flex flex-col items-center text-center">
-        <h2 className="my-4 text-3xl text-blue-900 uppercase font-bold">
-          Digital Product Design Workflow
-        </h2>
-        <div className="flex justify-center">
-          <div className="w-24 border-b-4 border-blue-900 mb-4"></div>
-        </div>
-        <div className="px-4" data-aos="fade-down" data-aos-delay="600">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3 min-h-max">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Research & Discovery
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Conduct in-depth user research and market analysis to
-                  understand user needs, pain points, and business objectives,
-                  laying the foundation for a successful design.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Wireframing & Prototyping
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-40">
-                  Create wireframes and interactive prototypes that showcase the
-                  structure and functionality of the product, ensuring it aligns
-                  with user needs and business goals.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Visual & UI Design
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Design visually engaging user interfaces with a focus on
-                  aesthetics, user flow, and usability, ensuring a seamless and
-                  intuitive experience.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Usability Testing & Feedback
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Perform usability testing to gather real-user feedback,
-                  identifying areas for improvement and validating design
-                  choices before final implementation.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Iterative Design & Refinement
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Continuously refine and iterate on designs based on user
-                  feedback and testing, ensuring the product evolves to meet
-                  both user expectations and business goals.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
-              <div className="m-2 text-justify text-sm">
-                <h3 className="font-semibold my-4 text-lg md:text-2xl text-center mb-8 h-12">
-                  Final Handoff & Implementation
-                </h3>
-                <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  Provide final designs with comprehensive guidelines for
-                  development, ensuring smooth implementation while maintaining
-                  design integrity.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <Footer />
     </>
   );
