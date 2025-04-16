@@ -11,7 +11,6 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
-import Vendor from './pages/Vendor';
 import Reactjs from './pages/Technology/Web/React';
 import Angularjs from './pages/Technology/Web/Angular';
 import Nodejs from './pages/Technology/Web/Node';
@@ -67,7 +66,6 @@ function App() {
             <Route path="/Technology" element={<Technology/>} />
             <Route path="/industries" element={<Industries/>} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/vendor" element={<Vendor/>}/>
             <Route path= "/staff-augment" element={<Augmentation/>}/>
             <Route path= "/digital-product" element={<DigitalProduct/>}/>
             <Route path= "/engineering" element={<Engineering/>}/>

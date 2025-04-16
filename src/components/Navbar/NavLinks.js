@@ -218,7 +218,9 @@ const NavLinks = ({ scrollToTop }) => {
         )}
       </div>
 
-      <div className="relative" ref={industriesDropdownRef}>
+      <div className="relative" ref={industriesDropdownRef}
+      onMouseEnter={() => window.innerWidth >= 768 && setIsIndustryOpen(true)}
+      onMouseLeave={() => window.innerWidth >= 768 && setIsIndustryOpen(false)}>
         {/* INDUSTRIES button - always visible */}
         <button
           className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
@@ -534,20 +536,11 @@ const NavLinks = ({ scrollToTop }) => {
         CONTACT
       </Link>
 
-      {/* Vendor Link */}
-      <Link
-        className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
-        to="/vendor"
-        onClick={scrollToTop}
-      >
-        VENDOR
-      </Link>
-
       {/* Phone Button */}
       <button className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-auto px-6 py-3 shadow-xl rounded-xl">
         <Phone className="w-5 h-5 mr-2" />
         <label htmlFor="phone" className="tooltip">
-          855-557-9264
+          732-347-9171
           <span className="tooltip-text">
             <span className="tooltip-icon">
               <Phone />

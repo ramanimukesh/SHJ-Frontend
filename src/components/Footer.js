@@ -15,9 +15,12 @@ const Footer = () => {
               <li className="mb-2">
                 <HashLink
                   to="/"
+                  scroll={(el) =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
                   className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
                 >
-                  About
+                  About us
                 </HashLink>
               </li>
               <li className="mb-2">
@@ -25,58 +28,48 @@ const Footer = () => {
                   to="/contact"
                   className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
                 >
-                  Contact
-                </HashLink>
-              </li>
-              <li className="mb-2">
-                <HashLink
-                  to="/vendor"
-                  className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
-                >
-                  Vendor
+                  Contact us
                 </HashLink>
               </li>
             </ul>
           </div>
 
-          <div className="w-full sm:w-auto text-center">
+          <div className="w-full sm:w-auto text-center sm:text-center">
             <h6 className="text-[#013289] text-xl font-bold mb-4">OUR PAGES</h6>
-            <div className="grid grid-cols-2 gap-4">
-              <ul className="text-md">
-                <li className="mb-2">
-                  <Link
-                    to="/kitchen"
-                    className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
-                  >
-                    Portfolio
-                  </Link>
-                </li>
-                <li className="mb-2">
-                  <Link
-                    to="/service"
-                    className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
-                  >
-                    Services
-                  </Link>
-                </li>
-                <li className="mb-2">
-                  <Link
-                    to="/industries"
-                    className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
-                  >
-                    Industries
-                  </Link>
-                </li>
-                <li className="mb-2">
-                  <Link
-                    to="/technology"
-                    className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
-                  >
-                    Technologies
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            <ul className="text-md">
+              <li className="mb-2">
+                <Link
+                  to="/kitchen"
+                  className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link
+                  to="/service"
+                  className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
+                >
+                  Services
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link
+                  to="/industries"
+                  className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
+                >
+                  Industries
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link
+                  to="/technology"
+                  className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
+                >
+                  Technologies
+                </Link>
+              </li>
+            </ul>
           </div>
 
           <div className="w-full sm:w-auto text-center">
@@ -87,12 +80,12 @@ const Footer = () => {
             <div className="text-md font-medium mb-6 flex justify-center items-center">
               <Phone className="w-5 h-5 mr-2 text-[#013289]" />
               <label htmlFor="phone" className="tooltip">
-                <span className="text-[#013289]">855-557-9264</span>{" "}
+                <span className="text-[#013289]">732-347-9171</span>{" "}
                 <span className="tooltip-text">
                   <span className="tooltip-icon">
                     <Phone className="w-5 h-5" />
                   </span>
-                  <span className="tooltip-text-content">855-55-SWAMI</span>
+                  <span className="tooltip-text-content">732-34-SWAMI</span>
                 </span>
               </label>
             </div>

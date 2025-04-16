@@ -6,6 +6,8 @@ import ui from "../images/Services/UI.jpg";
 import Devops from "../images/Services/devops.webp";
 import Project from "../images/Services/Promanage.jpg";
 import API from "../images/Services/API.jpeg";
+import AWS from "../images/Devops/AWS/slide.png";
+import DynamoDB from "../images/Database/Dynamodb/Dynamo.jpeg";
 import Quality from "../images/Services/Quality.avif";
 import { useState } from "react";
 
@@ -204,9 +206,9 @@ const Intro = () => {
                   {[
                     "web-dev",
                     "mobile-dev",
-                    "backend",
+                    "devops",
+                    "database",
                     "design",
-                    "testing",
                   ].map((tab) => (
                     <button
                       key={tab}
@@ -221,11 +223,11 @@ const Intro = () => {
                         ? "Web Development"
                         : tab === "mobile-dev"
                         ? "Mobile Development"
-                        : tab === "backend"
-                        ? "Backend Development"
-                        : tab === "design"
-                        ? "Design"
-                        : "Testing"}
+                        : tab === "devops"
+                        ? "DevOps Development"
+                        : tab === "database"
+                        ? "Database"
+                        : "Design"}
                     </button>
                   ))}
                 </div>
@@ -241,20 +243,47 @@ const Intro = () => {
 
                   <div className="flex flex-wrap justify-center gap-10">
                     {[
-                      { name: "A", fullName: "Angular" },
-                      { name: "R", fullName: "React" },
-                      { name: "N", fullName: "Node.js" },
-                      { name: "J", fullName: "Java" },
-                      { name: "T", fullName: "TypeScript" },
-                    ].map((tech) => (
-                      <div key={tech.name} className="text-center">
-                        <div className="w-40 h-40 flex items-center justify-center rounded-full bg-blue-900 text-white text-3xl font-bold shadow-md">
-                          {tech.name}
-                        </div>
+                      {
+                        href: "/angular",
+                        title: "Angular",
+                        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg",
+                      },
+                      {
+                        href: "/react",
+                        title: "React",
+                        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+                      },
+                      {
+                        href: "/node",
+                        title: "Node.js",
+                        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+                      },
+                      {
+                        href: "/java",
+                        title: "Java",
+                        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+                      },
+                      {
+                        href: "/typescript",
+                        title: "TypeScript",
+                        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+                      },
+                    ].map((tech, idx) => (
+                      <a
+                        key={idx}
+                        href={tech.href}
+                        title={tech.title}
+                        className="flex flex-col items-center"
+                      >
+                        <img
+                          src={tech.src}
+                          alt={tech.title}
+                          className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                        />
                         <p className="mt-2 text-lg font-medium text-blue-900">
-                          {tech.fullName}
+                          {tech.title}
                         </p>
-                      </div>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -269,98 +298,163 @@ const Intro = () => {
                   </p>
 
                   <div className="flex flex-wrap justify-center gap-6">
-                    {[
-                      { name: "R", fullName: "React Native" },
-                      { name: "F", fullName: "Flutter" },
-                    ].map((tech) => (
-                      <div key={tech.name} className="text-center">
-                        <div className="w-40 h-40 flex items-center justify-center rounded-full bg-blue-900 text-white text-3xl font-bold shadow-md">
-                          {tech.name}
-                        </div>
-                        <p className="mt-2 text-lg font-medium text-blue-900">
-                          {tech.fullName}
-                        </p>
-                      </div>
-                    ))}
+                    {/* React Native */}
+                    <a href="/react-native" title="React Native">
+                      <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                        alt="React Native"
+                        className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                      />
+                      <p className="mt-2 text-lg font-medium text-blue-900">
+                        React Native
+                      </p>
+                    </a>
+
+                    {/* Flutter */}
+                    <a href="/flutter" title="Flutter">
+                      <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg"
+                        alt="Flutter"
+                        className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                      />
+                      <p className="mt-2 text-lg font-medium text-blue-900">
+                        Flutter
+                      </p>
+                    </a>
                   </div>
                 </div>
               )}
 
               {/* Backend Development Section */}
-              {activeTab === "backend" && (
+              {activeTab === "devops" && (
                 <div className="mt-6 mx-12 text-center">
                   <p className="text-xl lg:text-2xl font-semibold text-blue-900 mb-6">
-                    Our backend development ensures scalable, secure, and
-                    high-performing systems.
+                    We implement robust DevOps practices using tools like
+                    Docker, Jenkins, and AWS to streamline deployment, enhance
+                    scalability, and ensure system reliability.
                   </p>
 
                   <div className="flex flex-wrap justify-center gap-6">
-                    {[
-                      { name: "N", fullName: "Node.js" },
-                      { name: "P", fullName: "Python" },
-                      { name: "P", fullName: "PHP" },
-                    ].map((tech) => (
-                      <div key={tech.name} className="text-center">
-                        <div className="w-40 h-40 flex items-center justify-center rounded-full bg-blue-900 text-white text-3xl font-bold shadow-md">
-                          {tech.name}
-                        </div>
-                        <p className="mt-2 text-lg font-medium text-blue-900">
-                          {tech.fullName}
-                        </p>
-                      </div>
-                    ))}
+                    {/* Docker */}
+                    <a href="/docker" title="Docker">
+                      <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
+                        alt="Docker"
+                        className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                      />
+                      <p className="mt-2 text-lg font-medium text-blue-900">
+                        Docker
+                      </p>
+                    </a>
+
+                    {/* Jenkins */}
+                    <a href="/jenkins" title="Jenkins">
+                      <img
+                        src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg"
+                        alt="Jenkins"
+                        className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                      />
+                      <p className="mt-2 text-lg font-medium text-blue-900">
+                        Jenkins
+                      </p>
+                    </a>
+
+                    {/* AWS */}
+                    <a href="/aws" title="AWS">
+                      <img
+                        src={AWS}
+                        alt="AWS"
+                        className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                      />
+                      <p className="mt-2 text-lg font-medium text-blue-900">
+                        AWS
+                      </p>
+                    </a>
                   </div>
                 </div>
               )}
 
               {/* Design Section */}
-              {activeTab === "design" && (
+              {activeTab === "database" && (
                 <div className="mt-6 mx-12 text-center">
-                  <p className="text-xl lg:text-2xl font-semibold text-blue-900 mb-6">
-                    We create visually appealing and user-friendly designs to
-                    enhance user experiences.
-                  </p>
+                  <h2 className="text-xl lg:text-2xl font-semibold text-blue-900 mb-6">
+                    Our database solutions ensure efficient, scalable, and
+                    secure data storage.
+                  </h2>
 
                   <div className="flex flex-wrap justify-center gap-6">
-                    {[
-                      { name: "P", fullName: "Photoshop" },
-                      { name: "F", fullName: "Figma" },
-                    ].map((tech) => (
-                      <div key={tech.name} className="text-center">
-                        <div className="w-40 h-40 flex items-center justify-center rounded-full bg-blue-900 text-white text-3xl font-bold shadow-md">
-                          {tech.name}
-                        </div>
-                        <p className="mt-2 text-lg font-medium text-blue-900">
-                          {tech.fullName}
-                        </p>
-                      </div>
-                    ))}
+                    {/* MySQL */}
+                    <a href="/mysql" title="MySQL">
+                      <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+                        alt="MySQL"
+                        className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                      />
+                      <p className="mt-2 text-lg font-medium text-blue-900">
+                        MySQL
+                      </p>
+                    </a>
+
+                    {/* Dynamo DB */}
+                    <a href="/dynamodb" title="DynamoDB">
+                      <img
+                        src={DynamoDB}
+                        alt="DynamoDB"
+                        className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                      />
+                      <p className="mt-2 text-lg font-medium text-blue-900">
+                        Dynamo DB
+                      </p>
+                    </a>
+
+                    {/* MongoDB */}
+                    <a href="/mongodb" title="MongoDB">
+                      <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                        alt="MongoDB"
+                        className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                      />
+                      <p className="mt-2 text-lg font-medium text-blue-900">
+                        MongoDB
+                      </p>
+                    </a>
                   </div>
                 </div>
               )}
 
               {/* Testing Section */}
-              {activeTab === "testing" && (
+              {activeTab === "design" && (
                 <div className="mt-6 mx-12 text-center">
-                  <p className="text-xl lg:text-2xl font-semibold text-blue-900 mb-6">
-                    We ensure the highest quality and reliability through
-                    comprehensive testing practices.
-                  </p>
+                  <h2 className="text-xl lg:text-2xl font-semibold text-blue-900 mb-6">
+                    We craft visually compelling and user-centric designs using
+                    industry-leading tools like Figma and Photoshop to elevate
+                    digital experiences.
+                  </h2>
 
                   <div className="flex flex-wrap justify-center gap-6">
-                    {[
-                      { name: "J", fullName: "Jest" },
-                      { name: "C", fullName: "Chai" },
-                    ].map((tech) => (
-                      <div key={tech.name} className="text-center">
-                        <div className="w-40 h-40 flex items-center justify-center rounded-full bg-blue-900 text-white text-3xl font-bold shadow-md">
-                          {tech.name}
-                        </div>
-                        <p className="mt-2 text-lg font-medium text-blue-900">
-                          {tech.fullName}
-                        </p>
-                      </div>
-                    ))}
+                    {/* Figma */}
+                    <a href="/figma" title="Figma">
+                      <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg"
+                        alt="Figma"
+                        className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                      />
+                      <p className="mt-2 text-lg font-medium text-blue-900">
+                        Figma
+                      </p>
+                    </a>
+
+                    {/* Photoshop */}
+                    <a href="/photoshop" title="Photoshop">
+                      <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-plain.svg"
+                        alt="Photoshop"
+                        className="w-[180px] h-[160px] object-contain hover:scale-110 transition-transform duration-200"
+                      />
+                      <p className="mt-2 text-lg font-medium text-blue-900">
+                        Photoshop
+                      </p>
+                    </a>
                   </div>
                 </div>
               )}
