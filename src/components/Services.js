@@ -24,12 +24,9 @@ const Services = () => {
             Empowering Businesses with End-to-End Digital Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            At SHJ, we offer a comprehensive suite of services tailored to
-            modern digital needs. From design and development to cloud
-            infrastructure and team extension, we help businesses innovate,
-            scale, and succeed in an ever-evolving tech landscape. Our goal is
-            to deliver impactful results through creativity, technical
-            excellence, and collaborative partnerships.
+            At SHJ, we deliver design, development, cloud, and team extension
+            services to help businesses innovate, grow, and thrive in today’s
+            digital world.
           </div>
 
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
@@ -68,14 +65,23 @@ const Services = () => {
               products that offer exceptional user experiences and visual
               appeal.
             </p>
+            <Link
+              to="/digital-product"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
-          <Link to="/digital-product">
-            <img
-              src={Digital}
-              alt="Web"
-              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
-            />
-          </Link>
+          <img
+            src={Digital}
+            alt="Web"
+            className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+          />
         </div>
 
         {/* 2. Image Left */}
@@ -91,14 +97,23 @@ const Services = () => {
               modularity and security, we lay the foundation for reliable
               software systems.
             </p>
+            <Link
+              to="/software-architect"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
-          <Link to="/software-architect">
-            <img
-              src={Architect}
-              alt="Architecture"
-              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
-            />
-          </Link>
+          <img
+            src={Architect}
+            alt="Architecture"
+            className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+          />
         </div>
 
         {/* 3. Image Right */}
@@ -114,14 +129,23 @@ const Services = () => {
               AWS. This ensures faster releases, reduced downtime, and improved
               reliability.
             </p>
+            <Link
+              to="/engineering"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
-          <Link to="/engineering">
-            <img
-              src={Engi}
-              alt="DevOps"
-              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
-            />
-          </Link>
+          <img
+            src={Engi}
+            alt="DevOps"
+            className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+          />
         </div>
 
         {/* 4. Image Left */}
@@ -137,14 +161,23 @@ const Services = () => {
               follow a mobile-first approach to deliver feature-rich
               applications that users love.
             </p>
+            <Link
+              to="/mobile-dev"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
-          <Link to="/mobile-dev">
-            <img
-              src={mobile}
-              alt="Mobile Development"
-              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
-            />
-          </Link>
+          <img
+            src={mobile}
+            alt="Mobile Development"
+            className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+          />
         </div>
 
         {/* 5. Image Right */}
@@ -160,14 +193,23 @@ const Services = () => {
               team integrates seamlessly with your workflow to boost
               productivity and project success.
             </p>
+            <Link
+              to="/staff-augment"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
-          <Link to="/staff-augment">
-            <img
-              src={staff}
-              alt="Staff Augmentation"
-              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
-            />
-          </Link>
+          <img
+            src={staff}
+            alt="Staff Augmentation"
+            className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+          />
         </div>
       </div>
 

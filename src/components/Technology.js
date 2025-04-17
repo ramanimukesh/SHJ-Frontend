@@ -70,6 +70,17 @@ const Technology = () => {
               technologies like React and Next.js to deliver high-performance
               digital experiences.
             </p>
+            <Link
+              to="/react"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
           <div
             className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
@@ -127,6 +138,17 @@ const Technology = () => {
               platforms, combining performance with sleek, intuitive user
               experiences.
             </p>
+            <Link
+              to="/react-native"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
           <div
             className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
@@ -171,6 +193,17 @@ const Technology = () => {
               Next.js, and TypeScript. Our focus is on delivering fast, seamless
               digital experiences that elevate user engagement.
             </p>
+            <Link
+              to="/angular"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
           <div
             className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
@@ -214,6 +247,17 @@ const Technology = () => {
               Django, Spring, Rails, Laravel, and Express.js to streamline and
               scale backend development efficiently.
             </p>
+            <Link
+              to="/node"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
           <div
             className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
@@ -258,11 +302,22 @@ const Technology = () => {
               accessibility, and aesthetic appeal—ensuring an intuitive
               experience for all users.
             </p>
+            <Link
+              to="/figma"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
           <div
             className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
             data-aos="fade-right"
-            data-aos-delay="700"
+            data-aos-delay="500"
           >
             <div className="grid grid-cols-2 gap-12 p-10 bg-gray-100 rounded-lg shadow-lg">
               {/* Figma */}
@@ -303,11 +358,22 @@ const Technology = () => {
               We offer scalable cloud infrastructure solutions on AWS, Azure,
               and GCP—ensuring performance, security, and business continuity.
             </p>
+            <Link
+              to="/docker"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
           <div
             className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
             data-aos="fade-left"
-            data-aos-delay="700"
+            data-aos-delay="600"
           >
             <div className="grid grid-cols-3 gap-10 p-10 bg-gray-100 rounded-lg shadow-lg">
               {/* Docker */}
@@ -358,11 +424,22 @@ const Technology = () => {
               Kubernetes. We help automate infrastructure for faster, reliable
               deployments.
             </p>
+            <Link
+              to="/mongodb"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
           <div
             className="w-full lg:w-1/2 flex justify-center items-center lg:mx-4 mt-6 lg:mt-0"
             data-aos="fade-left"
-            data-aos-delay="700"
+            data-aos-delay="600"
           >
             <div className="grid grid-cols-3 gap-10 p-10 bg-gray-100 rounded-lg shadow-lg">
               {/* MongoDB */}

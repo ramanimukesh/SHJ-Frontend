@@ -13,6 +13,7 @@ const NavLinks = ({ scrollToTop }) => {
   const industriesDropdownRef = useRef(null);
   const industriesButtonRef = useRef(null);
   const techButtonRef = useRef(null);
+  const timeoutRef = useRef(null);
 
   // Smooth scroll function
   const smoothScroll = (id) => {
@@ -58,6 +59,50 @@ const NavLinks = ({ scrollToTop }) => {
     };
   }, []);
 
+  const industryMouseEnter = () => {
+    if (window.innerWidth >= 768) {
+      clearTimeout(timeoutRef.current);
+      setIsIndustryOpen(true);
+    }
+  };
+  const serviceMouseEnter = () => {
+    if (window.innerWidth >= 768) {
+      clearTimeout(timeoutRef.current);
+      setIsOpen(true);
+    }
+  };
+
+  const serviceMouseLeave = () => {
+    if (window.innerWidth >= 768) {
+      timeoutRef.current = setTimeout(() => {
+        setIsOpen(false);
+      }, 150);
+    }
+  };
+
+  const techMouseEnter = () => {
+    if (window.innerWidth >= 768) {
+      clearTimeout(timeoutRef.current);
+      setIsTechOpen(true);
+    }
+  };
+
+  const techMouseLeave = () => {
+    if (window.innerWidth >= 768) {
+      timeoutRef.current = setTimeout(() => {
+        setIsTechOpen(false);
+      }, 150);
+    }
+  };
+
+  const industryMouseLeave = () => {
+    if (window.innerWidth >= 768) {
+      timeoutRef.current = setTimeout(() => {
+        setIsIndustryOpen(false);
+      }, 150); // short delay to allow interaction
+    }
+  };
+
   return (
     <>
       {/* Home Link */}
@@ -78,14 +123,20 @@ const NavLinks = ({ scrollToTop }) => {
         ABOUT
       </Link>
 
-      <div className="relative inline-block" ref={dropdownRef}>
-        <button
-          className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
-          onClick={() => setIsOpen((prev) => !prev)}
-          ref={buttonRef}
-        >
-          SERVICES <span className="text-sm">{isOpen ? "▲" : "▼"}</span>
-        </button>
+      <div
+        className="relative inline-block"
+        ref={dropdownRef}
+        onMouseEnter={serviceMouseEnter}
+        onMouseLeave={serviceMouseLeave}
+      >
+        <Link to="/service">
+          <button
+            className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
+            ref={buttonRef}
+          >
+            SERVICES <span className="text-sm">{isOpen ? "▲" : "▼"}</span>
+          </button>
+        </Link>
 
         {/* Mobile View Dropdown */}
         {isOpen && (
@@ -160,9 +211,9 @@ const NavLinks = ({ scrollToTop }) => {
                     Digital Product Design
                   </h3>
                   <p className="text-gray-700">
-                    We craft intuitive and visually compelling interfaces by
-                    combining user research, usability testing, and iterative
-                    design...
+                    Transform your ideas into intuitive digital experiences. Our
+                    design process is user-centered, data-informed, and focused
+                    on creating real impact.
                   </p>
                 </div>
               </Link>
@@ -173,8 +224,9 @@ const NavLinks = ({ scrollToTop }) => {
                     Software Architecture
                   </h3>
                   <p className="text-gray-700">
-                    Our architects design scalable, modular, and maintainable
-                    software solutions...
+                    Build future-proof systems with scalable architecture. We
+                    align your tech strategy with business goals to deliver
+                    long-term success.
                   </p>
                 </div>
               </Link>
@@ -185,8 +237,9 @@ const NavLinks = ({ scrollToTop }) => {
                     Engineering & DevOps
                   </h3>
                   <p className="text-gray-700">
-                    We integrate agile development with DevOps best practices to
-                    accelerate deployment cycles...
+                    Automate, optimize, and scale with confidence. Our
+                    engineering teams embrace DevOps principles to streamline
+                    delivery and reduce downtime.
                   </p>
                 </div>
               </Link>
@@ -197,8 +250,8 @@ const NavLinks = ({ scrollToTop }) => {
                     Mobile App Development
                   </h3>
                   <p className="text-gray-700">
-                    From concept to launch, we build high-performance mobile
-                    applications...
+                    We create sleek, high-performance apps for iOS and Android,
+                    tailored to your brand and built for long-term engagement.
                   </p>
                 </div>
               </Link>
@@ -209,7 +262,9 @@ const NavLinks = ({ scrollToTop }) => {
                     Staff Augmentation
                   </h3>
                   <p className="text-gray-700">
-                    Scale your team with top-tier IT talent...
+                    Quickly extend your team with top engineering talent. Our
+                    flexible staffing solutions help you deliver faster and
+                    scale smarter.
                   </p>
                 </div>
               </Link>
@@ -218,18 +273,22 @@ const NavLinks = ({ scrollToTop }) => {
         )}
       </div>
 
-      <div className="relative" ref={industriesDropdownRef}
-      onMouseEnter={() => window.innerWidth >= 768 && setIsIndustryOpen(true)}
-      onMouseLeave={() => window.innerWidth >= 768 && setIsIndustryOpen(false)}>
+      <div
+        className="relative"
+        ref={industriesDropdownRef}
+        onMouseEnter={industryMouseEnter}
+        onMouseLeave={industryMouseLeave}
+      >
         {/* INDUSTRIES button - always visible */}
-        <button
-          className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
-          onClick={() => setIsIndustryOpen((prev) => !prev)}
-          ref={industriesButtonRef}
-        >
-          INDUSTRIES
-          <span className="ml-1 text-sm">{isIndustryOpen ? "▲" : "▼"}</span>
-        </button>
+        <Link to="/industries">
+          <button
+            className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
+            ref={industriesButtonRef}
+          >
+            INDUSTRIES
+            <span className="ml-1 text-sm">{isIndustryOpen ? "▲" : "▼"}</span>
+          </button>
+        </Link>
 
         {/* Mobile View Dropdown */}
         {isIndustryOpen && (
@@ -379,14 +438,20 @@ const NavLinks = ({ scrollToTop }) => {
       </div>
 
       {/* Technology Dropdown */}
-      <div className="relative inline-block" ref={techDropdownRef}>
-        <button
-          className="px-4 py-2F font-extrabold text-blue-900 hover:text-blue-900"
-          onClick={() => setIsTechOpen((prev) => !prev)}
-          ref={techButtonRef}
-        >
-          TECHNOLOGY ▼
-        </button>
+      <div
+        className="relative inline-block"
+        ref={techDropdownRef}
+        onMouseEnter={techMouseEnter}
+        onMouseLeave={techMouseLeave}
+      >
+        <Link to="/Technology">
+          <button
+            className="px-4 py-2 font-extrabold text-blue-900 hover:text-blue-900"
+            ref={techButtonRef}
+          >
+            TECHNOLOGY ▼
+          </button>
+        </Link>
 
         {isTechOpen && (
           <div className="fixed top-20 left-0 w-full h-40% bg-white border-t border-gray-300 shadow-xl z-50 p-8 overflow-auto">

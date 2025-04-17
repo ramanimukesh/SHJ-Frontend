@@ -62,14 +62,23 @@ const Industries = () => {
               record management, our digital services enhance care delivery and
               patient engagement.
             </p>
+            <Link
+              to="/healthcare"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
-          <Link to="/healthcare">
-            <img
-              src={Health}
-              alt="Health"
-              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
-            />
-          </Link>
+          <img
+            src={Health}
+            alt="Health"
+            className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+          />
         </div>
 
         {/* 2. Image Left */}
@@ -83,14 +92,23 @@ const Industries = () => {
               institutions to deliver trustworthy and innovative digital
               experiences.
             </p>
+            <Link
+              to="/finance"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
-          <Link to="/finance">
-            <img
-              src={Finance}
-              alt="Architecture"
-              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
-            />
-          </Link>
+          <img
+            src={Finance}
+            alt="Architecture"
+            className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+          />
         </div>
 
         {/* 3. Image Right */}
@@ -103,14 +121,23 @@ const Industries = () => {
               inventory management and secure payments, our tech elevates
               digital commerce experiences across all devices.
             </p>
+            <Link
+              to="/ecommerce"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
-          <Link to="/ecommerce">
-            <img
-              src={comm}
-              alt="DevOps"
-              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
-            />
-          </Link>
+          <img
+            src={comm}
+            alt="DevOps"
+            className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+          />
         </div>
 
         {/* 4. Image Left */}
@@ -123,14 +150,23 @@ const Industries = () => {
               solutions support virtual classrooms, assessments, and
               personalized learning paths for institutions and edtech startups.
             </p>
+            <Link
+              to="/education"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
-          <Link to="/education">
-            <img
-              src={education}
-              alt="Mobile Development"
-              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
-            />
-          </Link>
+          <img
+            src={education}
+            alt="Mobile Development"
+            className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+          />
         </div>
 
         {/* 5. Image Right */}
@@ -145,14 +181,23 @@ const Industries = () => {
               personalized experiences, and real-time access to services through
               modern web and mobile platforms.
             </p>
+            <Link
+              to="/digital-banking"
+              className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+            >
+              Leran More
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </Link>
           </div>
-          <Link to="/digital-banking">
-            <img
-              src={banking}
-              alt="Digital-Banking"
-              className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
-            />
-          </Link>
+          <img
+            src={banking}
+            alt="Digital-Banking"
+            className="w-full lg:w-[500px] h-[350px] object-cover rounded cursor-pointer transition-transform duration-300 hover:scale-105"
+          />
         </div>
       </div>
 

@@ -133,8 +133,8 @@ const Footer = () => {
                 </svg>
               </Link>
 
-              <Link
-                to="rutvikramani32@gmail.com"
+              <a
+                href="mailto:ramani.mukesh@gmail.com"
                 className="text-blue-900 hover:text-gray-500 transition duration-150 ease-in-out"
                 aria-label="Email"
               >
@@ -145,7 +145,7 @@ const Footer = () => {
                 >
                   <path d="M27 6H5a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm-1.4 2L16 14.7 6.4 8zm1.4 16H5V10.4l11 7.4 11-7.4z" />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
