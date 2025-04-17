@@ -103,6 +103,24 @@ const NavLinks = ({ scrollToTop }) => {
     }
   };
 
+  const ServiceClick = () => {
+    if (window.innerWidth < 768) {
+      setIsOpen(!isOpen);
+    }
+  };
+
+  const IndustryClick = () => {
+    if (window.innerWidth < 768) {
+      setIsIndustryOpen(!isIndustryOpen);
+    }
+  };
+
+  const TechClick = () => {
+    if (window.innerWidth < 768) {
+      setIsTechOpen(!isTechOpen);
+    }
+  };
+
   return (
     <>
       {/* Home Link */}
@@ -129,18 +147,25 @@ const NavLinks = ({ scrollToTop }) => {
         onMouseEnter={serviceMouseEnter}
         onMouseLeave={serviceMouseLeave}
       >
-        <Link to="/service">
+        <div className="w-full flex justify-center">
           <button
-            className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
+            className="px-4 py-2 font-extrabold text-blue-900 hover:text-blue-900"
             ref={buttonRef}
+            onClick={(e) => {
+              if (window.innerWidth < 768) {
+                e.preventDefault();
+                ServiceClick();
+              } else {
+                window.location.href = "/service";
+              }
+            }}
           >
             SERVICES <span className="text-sm">{isOpen ? "▲" : "▼"}</span>
           </button>
-        </Link>
-
+        </div>
         {/* Mobile View Dropdown */}
         {isOpen && (
-          <div className="block md:hidden mt-1 pl-6 pr-4">
+          <div className="mt-1 pl-6 pr-4 block md:hidden ">
             <ul className="space-y-2">
               <li>
                 <Link
@@ -148,7 +173,7 @@ const NavLinks = ({ scrollToTop }) => {
                   className="block text-sm text-[#0A2D5F] font-medium hover:text-[#1E40AF]"
                   onClick={() => setIsOpen(false)}
                 >
-                  Digital Product Design
+                  Digital Product Designnn
                 </Link>
               </li>
               <li>
@@ -280,15 +305,25 @@ const NavLinks = ({ scrollToTop }) => {
         onMouseLeave={industryMouseLeave}
       >
         {/* INDUSTRIES button - always visible */}
-        <Link to="/industries">
-          <button
-            className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
-            ref={industriesButtonRef}
+        <div className="w-full flex justify-center">
+          <Link
+            to={window.innerWidth >= 768 ? "/industries" : "#"}
+            onClick={(e) => {
+              if (window.innerWidth < 768) {
+                e.preventDefault(); // prevent navigation in mobile
+                IndustryClick(); // toggle dropdown
+              }
+            }}
           >
-            INDUSTRIES
-            <span className="ml-1 text-sm">{isIndustryOpen ? "▲" : "▼"}</span>
-          </button>
-        </Link>
+            <button
+              className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
+              ref={industriesButtonRef}
+            >
+              INDUSTRIES
+              <span className="ml-1 text-sm">{isIndustryOpen ? "▲" : "▼"}</span>
+            </button>
+          </Link>
+        </div>
 
         {/* Mobile View Dropdown */}
         {isIndustryOpen && (
@@ -444,151 +479,174 @@ const NavLinks = ({ scrollToTop }) => {
         onMouseEnter={techMouseEnter}
         onMouseLeave={techMouseLeave}
       >
-        <Link to="/Technology">
-          <button
-            className="px-4 py-2 font-extrabold text-blue-900 hover:text-blue-900"
-            ref={techButtonRef}
+        <div className="w-full flex justify-center">
+          <Link
+            to={window.innerWidth >= 768 ? "/Technology" : "#"}
+            onClick={(e) => {
+              if (window.innerWidth < 768) {
+                e.preventDefault(); // Stop navigation
+                TechClick(); // Open dropdown
+              }
+            }}
           >
-            TECHNOLOGY ▼
-          </button>
-        </Link>
+            <button
+              className="px-4 py-2 font-extrabold text-blue-900 hover:text-blue-900"
+              ref={techButtonRef}
+            >
+              TECHNOLOGY{" "}
+              <span className="text-sm">{isTechOpen ? "▲" : "▼"}</span>
+            </button>
+          </Link>
+        </div>
 
         {isTechOpen && (
-          <div className="fixed top-20 left-0 w-full h-40% bg-white border-t border-gray-300 shadow-xl z-50 p-8 overflow-auto">
-            <button
-              className="absolute top-4 right-8 text-2xl font-bold text-gray-700 hover:text-black"
-              onClick={() => setIsTechOpen(false)}
-            >
-              ✕
-            </button>
-            <h2 className="text-2xl font-bold text-center text-gray-900 mb-6 mt-10">
-              Our Technology
-            </h2>
-
-            {/* Flexbox layout for technologies */}
-            <div className="flex flex-wrap gap-6 justify-center mb-10">
-              {/* Web Tech */}
-              <div className=" min-w-[300px]">
-                <h3 className="text-xl font-semibold text-gray-800 ">
-                  Web Development
-                </h3>
-                <div className="space-y-2">
-                  {[
-                    { label: "ReactJS", id: "webtech1", path: "/react" },
-                    { label: "Angular", id: "webtech2", path: "/angular" },
-                    { label: "NodeJs", id: "webtech3", path: "/node" },
-                    {
-                      label: "TypeScript",
-                      id: "webtech5",
-                      path: "/typescript",
-                    },
-                  ].map(({ label, id, path }) => (
-                    <Link
-                      key={id}
-                      className="block text-lg text-gray-700 hover:text-blue-600 transition"
-                      to={path}
-                      onClick={() => smoothScroll(id)}
-                    >
-                      {label}
-                    </Link>
-                  ))}
+          <>
+            {/* Mobile View */}
+            <div className="mt-1 pl-6 pr-4 block md:hidden">
+              {[
+                {
+                  title: "Web Development",
+                  links: [
+                    { label: "ReactJS", path: "/react" },
+                    { label: "Angular", path: "/angular" },
+                    { label: "Node.js", path: "/node" },
+                    { label: "TypeScript", path: "/typescript" },
+                  ],
+                },
+                {
+                  title: "Mobile Development",
+                  links: [
+                    { label: "React Native", path: "/react-native" },
+                    { label: "Flutter", path: "/flutter" },
+                  ],
+                },
+                {
+                  title: "DevOps",
+                  links: [
+                    { label: "Docker", path: "/docker" },
+                    { label: "Jenkins", path: "/jenkins" },
+                    { label: "AWS", path: "/aws" },
+                  ],
+                },
+                {
+                  title: "Database",
+                  links: [
+                    { label: "MySQL", path: "/mysql" },
+                    { label: "MongoDB", path: "/mongodb" },
+                    { label: "DynamoDB", path: "/dynamodb" },
+                  ],
+                },
+                {
+                  title: "Design",
+                  links: [
+                    { label: "Figma", path: "/figma" },
+                    { label: "Photoshop", path: "/photoshop" },
+                  ],
+                },
+              ].map(({ title, links }) => (
+                <div key={title} className="mb-2">
+                  <h4 className="text-sm font-semibold text-[#0A2D5F] mb-1">
+                    {title}
+                  </h4>
+                  <ul className="space-y-2">
+                    {links.map(({ label, path }) => (
+                      <li key={label}>
+                        <Link
+                          to={path}
+                          className="block text-sm text-[#0A2D5F] font-medium hover:text-[#1E40AF]"
+                          onClick={() => setIsTechOpen(false)}
+                        >
+                          {label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              </div>
+              ))}
+            </div>
 
-              {/* Mobile Tech */}
-              <div className=" min-w-[300px]">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                  Mobile Development
-                </h3>
-                <div className="space-y-2">
-                  {[
-                    {
-                      label: "React Native",
-                      id: "mobiletech1",
-                      path: "/react-native",
-                    },
-                    { label: "Flutter", id: "mobiletech2", path: "/flutter" },
-                  ].map(({ label, id, path }) => (
-                    <Link
-                      key={id}
-                      className="block text-lg text-gray-700 hover:text-blue-600 transition"
-                      to={path}
-                      onClick={() => smoothScroll(id)}
-                    >
-                      {label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              {/* Backend Dev */}
-              <div className=" min-w-[300px]">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                  DevOps Development
-                </h3>
-                <div className="space-y-2">
-                  {[
-                    { label: "Docker", id: "devopsdev1", path: "/docker" },
-                    { label: "Jenkins", id: "devopsdev2", path: "/jenkins" },
-                    { label: "AWS", id: "devopsdev3", path: "/aws" },
-                  ].map(({ label, id, path }) => (
-                    <Link
-                      key={id}
-                      className="block text-lg text-gray-700 hover:text-blue-600 transition"
-                      to={path}
-                      onClick={() => smoothScroll(id)}
-                    >
-                      {label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              <div className=" min-w-[300px]">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                  Database Development
-                </h3>
-                <div className="space-y-2">
-                  {[
-                    { label: "MySQL", id: "database1", path: "/mysql" },
-                    { label: "Mongo DB", id: "database2", path: "/mongodb" },
-                    { label: "Dynamo DB", id: "database3", path: "/dynamodb" },
-                  ].map(({ label, id, path }) => (
-                    <Link
-                      key={id}
-                      className="block text-lg text-gray-700 hover:text-blue-600 transition"
-                      to={path}
-                      onClick={() => smoothScroll(id)}
-                    >
-                      {label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              {/* Design */}
-              <div className=" min-w-[300px]">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                  Design
-                </h3>
-                <div className="space-y-2">
-                  {[
-                    { label: "Figma", id: "design1", path: "/figma" },
-                    { label: "Photoshop", id: "design2", path: "/photoshop" },
-                  ].map(({ label, id, path }) => (
-                    <Link
-                      key={id}
-                      className="block text-lg text-gray-700 hover:text-blue-600 transition"
-                      to={path}
-                      onClick={() => smoothScroll(id)}
-                    >
-                      {label}
-                    </Link>
-                  ))}
-                </div>
+            {/* Desktop View */}
+            <div className="fixed top-20 left-0 w-full max-h-[80vh] bg-white border-t border-gray-300 shadow-xl z-50 p-8 overflow-auto hidden md:block">
+              <button
+                className="absolute top-4 right-8 text-2xl font-bold text-gray-700 hover:text-black"
+                onClick={() => setIsTechOpen(false)}
+              >
+                ✕
+              </button>
+              <h2 className="text-2xl font-bold text-center text-gray-900 mb-6 mt-10">
+                Our Technology
+              </h2>
+              <div className="flex flex-wrap gap-6 justify-center mb-10">
+                {[
+                  {
+                    title: "Web Development",
+                    links: [
+                      { label: "ReactJS", path: "/react", id: "webtech1" },
+                      { label: "Angular", path: "/angular", id: "webtech2" },
+                      { label: "NodeJs", path: "/node", id: "webtech3" },
+                      {
+                        label: "TypeScript",
+                        path: "/typescript",
+                        id: "webtech4",
+                      },
+                    ],
+                  },
+                  {
+                    title: "Mobile Development",
+                    links: [
+                      {
+                        label: "React Native",
+                        path: "/react-native",
+                        id: "mobiletech1",
+                      },
+                      { label: "Flutter", path: "/flutter", id: "mobiletech2" },
+                    ],
+                  },
+                  {
+                    title: "DevOps Development",
+                    links: [
+                      { label: "Docker", path: "/docker", id: "devops1" },
+                      { label: "Jenkins", path: "/jenkins", id: "devops2" },
+                      { label: "AWS", path: "/aws", id: "devops3" },
+                    ],
+                  },
+                  {
+                    title: "Database Development",
+                    links: [
+                      { label: "MySQL", path: "/mysql", id: "db1" },
+                      { label: "MongoDB", path: "/mongodb", id: "db2" },
+                      { label: "DynamoDB", path: "/dynamodb", id: "db3" },
+                    ],
+                  },
+                  {
+                    title: "Design",
+                    links: [
+                      { label: "Figma", path: "/figma", id: "design1" },
+                      { label: "Photoshop", path: "/photoshop", id: "design2" },
+                    ],
+                  },
+                ].map(({ title, links }) => (
+                  <div key={title} className="min-w-[300px]">
+                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                      {title}
+                    </h3>
+                    <div className="space-y-2">
+                      {links.map(({ label, path, id }) => (
+                        <Link
+                          key={id}
+                          to={path}
+                          className="block text-lg text-gray-700 hover:text-blue-600 transition"
+                          onClick={() => smoothScroll(id)}
+                        >
+                          {label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          </div>
+          </>
         )}
       </div>
 
