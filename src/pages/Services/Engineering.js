@@ -19,7 +19,7 @@ const Engineering = () => {
             Accelerate Innovation with Digital Engineering & DevOps
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ bridges development and operations with automated CI/CD
+            STL bridges development and operations with automated CI/CD
             pipelines, cloud-native infrastructure, and agile engineering
             practices — empowering your teams to deliver faster, safer, and
             smarter.

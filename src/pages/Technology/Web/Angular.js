@@ -20,7 +20,7 @@ const Angularjs = () => {
             Transform Your Web Experience with Expert angular Development
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ is a premier Angular development company, delivering tailored
+            STL is a premier Angular development company, delivering tailored
             solutions to businesses ranging from startups to enterprises.
           </div>
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">

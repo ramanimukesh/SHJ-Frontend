@@ -24,7 +24,7 @@ const Industries = () => {
             Empowering Industries with Tailored Digital Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ empowers diverse industries with customized digital solutions
+            STL empowers diverse industries with customized digital solutions
             that drive innovation, efficiency, and growth.
           </div>
 

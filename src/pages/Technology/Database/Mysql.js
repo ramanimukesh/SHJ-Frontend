@@ -19,7 +19,7 @@ const MySQL = () => {
             Power Your Data with Robust MySQL Database Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ delivers scalable MySQL solutions, helping startups and
+            STL delivers scalable MySQL solutions, helping startups and
             enterprises manage structured data efficiently with high
             availability, security, and performance.
           </div>

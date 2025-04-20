@@ -19,7 +19,7 @@ const Healthcare = () => {
             Scale Your Applications with High-Performance healthcare Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-          SHJ offers scalable database solutions that empower healthcare providers to create secure, efficient, and high-performance patient management systems.
+          STL offers scalable database solutions that empower healthcare providers to create secure, efficient, and high-performance patient management systems.
           </div>
 
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">

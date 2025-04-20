@@ -23,7 +23,7 @@ const Technology = () => {
             Innovative Technologies Powering Industry-Specific Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ leverages the latest technologies to build custom software
+            STL leverages the latest technologies to build custom software
             solutions that meet the unique needs of startups, enterprises, and
             growing businesses.
           </div>

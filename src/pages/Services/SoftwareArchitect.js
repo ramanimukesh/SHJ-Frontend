@@ -19,7 +19,7 @@ const SoftwareArchitect = () => {
             Build Scalable Solutions with Robust Software Architecture
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ delivers modular, future-ready software architectures that drive
+            STL delivers modular, future-ready software architectures that drive
             system stability, scalability, and performance—empowering your
             business to grow with confidence.
           </div>

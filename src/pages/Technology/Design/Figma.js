@@ -19,7 +19,7 @@ const Figma = () => {
             Transform Your UI/UX Workflow with Figma’s Cutting-Edge Tools
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ specializes in intuitive Figma-based design solutions, enabling
+            STL specializes in intuitive Figma-based design solutions, enabling
             startups and enterprises to collaborate seamlessly, streamline
             prototyping, and build pixel-perfect user experiences.
           </div>

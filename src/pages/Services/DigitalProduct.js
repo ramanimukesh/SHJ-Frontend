@@ -19,7 +19,7 @@ const DigitalProduct = () => {
             Elevate User Experiences with Digital Product Design
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ crafts intuitive and engaging digital interfaces by blending
+            STL crafts intuitive and engaging digital interfaces by blending
             user research, usability testing, and iterative design—ensuring
             products that resonate with users and drive business success.
           </div>

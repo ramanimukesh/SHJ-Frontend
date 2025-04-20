@@ -19,7 +19,7 @@ const Photoshop = () => {
             Unlock Your Creative Potential with Adobe Photoshop
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ specializes in advanced Photoshop solutions, helping designers
+            STL specializes in advanced Photoshop solutions, helping designers
             and businesses create stunning visuals, seamless edits, and
             professional-grade digital content with ease.
           </div>

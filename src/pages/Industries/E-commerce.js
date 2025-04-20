@@ -17,11 +17,11 @@ const Ecommerce = () => {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
           <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
-            SHJ delivers secure, scalable finance solutions for modern digital
+            STL delivers secure, scalable finance solutions for modern digital
             growth.
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ builds fast, secure, and scalable eCommerce platforms,
+            STL builds fast, secure, and scalable eCommerce platforms,
             delivering seamless user experiences and powerful backend systems to
             help brands grow in the digital marketplace.
           </div>

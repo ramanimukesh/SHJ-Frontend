@@ -19,7 +19,7 @@ const Augmentation = () => {
             Accelerate Your Growth with Expert Staff Augmentation
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ provides businesses with on-demand, specialized talent to drive
+            STL provides businesses with on-demand, specialized talent to drive
             success. Scale your team quickly, access critical skills, and adapt
             to project needs with ease.
           </div>
@@ -66,11 +66,11 @@ const Augmentation = () => {
             data-aos-delay="500"
           >
             <h3 className="text-3xl text-blue-900 font-bold">
-              Why Choose SHJ for Staff Augmentation?
+              Why Choose STL for Staff Augmentation?
             </h3>
             <ul className="my-3 text-xl text-gray-600 font-semibold text-left list-disc pl-5">
               <li>
-                <strong>Access to Top Talent:</strong> SHJ provides on-demand
+                <strong>Access to Top Talent:</strong> STL provides on-demand
                 experts in various domains, ensuring you have the right skill
                 set for your projects.
               </li>
@@ -114,7 +114,7 @@ const Augmentation = () => {
                   Talent Acquisition & Onboarding
                 </h3>
                 <p className="text-lg font-medium leading-6 h-auto md:h-48">
-                  SHJ identifies top-tier professionals to seamlessly integrate
+                  STL identifies top-tier professionals to seamlessly integrate
                   into your team, ensuring a quick and efficient onboarding
                   process for immediate contribution.
                 </p>

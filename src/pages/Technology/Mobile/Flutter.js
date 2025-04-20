@@ -19,7 +19,7 @@ const Flutter = () => {
             Transform Your Mobile Experience with Expert Flutter Development
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ specializes in high-performance Flutter development, helping
+            STL specializes in high-performance Flutter development, helping
             startups and enterprises build seamless, cross-platform
             applications.
           </div>

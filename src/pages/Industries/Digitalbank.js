@@ -20,7 +20,7 @@ const DigitalBank = () => {
             Transform Financial Services with Secure Digital Banking Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ empowers banks and fintechs by delivering scalable, secure, and
+            STL empowers banks and fintechs by delivering scalable, secure, and
             intuitive digital banking platforms.
           </div>
 

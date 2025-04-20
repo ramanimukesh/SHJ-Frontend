@@ -24,7 +24,7 @@ const Services = () => {
             Empowering Businesses with End-to-End Digital Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            At SHJ, we deliver design, development, cloud, and team extension
+            At STL, we deliver design, development, cloud, and team extension
             services to help businesses innovate, grow, and thrive in today’s
             digital world.
           </div>

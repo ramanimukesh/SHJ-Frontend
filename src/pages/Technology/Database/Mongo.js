@@ -19,7 +19,7 @@ const MongoDB = () => {
             Power Your Applications with Scalable MongoDB Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ specializes in high-performance MongoDB database solutions,
+            STL specializes in high-performance MongoDB database solutions,
             helping startups and enterprises manage data efficiently with
             scalability, flexibility, and reliability.
           </div>

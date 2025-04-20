@@ -19,7 +19,7 @@ const Docker = () => {
             Optimize Your Workflow with Docker Containerization
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ empowers businesses with seamless Docker solutions, enabling
+            STL empowers businesses with seamless Docker solutions, enabling
             efficient application deployment, scalability, and infrastructure
             management with ease.
           </div>

@@ -19,7 +19,7 @@ const DynamoDB = () => {
             Scale Your Applications with High-Performance DynamoDB Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ specializes in fully managed NoSQL database solutions, enabling
+            STL specializes in fully managed NoSQL database solutions, enabling
             startups and enterprises to build fast, scalable, and highly
             available applications with AWS DynamoDB.
           </div>

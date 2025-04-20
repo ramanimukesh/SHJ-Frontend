@@ -19,7 +19,7 @@ const Jenkins = () => {
             Streamline Your Development Pipeline with Expert Jenkins Integration
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ specializes in optimizing CI/CD workflows with Jenkins, enabling
+            STL specializes in optimizing CI/CD workflows with Jenkins, enabling
             startups and enterprises to automate builds, testing, and
             deployments efficiently.
           </div>

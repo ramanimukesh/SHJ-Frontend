@@ -19,7 +19,7 @@ const MobileDev = () => {
             Transform Your Vision with Mobile App Development
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ builds intuitive, high-performance mobile apps that enhance user
+            STL builds intuitive, high-performance mobile apps that enhance user
             engagement, streamline operations, and scale with your business —
             from concept to launch.
           </div>

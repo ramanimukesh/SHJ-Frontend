@@ -19,7 +19,7 @@ const Nodejs = () => {
             Elevate Your Web Presence with Professional Node.js Development
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ is a leading Node.js development company, catering to a wide
+            STL is a leading Node.js development company, catering to a wide
             array of businesses, from startups to large enterprises.
           </div>
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">

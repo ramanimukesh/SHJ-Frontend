@@ -41,7 +41,7 @@ const Main = () => {
                                 <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
                                 Our Treasure Comprises Our People, Vision & Values </h1>
                                 <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-                                SHJ is not only a globally recognized IT company but also a family filled with talented experts that help global brands, enterprises, mid-size businesses or even startups with innovative solutions. </div>
+                                STL is not only a globally recognized IT company but also a family filled with talented experts that help global brands, enterprises, mid-size businesses or even startups with innovative solutions. </div>
                                 <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
                                     <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
                                         Leran More

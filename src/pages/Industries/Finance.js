@@ -19,7 +19,7 @@ const Finance = () => {
             Scale Your Applications with High-Performance finance Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ offers scalable database solutions to help financial
+            STL offers scalable database solutions to help financial
             institutions build secure, high-performance platforms for managing
             transactions and data.
           </div>

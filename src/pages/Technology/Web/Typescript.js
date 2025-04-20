@@ -19,7 +19,7 @@ const TypeScript = () => {
             Transform Your Web Experience with Expert TypeScript Development
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ is a premier TypeScript development company serving a diverse
+            STL is a premier TypeScript development company serving a diverse
             range of businesses, from startups to enterprises.
           </div>
           <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">

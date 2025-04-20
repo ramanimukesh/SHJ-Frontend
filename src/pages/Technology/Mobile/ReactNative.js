@@ -20,7 +20,7 @@ const ReactNative = () => {
             Development
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ is a top-tier React Native development company, serving a
+            STL is a top-tier React Native development company, serving a
             diverse range of businesses, from startups to established
             enterprises.
           </div>

@@ -19,7 +19,7 @@ const AWS = () => {
             Elevate Your Cloud Infrastructure with Expert AWS Solutions
           </h1>
           <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-            SHJ specializes in scalable AWS solutions, empowering startups and
+            STL specializes in scalable AWS solutions, empowering startups and
             enterprises with secure, high-performance cloud computing and
             seamless deployment.
           </div>
