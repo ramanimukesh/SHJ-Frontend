@@ -584,11 +584,8 @@ const NavLinks = ({ scrollToTop }) => {
                       { label: "ReactJS", path: "/react", id: "webtech1" },
                       { label: "Angular", path: "/angular", id: "webtech2" },
                       { label: "NodeJs", path: "/node", id: "webtech3" },
-                      {
-                        label: "TypeScript",
-                        path: "/typescript",
-                        id: "webtech4",
-                      },
+                      { label: "TypeScript", path: "/typescript", id: "webtech4"},
+                      {label: "Java", path: "/java", id: "webtech5"}
                     ],
                   },
                   {

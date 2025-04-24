@@ -38,6 +38,7 @@ import Augmentation from './pages/Services/StaffAugmentation';
 import Services from './components/Services';
 import Technology from './components/Technology';
 import Industries from './components/Industries';
+import Java from './pages/Technology/Web/Java';
 
 function App() {
   useEffect(() => {
@@ -90,7 +91,7 @@ function App() {
             <Route path= "/education" element={<Education/>}/>
             <Route path= "/finance" element={<Finance/>}/>
             <Route path= "/digital-banking" element={<DigitalBank/>}/>
-
+            <Route path= "/java" element={<Java/>}/>
           </Routes>
         </ScrollToTop>
       </Router>

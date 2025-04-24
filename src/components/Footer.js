@@ -153,9 +153,9 @@ const Footer = () => {
         <div className="mt-10 mb-5 text-center text-gray-600 text-sm">
           &copy; {new Date().getFullYear()}{" "}
           <HashLink className="hover:text-gray-900">
-            Swaminarayan Construction
+            Sahajanand Technologies LLC
           </HashLink>
-          . All rights reserved.
+          .  All rights reserved.
         </div>
       </div>
     </footer>

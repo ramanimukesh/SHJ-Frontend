@@ -3,7 +3,6 @@ import NavBar from "../components/Navbar/NavBar";
 import Footer from "../components/Footer";
 import { useDocTitle } from "../components/CustomHook";
 import { userContact } from "../api/nodejs-api.js";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   useDocTitle("SWC");

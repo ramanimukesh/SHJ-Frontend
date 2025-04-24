@@ -104,9 +104,7 @@ const Intro = () => {
                       src={web}
                     />
                     <h2 className="font-semibold my-6 text-2xl text-center">
-                      <Link to="/kitchen" className="hover:text-gray-300">
                         Web & Mobile App development
-                      </Link>
                     </h2>
                   </div>
                 </div>
@@ -119,9 +117,7 @@ const Intro = () => {
                       src={ui}
                     />
                     <h2 className="font-semibold my-6 text-2xl text-center">
-                      <Link to="/bathroom" className="hover:text-gray-300">
                         UI/UX Design
-                      </Link>
                     </h2>
                   </div>
                 </div>
@@ -134,9 +130,7 @@ const Intro = () => {
                       src={Devops}
                     />
                     <h2 className="font-semibold my-6 text-2xl text-center">
-                      <Link to="/laundry" className="hover:text-gray-300">
                         DevOps
-                      </Link>
                     </h2>
                   </div>
                 </div>
@@ -149,9 +143,7 @@ const Intro = () => {
                       src={Project}
                     />
                     <h2 className="font-semibold my-6 text-2xl text-center">
-                      <Link to="/basement" className="hover:text-gray-300">
                         Project management services
-                      </Link>
                     </h2>
                   </div>
                 </div>
@@ -164,9 +156,7 @@ const Intro = () => {
                       src={API}
                     />
                     <h2 className="font-semibold my-6 text-2xl text-center">
-                      <Link to="/deck" className="hover:text-gray-300">
                         Custom API Development
-                      </Link>
                     </h2>
                   </div>
                 </div>
@@ -179,9 +169,7 @@ const Intro = () => {
                       src={Quality}
                     />
                     <h2 className="font-semibold my-6 text-2xl text-center">
-                      <Link to="/roof" className="hover:text-gray-300">
                         Quality assurance
-                      </Link>
                     </h2>
                   </div>
                 </div>
