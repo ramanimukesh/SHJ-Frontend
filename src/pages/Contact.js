@@ -16,7 +16,7 @@ const Contact = () => {
     email: "",
     phone: "",
     message: "",
-    captcha: ""  // Store CAPTCHA response
+    // captcha: ""  // Store CAPTCHA response
   });
 
   const [errors, setErrors] = useState({
@@ -25,7 +25,7 @@ const Contact = () => {
     email: "",
     phone: "",
     message: "",
-    captcha: "" 
+    // captcha: "" 
   });
 
   const handleChange = (e) => {
@@ -105,7 +105,7 @@ const Contact = () => {
           email: "",
           phone: "",
           message: "",
-          captcha: ""  // Reset captcha after successful form submission
+          // captcha: ""  // Reset captcha after successful form submission
         });
       } else {
         throw new Error(response.data.message || "An error occurred");
