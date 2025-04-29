@@ -502,7 +502,7 @@ const NavLinks = ({ scrollToTop }) => {
         {isTechOpen && (
           <>
             {/* Mobile View */}
-            <div className="mt-1 pl-6 pr-4 block md:hidden">
+            <div className="mt-1 pl-6 pr-4 block md:hidden max-h-60 overflow-y-auto">
               {[
                 {
                   title: "Web Development",
