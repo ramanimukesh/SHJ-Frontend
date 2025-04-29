@@ -5,7 +5,7 @@ import { useDocTitle } from "../components/CustomHook";
 import { userContact } from "../api/nodejs-api.js";
 
 const Contact = () => {
-  useDocTitle("SWC");
+  useDocTitle("STL");
 
   const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
 

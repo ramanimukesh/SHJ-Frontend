@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import NavLinks from "../Navbar/NavLinks";
-import img from "../../images/Navbar/STL.png";
+import img from "../../images/logo/STL.png";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
