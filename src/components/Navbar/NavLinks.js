@@ -148,21 +148,25 @@ const NavLinks = ({ scrollToTop }) => {
         onMouseLeave={serviceMouseLeave}
       >
         <div className="w-full flex justify-center">
-          <button
-            className="px-4 py-2 font-extrabold text-blue-900 hover:text-blue-900"
-            ref={buttonRef}
+        <Link
+            to={window.innerWidth >= 768 ? "/service" : "#"}
             onClick={(e) => {
               if (window.innerWidth < 768) {
-                e.preventDefault();
+                e.preventDefault(); // prevent navigation in mobile
                 ServiceClick();
-              } else {
-                window.location.href = "/service";
               }
             }}
           >
-            SERVICES <span className="text-sm">{isOpen ? "▲" : "▼"}</span>
-          </button>
+            <button
+              className="px-4 font-extrabold text-blue-900 hover:text-blue-900"
+              ref={buttonRef}
+            >
+              SERVICES
+              <span className="ml-1 text-sm">{isOpen ? "▲" : "▼"}</span>
+            </button>
+          </Link>
         </div>
+
         {/* Mobile View Dropdown */}
         {isOpen && (
           <div className="mt-1 pl-6 pr-4 block md:hidden ">

@@ -39,7 +39,7 @@ const Footer = () => {
             <ul className="text-md">
               <li className="mb-2">
                 <Link
-                  to="/kitchen"
+                  to="/"
                   className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out"
                 >
                   Portfolio
