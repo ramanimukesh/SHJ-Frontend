@@ -49,8 +49,8 @@ const NavBar = () => {
 
           <img
             src={img}
-            alt="Swaminarayan Construction LLC"
-            title="Swaminarayan Construction LLC"
+            alt="Sahajanand Technologies LLC"
+            title="Sahajanand Technologies LLC"
             className="h-20 sm:h-20 md:h-22 lg:h-23 lg:ml-56 cursor-pointer scale-110"
             onClick={scrollToTop}
           />

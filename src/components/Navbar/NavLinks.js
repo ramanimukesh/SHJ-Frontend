@@ -59,67 +59,74 @@ const NavLinks = ({ scrollToTop }) => {
     };
   }, []);
 
-  const industryMouseEnter = () => {
-    if (window.innerWidth >= 768) {
-      clearTimeout(timeoutRef.current);
-      setIsIndustryOpen(true);
-    }
-  };
-  const serviceMouseEnter = () => {
-    if (window.innerWidth >= 768) {
-      clearTimeout(timeoutRef.current);
-      setIsOpen(true);
-    }
-  };
+  
+const industryTimeoutRef = useRef(null);
+const serviceTimeoutRef = useRef(null);
+const techTimeoutRef = useRef(null);
 
-  const serviceMouseLeave = () => {
-    if (window.innerWidth >= 768) {
-      timeoutRef.current = setTimeout(() => {
-        setIsOpen(false);
-      }, 150);
-    }
-  };
+// Industry Hover
+const industryMouseEnter = () => {
+  if (window.innerWidth >= 768) {
+    clearTimeout(industryTimeoutRef.current);
+    setIsIndustryOpen(true);
+  }
+};
+const industryMouseLeave = () => {
+  if (window.innerWidth >= 768) {
+    industryTimeoutRef.current = setTimeout(() => {
+      setIsIndustryOpen(false);
+    }, 150);
+  }
+};
 
-  const techMouseEnter = () => {
-    if (window.innerWidth >= 768) {
-      clearTimeout(timeoutRef.current);
-      setIsTechOpen(true);
-    }
-  };
+// Service Hover
+const serviceMouseEnter = () => {
+  if (window.innerWidth >= 768) {
+    clearTimeout(serviceTimeoutRef.current);
+    setIsOpen(true);
+  }
+};
+const serviceMouseLeave = () => {
+  if (window.innerWidth >= 768) {
+    serviceTimeoutRef.current = setTimeout(() => {
+      setIsOpen(false);
+    }, 150);
+  }
+};
 
-  const techMouseLeave = () => {
-    if (window.innerWidth >= 768) {
-      timeoutRef.current = setTimeout(() => {
-        setIsTechOpen(false);
-      }, 150);
-    }
-  };
+// Tech Hover
+const techMouseEnter = () => {
+  if (window.innerWidth >= 768) {
+    clearTimeout(techTimeoutRef.current);
+    setIsTechOpen(true);
+  }
+};
+const techMouseLeave = () => {
+  if (window.innerWidth >= 768) {
+    techTimeoutRef.current = setTimeout(() => {
+      setIsTechOpen(false);
+    }, 150);
+  }
+};
 
-  const industryMouseLeave = () => {
-    if (window.innerWidth >= 768) {
-      timeoutRef.current = setTimeout(() => {
-        setIsIndustryOpen(false);
-      }, 150); // short delay to allow interaction
-    }
-  };
+// Mobile Click Handlers
+const ServiceClick = () => {
+  if (window.innerWidth < 768) {
+    setIsOpen(!isOpen);
+  }
+};
+const IndustryClick = () => {
+  if (window.innerWidth < 768) {
+    setIsIndustryOpen(!isIndustryOpen);
+  }
+};
+const TechClick = () => {
+  if (window.innerWidth < 768) {
+    setIsTechOpen(!isTechOpen);
+  }
+};
 
-  const ServiceClick = () => {
-    if (window.innerWidth < 768) {
-      setIsOpen(!isOpen);
-    }
-  };
 
-  const IndustryClick = () => {
-    if (window.innerWidth < 768) {
-      setIsIndustryOpen(!isIndustryOpen);
-    }
-  };
-
-  const TechClick = () => {
-    if (window.innerWidth < 768) {
-      setIsTechOpen(!isTechOpen);
-    }
-  };
 
   return (
     <>

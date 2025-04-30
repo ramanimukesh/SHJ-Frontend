@@ -55,7 +55,7 @@ function App() {
     });
   }, []);
 
-  useDocTitle("SWC");
+  useDocTitle("STL");
 
   return (
     <>
@@ -66,7 +66,7 @@ function App() {
             <Route path="/service" element={<Services/>} />
             <Route path="/Technology" element={<Technology/>} />
             <Route path="/industries" element={<Industries/>} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact/>} />
             <Route path= "/staff-augment" element={<Augmentation/>}/>
             <Route path= "/digital-product" element={<DigitalProduct/>}/>
             <Route path= "/engineering" element={<Engineering/>}/>
