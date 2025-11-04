@@ -671,7 +671,7 @@ const TechClick = () => {
       <button className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-auto px-6 py-3 shadow-xl rounded-xl">
         <Phone className="w-5 h-5 mr-2" />
         <label htmlFor="phone" className="tooltip">
-          732-347-9171
+          470-283-0821
           <span className="tooltip-text">
             <span className="tooltip-icon">
               <Phone />

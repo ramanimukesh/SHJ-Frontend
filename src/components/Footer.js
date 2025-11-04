@@ -80,12 +80,12 @@ const Footer = () => {
             <div className="text-md font-medium mb-6 flex justify-center items-center">
               <Phone className="w-5 h-5 mr-2 text-[#013289]" />
               <label htmlFor="phone" className="tooltip">
-                <span className="text-[#013289]">732-347-9171</span>{" "}
+                <span className="text-[#013289]">470-283-0821</span>{" "}
                 <span className="tooltip-text">
                   <span className="tooltip-icon">
                     <Phone className="w-5 h-5" />
                   </span>
-                  <span className="tooltip-text-content">732-34-SWAMI</span>
+                  <span className="tooltip-text-content">470-28-SWAMI</span>
                 </span>
               </label>
             </div>
