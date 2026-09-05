@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Ramani;Mukesh;;;
+FN:Mukesh Ramani
+ORG:Sahajanand Technologies LLC
+TITLE:President
+TEL;TYPE=CELL,VOICE:+17323479171
+EMAIL;TYPE=WORK:mukesh.ramani@sahajanandtechnologies.com
+URL:https://www.sahajanandtechnologies.com
+URL;TYPE=card:https://www.sahajanandtechnologies.com/card/mukesh
+END:VCARD

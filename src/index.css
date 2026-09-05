@@ -2,106 +2,399 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 
-body {
-  margin: 0;
-  font-family: 'Lato', sans-serif;
+    /* The canvas: what the browser paints outside the document box, i.e. the
+       strip uncovered when a trackpad drags past the top or bottom. It was
+       inherited from body, which left it to each browser to decide — Safari
+       used theme-color and drew a navy band above the header. Naming it here
+       makes it the same ground as the page. */
+    background-color: theme("colors.paper");
+
+    /* ...and this stops the rubber-band from uncovering that strip at all, at
+       either end. Remove this line if you would rather have the bounce back. */
+    overscroll-behavior-y: none;
+  }
+
+  body {
+    @apply bg-paper font-sans text-body text-ink-600 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Headings take the display face; weight comes from the type scale so no
+     heading has to hand-pick one. */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-ink-900;
+    text-wrap: balance;
+  }
+
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-ink-900;
+  }
+
+  /* One focus treatment for the whole site. Keyboard users get a visible ring
+     on anything interactive even if a component forgets to style it. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-600 ring-offset-2 ring-offset-white;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }
 
-/* .hero {
-  background: url(./images/hero-bg.svg) top center no-repeat;
-  background-size: cover;
-} */
+@layer components {
+  /* Off-screen until focused, then it lands over the sticky header. Not
+     `sr-only`, because that class stays clipped even while focused. */
+  .skip-link {
+    @apply absolute left-4 top-4 z-[100] -translate-y-[200%] rounded-surface bg-brand-600
+           px-4 py-2.5 font-display text-sm font-semibold text-white shadow-panel
+           transition-transform duration-200
+           focus-visible:translate-y-0;
+  }
 
-.footer {
-  background: url(./images/footer.svg) top center no-repeat;
-  background-size: cover;
+  /* WCAG 2.2 (2.5.8) asks for a 24x24 target. Inline text links in lists and
+     definition lists were landing at 17-21px tall; this pads them back up
+     without changing how they read, and the negative margin keeps the extra
+     padding from opening gaps in the layout around them. */
+  .link-target {
+    @apply -my-1 inline-flex min-h-[24px] items-center py-1;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-[80rem] px-5 sm:px-8;
+  }
+
+  /* Mobile browsers report 100vh as the *large* viewport — the height the page
+     only has once the URL bar has scrolled away — so a panel measured in vh
+     runs underneath the browser chrome. dvh tracks the height actually on
+     screen; the vh line above it stays as the fallback. */
+  .h-drawer {
+    max-height: calc(100vh - 4rem);
+    max-height: calc(100dvh - 4rem);
+  }
+
+  .h-chat {
+    max-height: 85vh;
+    max-height: 85dvh;
+  }
+
+  @media (min-width: 640px) {
+    .h-chat {
+      max-height: calc(100vh - 9rem);
+      max-height: calc(100dvh - 9rem);
+    }
+  }
+
+  /* The nav drawer owns the screen while it is open; the chat launcher is
+     fixed to the viewport and otherwise floats on top of the nav links. */
+  body[data-nav-open] .chat-launcher {
+    display: none;
+  }
+
+  /* ---------- type ---------- */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-sans text-label uppercase text-brand-600;
+  }
+
+  .h-display {
+    @apply font-display text-display text-ink-900;
+  }
+
+  .h-section {
+    @apply font-display text-h2 text-ink-900;
+  }
+
+  .h-card {
+    @apply font-display text-h3 text-ink-900;
+  }
+
+  .prose-muted {
+    @apply text-body text-ink-600;
+  }
+
+  /* Running text tops out near 68 characters — past that, tracking suffers. */
+  .measure {
+    @apply max-w-[68ch];
+  }
+
+  /* Historically a gradient fill, then a flat violet. Kept as a class so the
+     existing hero markup keeps working; it is now the on-dark accent tint. */
+  .text-gradient {
+    @apply text-brand-300;
+  }
+
+  /* ---------- buttons ---------- */
+  /* Every variant below inherits the same geometry, transition and disabled
+     handling, so a disabled primary and a disabled ghost fail the same way.
+     Hover/active effects sit behind `enabled:` so a disabled button cannot be
+     nudged by the pointer. */
+  .btn {
+    @apply relative inline-flex select-none items-center justify-center gap-2 rounded-surface
+           px-5 py-2.5 font-display text-sm font-semibold leading-6 tracking-[-0.01em]
+           transition-[background-color,border-color,color,box-shadow,transform] duration-200
+           disabled:cursor-not-allowed disabled:opacity-55 disabled:shadow-none;
+  }
+
+  /* Primary: the brand colour, not near-black. On a site whose accent is a
+     considered indigo, the main action should be the thing carrying it. */
+  .btn-primary {
+    @apply btn bg-brand-600 text-white shadow-card
+           enabled:hover:bg-brand-700 enabled:active:bg-brand-800 enabled:active:shadow-none
+           focus-visible:shadow-focus;
+  }
+
+  /* Secondary on light: a bordered surface, clearly subordinate to primary. */
+  .btn-ghost {
+    @apply btn border border-ink-200 bg-white text-ink-800 shadow-card
+           enabled:hover:border-ink-300 enabled:hover:bg-ink-50 enabled:hover:text-ink-900
+           enabled:active:bg-ink-100 enabled:active:shadow-none
+           focus-visible:shadow-focus;
+  }
+
+  /* Primary on the dark canvas. White carries far more contrast against
+     near-black navy than any tint of the brand could, so the CTA stays the
+     brightest thing in the hero without resorting to a glow. */
+  .btn-glow {
+    @apply btn bg-white text-ink-900
+           enabled:hover:bg-ink-100 enabled:active:bg-ink-200
+           focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2
+           focus-visible:ring-offset-brand-950;
+  }
+
+  /* Secondary on dark. */
+  .btn-onDark {
+    @apply btn border border-white/25 bg-white/[0.06] text-white
+           enabled:hover:border-white/40 enabled:hover:bg-white/[0.12]
+           enabled:active:bg-white/[0.16]
+           focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2
+           focus-visible:ring-offset-brand-950;
+  }
+
+  /* ---------- forms ---------- */
+  .form-label {
+    @apply mb-1.5 block font-display text-[13px] font-semibold text-ink-800;
+  }
+
+  /* ink-500 rather than ink-400: hint text still has to be readable (4.9:1). */
+  .form-hint {
+    @apply mt-1.5 block text-[13px] leading-relaxed text-ink-500;
+  }
+
+  .form-required {
+    @apply text-danger-600;
+  }
+
+  /* Inputs share the button radius and the same focus ring, so a form reads as
+     one control set. The ring is a box-shadow rather than an outline so it
+     layers over the border colour change instead of replacing it. */
+  .input {
+    @apply block w-full rounded-surface border border-ink-200 bg-white px-3.5 py-2.5
+           font-sans text-[15px] leading-6 text-ink-900 shadow-card
+           transition-[border-color,box-shadow] duration-200
+           placeholder:text-ink-400
+           hover:border-ink-300
+           focus:border-brand-600 focus:shadow-focus focus:outline-none
+           disabled:cursor-not-allowed disabled:border-ink-200 disabled:bg-ink-50
+           disabled:text-ink-500 disabled:shadow-none;
+  }
+
+  .input-error {
+    @apply border-danger-500 focus:border-danger-600 focus:shadow-focus-danger;
+  }
+
+  /* Validation surfaced from the browser's own constraint state. :user-invalid
+     only matches once the user has actually interacted with the field, so a
+     pristine form stays neutral instead of greeting people in red — and it
+     needs no JS, leaving the existing submit handler untouched. */
+  .input:user-invalid {
+    @apply border-danger-500;
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.14);
+  }
+
+  /* `:required` matters here. A submit attempt makes the browser treat every
+     field as interacted-with, so a bare :user-valid turned the untouched
+     OPTIONAL fields green — a rejected form came back showing three green
+     "correct" boxes beside the red ones, on fields nobody had typed in. */
+  .input:required:user-valid {
+    @apply border-success-500;
+  }
+
+  /* Native selects lose their arrow the moment appearance is reset, so the
+     chevron is reinstated as a background image and the ramp is kept clear of
+     it with right padding. */
+  .select {
+    @apply input appearance-none bg-no-repeat pr-10;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' stroke='%2364748b' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 7.5 10 12.5 15 7.5'/%3E%3C/svg%3E");
+    background-position: right 0.75rem center;
+    background-size: 1.25rem 1.25rem;
+  }
+
+  .textarea {
+    @apply input resize-y;
+  }
+
+  .form-message {
+    @apply text-[13px] font-medium leading-relaxed;
+  }
+  .form-message-success {
+    @apply form-message text-success-700;
+  }
+  .form-message-error {
+    @apply form-message text-danger-700;
+  }
+
+  /* ---------- tables ---------- */
+  /* Scannability comes from row separation and a quiet header, not from zebra
+     striping plus vertical rules. The wrapper is what scrolls on narrow
+     screens, so a wide table never forces the page body sideways. */
+  .table-wrap {
+    @apply w-full overflow-x-auto rounded-surface border border-ink-200 bg-white shadow-card;
+  }
+
+  .table {
+    @apply w-full border-collapse text-left text-[15px];
+  }
+
+  .table thead th {
+    @apply whitespace-nowrap border-b border-ink-200 bg-ink-50 px-4 py-3
+           font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-ink-500;
+  }
+
+  .table tbody td {
+    @apply border-b border-ink-100 px-4 py-3.5 align-middle text-ink-700;
+  }
+
+  .table tbody tr:last-child td {
+    @apply border-b-0;
+  }
+
+  .table tbody tr {
+    @apply transition-colors duration-150 hover:bg-ink-50;
+  }
+
+  .table-numeric {
+    @apply text-right font-display tabular-nums;
+  }
+
+  /* ---------- surfaces ---------- */
+  .card {
+    @apply relative rounded-surface border border-ink-200 bg-white p-6 shadow-card
+           transition-[border-color,box-shadow,transform] duration-200 sm:p-7;
+  }
+
+  /* A 6px rise and a soft shadow. The previous 1.5rem lift plus a 64px shadow
+     made every grid jump around under the pointer. */
+  .card-hover {
+    @apply hover:-translate-y-0.5 hover:border-ink-300 hover:shadow-lift;
+  }
+
+  .card-dark {
+    @apply relative rounded-surface border border-white/10 bg-white/[0.04] p-6 shadow-inset
+           backdrop-blur transition-[border-color,background-color,transform] duration-200 sm:p-7;
+  }
+
+  .card-dark-hover {
+    @apply hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/[0.07];
+  }
+
+  .rule-gradient {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent;
+  }
+
+  /* Pills stay round — the one shape that earns it. */
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-white
+           px-3.5 py-2.5 font-sans text-[13px] font-medium text-ink-600
+           transition-colors duration-200
+           hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700;
+  }
+
+  /* Technology names. The leading cyan dot is the only ornament; it marks
+     these as stack items rather than filter buttons. Set in the display face
+     now that the site runs on two families. */
+  .chip-tech {
+    @apply font-display text-[13px] font-medium tracking-[-0.01em];
+  }
+  .chip-tech::before {
+    content: "";
+    @apply h-1.5 w-1.5 shrink-0 rounded-full bg-accent-500;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-brand-50
+           px-2.5 py-1 font-display text-[12px] font-semibold text-brand-700;
+  }
 }
 
-.cta {
-  background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) fixed center center;
-}
+@layer utilities {
+  /* Dark canvas used by hero + footer. */
+  .bg-canvas {
+    background-color: theme("colors.brand.950");
+  }
 
-/* Basic styling for the review box */
-.review-box {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 15px;
-  background-color: #f9f9f9;
-  font-family: Arial, sans-serif;
-}
+  /* Depth for the dark bands. Toned well down from the previous violet/fuchsia
+     mesh — at 18% it read as a coloured spotlight rather than shading. */
+  .mesh {
+    background-image:
+      radial-gradient(52rem 34rem at 12% -8%, rgba(87, 105, 226, 0.12), transparent 68%),
+      radial-gradient(44rem 28rem at 88% 6%, rgba(63, 77, 208, 0.08), transparent 66%);
+  }
 
-.review-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
+  .grid-lines {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
 
-.user-profile {
-  display: flex;
-  align-items: center;
-}
+  /* Film grain so large flat dark areas do not band. */
+  .noise::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E");
+  }
 
-.user-initial {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #007bff;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-}
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  }
 
-.review-meta {
-  text-align: right;
-  margin-left: 10px;
-}
+  /* Scroll-reveal: hidden until .is-visible is set by IntersectionObserver. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
 
-.user-name {
-  font-weight: bold;
-  font-size: 16px;
-}
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
 
-.review-date {
-  font-size: 12px;
-  color: gray;
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
 }
-
-.google-logo {
-  width: 25px;
-  height: auto;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.review-body {
-  margin-top: 10px;
-}
-
-.review-rating {
-  color: gold;
-}
-
-.star {
-  font-size: 18px;
-  margin-right: 2px;
-}
-
-.review-body p {
-  font-size: 14px;
-  color: #333;
-  margin-top: 5px;
-}
-
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-}
-

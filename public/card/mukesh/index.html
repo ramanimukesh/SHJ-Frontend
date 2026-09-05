@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mukesh Ramani — Sahajanand Technologies LLC</title>
+<meta name="description" content="Mukesh Ramani, President at Sahajanand Technologies LLC. Save the contact, call, or email.">
+<link rel="canonical" href="https://www.sahajanandtechnologies.com/card/mukesh">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Mukesh Ramani — Sahajanand Technologies LLC">
+<meta property="og:description" content="President at Sahajanand Technologies LLC. Save the contact, call, or email.">
+<meta property="og:url" content="https://www.sahajanandtechnologies.com/card/mukesh">
+<meta name="theme-color" content="#0a1f3f">
+<link rel="icon" href="/img/favicon.svg">
+<!--
+  Deliberately a plain static file, not the React route at src/pages/Card.jsx.
+  This is the address a printed QR code opens, so it must not depend on the SPA
+  bundle loading or on the host rewriting unknown paths to index.html — the
+  current host 404s every sub-path, which is exactly why the QR came up blank.
+  Keep the two in sync by hand; this one is the deployed truth.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0a1f3f; --navy-deep:#071730; --navy-lift:#16386a;
+    --brand-600:#1d4ed8; --brand-700:#1e40af;
+    --accent-500:#0fb5ce; --accent-700:#0e7490; --accent-300:#67e8f9;
+    --ink-900:#0f172a; --ink-600:#475569; --ink-500:#64748b; --ink-300:#cbd5e1; --ink-200:#e2e8f0;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; min-height:100vh; padding:32px 16px;
+    font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+    color:var(--ink-900);
+    background:var(--navy);
+    background-image:radial-gradient(120% 80% at 50% -10%, var(--navy-lift) 0%, var(--navy) 55%, var(--navy-deep) 100%);
+    background-attachment:fixed;
+  }
+  @media (min-width:640px){ body{ padding:56px 16px; } }
+  .wrap{ margin:0 auto; width:100%; max-width:400px; }
+  .card{ overflow:hidden; border-radius:24px; background:#fff; box-shadow:0 24px 60px -20px rgba(7,23,48,.55), 0 2px 8px rgba(7,23,48,.16); }
+  .band{ position:relative; background:var(--navy); padding:32px 28px 28px; }
+  .band .rule{ position:absolute; left:0; right:0; bottom:0; height:3px; background:var(--accent-500); }
+  .lockup{ display:flex; align-items:center; gap:12px; }
+  .lockup svg{ width:40px; height:40px; flex:none; }
+  .lockup .n{ color:#fff; font-weight:700; font-size:15px; letter-spacing:.08em; line-height:1; }
+  .lockup .s{ color:rgba(255,255,255,.55); font-size:9.5px; letter-spacing:.22em; line-height:1; margin-top:5px; }
+  .body{ padding:24px 28px 28px; }
+  h1{ margin:0; font-family:"Space Grotesk",Inter,sans-serif; font-size:28px; font-weight:700; line-height:1.15; letter-spacing:-.01em; }
+  .role{ margin:6px 0 0; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.22em; color:var(--accent-700); }
+  .org{ margin:4px 0 0; font-size:14px; color:var(--ink-500); }
+  .actions{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:24px; }
+  .btn{ display:inline-flex; align-items:center; justify-content:center; border-radius:999px; padding:14px 18px; font-size:15px; font-weight:600; text-decoration:none; cursor:pointer; border:1px solid transparent; font-family:inherit; }
+  .btn-primary{ background:var(--brand-600); color:#fff; }
+  .btn-primary:hover{ background:var(--brand-700); }
+  .btn-ghost{ background:#fff; border-color:var(--ink-300); color:var(--ink-900); }
+  .btn-ghost:hover{ border-color:var(--brand-600); color:var(--brand-600); }
+  ul.rows{ list-style:none; margin:24px 0 0; padding:0; border-top:1px solid var(--ink-200); border-bottom:1px solid var(--ink-200); }
+  ul.rows li + li{ border-top:1px solid var(--ink-200); }
+  ul.rows a{ display:flex; align-items:baseline; justify-content:space-between; gap:16px; padding:14px 0; text-decoration:none; color:inherit; }
+  ul.rows a:hover .val{ color:var(--brand-600); }
+  .lab{ font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.2em; color:var(--ink-500); flex:none; }
+  .val{ min-width:0; text-align:right; font-size:15px; font-weight:500; line-height:1.35; color:var(--ink-900); word-break:break-all; font-variant-numeric:tabular-nums; }
+  .qrtoggle{ margin-top:20px; background:none; border:0; padding:4px 0; font:inherit; font-size:13px; font-weight:600; color:var(--brand-600); cursor:pointer; }
+  .qrtoggle:hover{ text-decoration:underline; }
+  figure.qr{ margin:16px 0 0; display:flex; flex-direction:column; align-items:center; gap:12px; }
+  figure.qr img{ width:176px; height:176px; border-radius:12px; background:#fff; padding:8px; box-shadow:0 0 0 1px var(--ink-200); }
+  figure.qr figcaption{ font-size:12px; color:var(--ink-500); text-align:center; }
+  .foot{ margin:24px 0 0; text-align:center; font-size:13px; color:rgba(255,255,255,.6); }
+  /* inline-flex + min-height so the link clears the 24px minimum target
+     (WCAG 2.5.8). As a plain inline anchor it was 16px tall, on the page a
+     phone opens straight from a QR scan. */
+  .foot a{ display:inline-flex; align-items:center; min-height:24px; padding:4px 0; color:var(--accent-300); font-weight:500; text-decoration:none; }
+  .foot a:hover{ text-decoration:underline; }
+  [hidden]{ display:none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <article class="card">
+    <header class="band">
+      <div class="lockup">
+        <!-- The mark is a counter-form: the S is the navy gap cut through the
+             field by this mask, not a drawn letter. Do not flatten it. -->
+        <svg viewBox="0 0 120 120" role="img" aria-label="Sahajanand Technologies LLC">
+          <defs>
+            <mask id="m"><rect x="-8" y="-8" width="136" height="136" fill="#fff"/><path d="M-8 96 H72 A18 18 0 1 0 72 60 H48 A18 18 0 1 1 48 24 H128" fill="none" stroke="#000" stroke-width="18"/></mask>
+            <clipPath id="c"><rect x="8" y="8" width="104" height="104" rx="24"/></clipPath>
+          </defs>
+          <g clip-path="url(#c)"><g mask="url(#m)">
+            <rect x="-8" y="-8" width="136" height="136" fill="#ffffff"/>
+            <path d="M-8 96 H72 A18 18 0 1 0 72 60 H48 A18 18 0 1 1 48 24 H128 V-8 H-8 Z" fill="#0fb5ce"/>
+          </g></g>
+        </svg>
+        <div>
+          <div class="n">SAHAJANAND</div>
+          <div class="s">TECHNOLOGIES LLC</div>
+        </div>
+      </div>
+      <span class="rule" aria-hidden="true"></span>
+    </header>
+
+    <div class="body">
+      <h1>Mukesh Ramani</h1>
+      <p class="role">President</p>
+      <p class="org">Sahajanand Technologies LLC</p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="/vcard/mukesh-ramani.vcf" download>Save contact</a>
+        <button class="btn btn-ghost" type="button" id="share" aria-live="polite">Share card</button>
+      </div>
+
+      <ul class="rows">
+        <li><a href="tel:+17323479171"><span class="lab">Mobile</span><span class="val">+1 732 347 9171</span></a></li>
+        <li><a href="mailto:mukesh.ramani@sahajanandtechnologies.com"><span class="lab">Email</span><span class="val">mukesh.ramani@sahajanandtechnologies.com</span></a></li>
+        <li><a href="https://www.sahajanandtechnologies.com"><span class="lab">Web</span><span class="val">sahajanandtechnologies.com</span></a></li>
+      </ul>
+
+      <button class="qrtoggle" type="button" id="qrbtn" aria-expanded="false">Show QR code for this card</button>
+      <figure class="qr" id="qrfig" hidden>
+        <img src="/vcard/mukesh-ramani-qr.svg" alt="QR code that opens Mukesh Ramani's card" width="176" height="176">
+        <figcaption>Let someone scan this to open the card on their phone.</figcaption>
+      </figure>
+    </div>
+  </article>
+
+  <p class="foot"><a href="/">sahajanandtechnologies.com</a></p>
+</div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Mukesh Ramani","jobTitle":"President","email":"mukesh.ramani@sahajanandtechnologies.com","telephone":"+17323479171","url":"https://www.sahajanandtechnologies.com/card/mukesh","worksFor":{"@type":"Organization","name":"Sahajanand Technologies LLC","url":"https://www.sahajanandtechnologies.com"}}
+</script>
+
+<script>
+(function(){
+  var url = "https://www.sahajanandtechnologies.com/card/mukesh";
+  var btn = document.getElementById('share');
+  var idle = 'Share card';
+  function flash(t){ btn.textContent = t; setTimeout(function(){ btn.textContent = idle; }, 2400); }
+  btn.addEventListener('click', function(){
+    var data = { title:'Mukesh Ramani', text:'Mukesh Ramani, President at Sahajanand Technologies LLC', url:url };
+    // Web Share hands the link to AirDrop / Nearby Share / WhatsApp — the
+    // "hold the phones together" moment. Desktop mostly lacks it, so copy.
+    if (navigator.share) {
+      navigator.share(data).catch(function(err){ if (err && err.name !== 'AbortError') flash('Could not share'); });
+      return;
+    }
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(url).then(function(){ flash('Link copied'); }, function(){ flash('Could not share'); });
+      return;
+    }
+    flash('Could not share');
+  });
+  var qb = document.getElementById('qrbtn'), fig = document.getElementById('qrfig');
+  qb.addEventListener('click', function(){
+    var open = fig.hidden;
+    fig.hidden = !open;
+    qb.setAttribute('aria-expanded', String(open));
+    qb.textContent = open ? 'Hide QR code' : 'Show QR code for this card';
+  });
+})();
+</script>
+</body>
+</html>

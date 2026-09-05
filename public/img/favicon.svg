@@ -1,0 +1,12 @@
+<!-- Icon form of the LogoMark in src/components/ui/Logo.jsx. The S channel
+     is painted white rather than left transparent: a favicon lands on tab
+     bars of unknown colour, and a transparent channel would let a dark one
+     swallow the navy plane and with it the letter. -->
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sahajanand Technologies" style="display: block; flex: none;">
+    <defs>
+      <mask id="mfav"><rect x="-8" y="-8" width="136" height="136" fill="#fff"/>
+        <path d="M-8 96 H72 A18 18 0 1 0 72 60 H48 A18 18 0 1 1 48 24 H128" fill="none" stroke="#000" stroke-width="18" stroke-linecap="butt"/></mask>
+      <clipPath id="cfav"><rect x="8" y="8" width="104" height="104" rx="24"/></clipPath>
+    </defs>
+    <g clip-path="url(#cfav)"><rect x="8" y="8" width="104" height="104" fill="#FFFFFF"/><g mask="url(#mfav)"><rect x="-8" y="-8" width="136" height="136" fill="#0A1F3F"/><path d="M-8 96 H72 A18 18 0 1 0 72 60 H48 A18 18 0 1 1 48 24 H128 V-8 H-8 Z" fill="#0FB5CE"/></g></g>
+  </svg>

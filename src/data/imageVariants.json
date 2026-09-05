@@ -1,0 +1,155 @@
+{
+  "/stl/DevOps.jpg": {
+    "stem": "DevOps",
+    "w": 1600,
+    "h": 714,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/stl/E-comm.jpg": {
+    "stem": "E-comm",
+    "w": 974,
+    "h": 500,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/stl/Finance.jpg": {
+    "stem": "Finance",
+    "w": 1600,
+    "h": 848,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/stl/Promanage.jpg": {
+    "stem": "Promanage",
+    "w": 612,
+    "h": 327,
+    "variants": [
+      480
+    ]
+  },
+  "/stl/Service.jpg": {
+    "stem": "Service",
+    "w": 612,
+    "h": 434,
+    "variants": [
+      480
+    ]
+  },
+  "/stl/Technology.jpg": {
+    "stem": "Technology",
+    "w": 800,
+    "h": 450,
+    "variants": [
+      480
+    ]
+  },
+  "/stl/UI.jpg": {
+    "stem": "UI",
+    "w": 364,
+    "h": 260,
+    "variants": []
+  },
+  "/stl/about-11.jpg": {
+    "stem": "about-11",
+    "w": 1600,
+    "h": 837,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/stl/about-13.jpg": {
+    "stem": "about-13",
+    "w": 1600,
+    "h": 900,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/stl/digital.jpg": {
+    "stem": "digital",
+    "w": 1456,
+    "h": 816,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/stl/software.jpg": {
+    "stem": "software",
+    "w": 1600,
+    "h": 1076,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/stl/staff.jpg": {
+    "stem": "staff",
+    "w": 740,
+    "h": 518,
+    "variants": [
+      480
+    ]
+  },
+  "/stl/API.jpeg": {
+    "stem": "API",
+    "w": 1200,
+    "h": 628,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/stl/education.jpeg": {
+    "stem": "education",
+    "w": 980,
+    "h": 551,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/stl/Mobile-App.png": {
+    "stem": "Mobile-App",
+    "w": 768,
+    "h": 533,
+    "variants": [
+      480
+    ]
+  },
+  "/stl/Banking.webp": {
+    "stem": "Banking",
+    "w": 724,
+    "h": 483,
+    "variants": [
+      480
+    ]
+  },
+  "/stl/devops.webp": {
+    "stem": "devops",
+    "w": 1200,
+    "h": 517,
+    "variants": [
+      480,
+      960
+    ]
+  },
+  "/stl/healthcare.webp": {
+    "stem": "healthcare",
+    "w": 1050,
+    "h": 700,
+    "variants": [
+      480,
+      960
+    ]
+  }
+}

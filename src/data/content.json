@@ -1,0 +1,1503 @@
+{
+ "technologies": [
+  {
+   "slug": "react",
+   "name": "React.js",
+   "category": "Front-end",
+   "heroHead": "Transform Your Web Experience with Expert React.js Development",
+   "heroSub": "STL is a premier React.js development company serving a diverse range of businesses, from startups to enterprises.",
+   "whyTitle": "Why Choose ReactJS for Your Web Development Needs?",
+   "why": [
+    {
+     "label": "Structured & Modular Code:",
+     "text": "React.js follows a modular approach with an emphasis on asynchronous programming and event-driven architecture, making applications scalable and maintainable."
+    },
+    {
+     "label": "High-Speed Development:",
+     "text": "Utilizing non-blocking operations, an event-driven framework, the powerful V8 engine, and a rich ecosystem, React.js ensures high performance and rapid development."
+    },
+    {
+     "label": "Custom Components for Flexibility:",
+     "text": "With modular code organization, NPM packages, templating engines, and middleware integration, developers can create reusable and customizable components effortlessly."
+    },
+    {
+     "label": "Optimized Testing Process:",
+     "text": "React.js enhances testing with fast execution, robust frameworks, asynchronous capabilities, and built-in support for mocking and CI/CD pipelines."
+    },
+    {
+     "label": "Enhanced User Experience:",
+     "text": "Whether for a real-time chat app, a high-performance web platform, or a single-page application, React.js ensures a seamless and responsive user experience."
+    }
+   ],
+   "workflowTitle": "ReactJS Development Workflow",
+   "workflow": [
+    {
+     "title": "Requirement Analysis & Project Planning",
+     "desc": "In the initial phase, we engage with the client to understand their requirements, goals, and vision. We define the project scope, outline key features, and create a comprehensive plan that includes user stories and technical specifications."
+    },
+    {
+     "title": "UI Development & State Management",
+     "desc": "A modular component-based structure is implemented using Material UI, Tailwind CSS, or Styled Components. State management is efficiently handled using React’s built-in useState and useReducer, while Redux Toolkit or Context API manages global state."
+    },
+    {
+     "title": "API Integration & Backend Communication",
+     "desc": "Smooth backend interaction is achieved using RESTful APIs or GraphQL. API requests are managed using Axios or Fetch API, with caching handled via React Query or SWR. Authentication is implemented using JWT, OAuth, or Firebase Authentication."
+    },
+    {
+     "title": "Testing & Debugging",
+     "desc": "Comprehensive testing is performed using Jest, React Testing Library, Cypress, and Playwright to ensure reliability. Debugging tools like React DevTools and Redux DevTools help in troubleshooting and fixing issues efficiently."
+    }
+   ]
+  },
+  {
+   "slug": "angular",
+   "name": "Angular",
+   "category": "Front-end",
+   "heroHead": "Transform Your Web Experience with Expert Angular Development",
+   "heroSub": "STL is a premier Angular development company, delivering tailored solutions to businesses ranging from startups to enterprises.",
+   "whyTitle": "Why Choose Angular for Your Web Development Needs?",
+   "why": [
+    {
+     "label": "Cross-Platform Development:",
+     "text": "Angular facilitates the creation of applications that function seamlessly across various platforms, including web, mobile, and desktop, ensuring a consistent user experience."
+    },
+    {
+     "label": "Code Consistency and Maintainability:",
+     "text": "Angular's use of TypeScript enhances code consistency and maintainability, reducing errors and improving overall code quality."
+    },
+    {
+     "label": "Comprehensive Tooling:",
+     "text": "The Angular CLI offers a suite of powerful tools for code scaffolding, testing, and deployment, streamlining the development process and boosting productivity."
+    },
+    {
+     "label": "Strong Community Support:",
+     "text": "Backed by Google and a robust community, Angular provides extensive resources, regular updates, and a wealth of third-party tools and libraries to support developers."
+    }
+   ],
+   "workflowTitle": "Angular Development Workflow",
+   "workflow": [
+    {
+     "title": "Requirement Analysis & Project Planning",
+     "desc": "In the initial phase, we engage with the client to understand their requirements, goals, and vision. We define the project scope, outline key features, and create a comprehensive plan that includes user stories and technical specifications."
+    },
+    {
+     "title": "UI Development & State Management",
+     "desc": "A modular component-based structure is implemented using Material UI, Tailwind CSS, or Styled Components. State management is efficiently handled using React’s built-in useState and useReducer, while Redux Toolkit or Context API manages global state."
+    },
+    {
+     "title": "API Integration & Backend Communication",
+     "desc": "Smooth backend interaction is achieved using RESTful APIs or GraphQL. API requests are managed using Axios or Fetch API, with caching handled via React Query or SWR. Authentication is implemented using JWT, OAuth, or Firebase Authentication."
+    },
+    {
+     "title": "Testing & Debugging",
+     "desc": "Comprehensive testing is performed using Jest, React Testing Library, Cypress, and Playwright to ensure reliability. Debugging tools like React DevTools and Redux DevTools help in troubleshooting and fixing issues efficiently."
+    }
+   ]
+  },
+  {
+   "slug": "typescript",
+   "name": "TypeScript",
+   "category": "Front-end",
+   "heroHead": "Transform Your Web Experience with Expert TypeScript Development",
+   "heroSub": "STL is a premier TypeScript development company serving a diverse range of businesses, from startups to enterprises.",
+   "whyTitle": "Why Choose TypeScript for Your Web Development Needs?",
+   "why": [
+    {
+     "label": "Static Typing for Reliability:",
+     "text": "TypeScript provides static type checking, reducing runtime errors and improving code quality."
+    },
+    {
+     "label": "Improved Developer Productivity:",
+     "text": "Features like autocompletion, inline documentation, and type inference streamline development and debugging."
+    },
+    {
+     "label": "Better Code Maintainability:",
+     "text": "TypeScript enforces structured coding practices, making large-scale applications easier to manage and refactor."
+    },
+    {
+     "label": "Enhanced JavaScript Ecosystem:",
+     "text": "TypeScript is compatible with existing JavaScript libraries, allowing gradual adoption and integration."
+    },
+    {
+     "label": "Robust Tooling Support:",
+     "text": "With first-class support in IDEs like VS Code and integration with build tools, TypeScript simplifies development workflows."
+    }
+   ],
+   "workflowTitle": "TypeScript Development Workflow",
+   "workflow": [
+    {
+     "title": "Component & State Management",
+     "desc": "In React, use TypeScript with functional components and hooks. Define prop types with interfaces and manage global state using Redux Toolkit or Context API with type-safe actions and reducers."
+    },
+    {
+     "title": "API Integration & Data Fetching",
+     "desc": "Fetch data using Axios or Fetch API with strict type definitions for request and response data. Use libraries like React Query for caching and ensure API calls return properly typed objects."
+    },
+    {
+     "title": "Testing & Debugging",
+     "desc": "Perform unit tests with Jest and React Testing Library using type-safe mocks. Use TypeScript-friendly debugging tools like VS Code IntelliSense and TypeScript Watch Mode for error detection."
+    },
+    {
+     "title": "Deployment & Monitoring",
+     "desc": "Deploy with Vercel, Netlify, or AWS. Automate builds using CI/CD pipelines. Monitor logs and errors using Sentry and LogRocket for TypeScript-specific issues."
+    }
+   ]
+  },
+  {
+   "slug": "nodejs",
+   "name": "Node.js",
+   "category": "Back-end",
+   "heroHead": "Elevate Your Web Presence with Professional Node.js Development",
+   "heroSub": "STL is a leading Node.js development company, catering to a wide array of businesses, from startups to large enterprises.",
+   "whyTitle": "Why Choose NodeJS for Your Web Development Needs?",
+   "why": [
+    {
+     "label": "Asynchronous and Event-Driven Architecture:",
+     "text": "Node.js utilizes a non-blocking, event-driven architecture, allowing it to handle multiple concurrent connections efficiently. This design is particularly beneficial for applications requiring high throughput and scalability."
+    },
+    {
+     "label": "High Performance:",
+     "text": "Built on Google's V8 JavaScript engine, Node.js compiles JavaScript directly to native machine code, resulting in fast execution and improved performance for web applications."
+    },
+    {
+     "label": "Scalability:",
+     "text": "Node.js's lightweight and efficient design makes it well-suited for building scalable network applications, capable of handling numerous simultaneous connections with minimal resource consumption."
+    },
+    {
+     "label": "Active Community Support:",
+     "text": "A large and active community contributes to continuous improvements, robust documentation, and a wealth of resources, ensuring developers have access to the latest tools and best practices."
+    }
+   ],
+   "workflowTitle": "NodeJS Development Workflow",
+   "workflow": [
+    {
+     "title": "Requirement Analysis & Project Planning",
+     "desc": "Engage with stakeholders to gather detailed requirements, define the project scope, and establish clear objectives. This foundational phase ensures alignment with business goals and user needs."
+    },
+    {
+     "title": "Project Structure Design",
+     "desc": "Organize the codebase using a modular architecture, dividing functionalities into distinct modules or components to enhance maintainability. This approach facilitates scalability and collaborative development."
+    },
+    {
+     "title": "API Development & Integration",
+     "desc": "Design and implement RESTful APIs or GraphQL endpoints, ensuring seamless communication between the frontend and backend systems. Efficient API integration is vital for responsive and dynamic applications."
+    },
+    {
+     "title": "Database Integration",
+     "desc": "Choose an appropriate database (e.g., MongoDB, PostgreSQL) and integrate it with the application, establishing schemas and data models as needed. Proper database design ensures data integrity and performance."
+    },
+    {
+     "title": "Middleware Implementation",
+     "desc": "Develop and integrate middleware functions to handle tasks such as authentication, logging, and error handling, thereby enhancing application functionality. Middleware streamlines request processing and security."
+    },
+    {
+     "title": "Testing & Debugging",
+     "desc": "Conduct comprehensive testing, including unit and integration tests, to identify and resolve issues, ensuring the application operates as intended. Robust testing frameworks contribute to software reliability."
+    },
+    {
+     "title": "Deployment & Monitoring",
+     "desc": "Deploy the application to a production environment using platforms like AWS or Heroku, and implement monitoring tools to track performance and user engagement. Continuous monitoring ensures optimal application health and user satisfaction."
+    }
+   ]
+  },
+  {
+   "slug": "java",
+   "name": "Java",
+   "category": "Back-end",
+   "heroHead": "Transform Your Web Experience with Expert Java Development",
+   "heroSub": "STL is a premier Java development company, delivering tailored solutions to businesses ranging from startups to enterprises.",
+   "whyTitle": "Why Choose Java for Your Web Development Needs?",
+   "why": [
+    {
+     "label": "Platform Independence:",
+     "text": "Java’s “write once, run anywhere” philosophy allows applications to run on any device with a JVM, ensuring broad compatibility and flexibility."
+    },
+    {
+     "label": "Robust Performance & Scalability:",
+     "text": "Java is known for its high performance and scalability, making it ideal for building large-scale enterprise-level applications."
+    },
+    {
+     "label": "Strong Ecosystem & Frameworks:",
+     "text": "Java offers mature frameworks like Spring Boot, Hibernate, and Jakarta EE that accelerate development, simplify integration, and enhance application stability."
+    },
+    {
+     "label": "Security & Reliability:",
+     "text": "Java is built with a strong focus on security and reliability, making it a trusted choice for mission-critical web applications across industries."
+    }
+   ],
+   "workflowTitle": "Java Development Workflow",
+   "workflow": [
+    {
+     "title": "Requirement Analysis & Architecture Design",
+     "desc": "We collaborate closely with clients to gather business needs and define system requirements. A scalable architecture is designed using MVC or microservices, setting the foundation for a robust and flexible Java-based solution."
+    },
+    {
+     "title": "Backend Development with Spring Boot",
+     "desc": "Java and Spring Boot are used to create RESTful APIs, handle business logic, and manage database interactions. Modular services, DTOs, and validation ensure clean code and scalable development."
+    },
+    {
+     "title": "Frontend Integration & API Communication",
+     "desc": "REST APIs developed in Spring Boot are integrated with frontend frameworks like React or Angular. Secure communication is ensured using HTTPS, CORS configurations, and token-based authentication (JWT, OAuth2)."
+    },
+    {
+     "title": "Testing & Quality Assurance",
+     "desc": "Unit and integration testing are done using JUnit and Mockito. End-to-end testing is handled with tools like Selenium or REST Assured. Continuous quality checks ensure maintainability and bug-free releases."
+    },
+    {
+     "title": "Deployment, Monitoring & Maintenance",
+     "desc": "Applications are deployed on servers or cloud platforms like AWS, Azure, or GCP using Docker and CI/CD pipelines (Jenkins, GitHub Actions). Monitoring is handled via Prometheus, ELK Stack, or New Relic."
+    }
+   ]
+  },
+  {
+   "slug": "react-native",
+   "name": "React Native",
+   "category": "Mobile",
+   "heroHead": "Enhance Your Mobile App Experience with Expert React Native Development",
+   "heroSub": "STL is a top-tier React Native development company, serving a diverse range of businesses, from startups to established enterprises.",
+   "whyTitle": "Why Choose React Native for Your Mobile App Development Needs?",
+   "why": [
+    {
+     "label": "Cross-Platform Compatibility:",
+     "text": "React Native allows you to build applications for both iOS and Android platforms with a single codebase, significantly reducing development time and costs."
+    },
+    {
+     "label": "Performance Optimization:",
+     "text": "React Native uses native components, offering a seamless user experience with high performance on mobile devices."
+    },
+    {
+     "label": "Hot Reloading:",
+     "text": "React Native's hot reloading feature enables developers to instantly see changes without rebuilding the entire app, boosting productivity."
+    },
+    {
+     "label": "Large Developer Community:",
+     "text": "React Native boasts a vast and active developer community, providing extensive resources, libraries, and third-party integrations to accelerate development."
+    }
+   ],
+   "workflowTitle": "React Native Development Workflow",
+   "workflow": [
+    {
+     "title": "Requirement Analysis & Project Planning",
+     "desc": "Gather requirements, define project scope, and set clear objectives to align with business goals. Establish key milestones and choose the tech stack."
+    },
+    {
+     "title": "Project Structure Design",
+     "desc": "Organize the codebase with modular architecture and reusable components. Set up navigation, state management, and essential libraries for scalability."
+    },
+    {
+     "title": "Database Integration",
+     "desc": "Choose databases like Firebase, SQLite, or PostgreSQL for data storage. Design schemas to optimize performance, security, and scalability."
+    },
+    {
+     "title": "Middleware Implementation",
+     "desc": "Implement authentication, authorization, logging, and caching using JWT or Firebase Authentication. Enhance security and request processing."
+    },
+    {
+     "title": "Testing & Debugging",
+     "desc": "Use Jest and React Native Testing Library for unit and integration tests. Debug efficiently with tools like Flipper and React Native Debugger."
+    },
+    {
+     "title": "Deployment & Monitoring",
+     "desc": "Deploy apps on Play Store/App Store using Expo or Fastlane. Monitor performance with Firebase Analytics and Sentry for continuous improvements."
+    }
+   ]
+  },
+  {
+   "slug": "flutter",
+   "name": "Flutter",
+   "category": "Mobile",
+   "heroHead": "Transform Your Mobile Experience with Expert Flutter Development",
+   "heroSub": "STL specializes in high-performance Flutter development, helping startups and enterprises build seamless, cross-platform applications.",
+   "whyTitle": "Why Choose Flutter for Your Mobile App Development Needs?",
+   "why": [
+    {
+     "label": "Unified Codebase:",
+     "text": "Flutter allows developers to create apps for iOS, Android, and beyond using a single codebase, reducing effort and maintenance costs."
+    },
+    {
+     "label": "Fast Performance:",
+     "text": "Powered by the Dart language and Skia graphics engine, Flutter delivers smooth animations and native-like responsiveness."
+    },
+    {
+     "label": "Expressive UI:",
+     "text": "Flutter’s rich widget library enables highly customizable and visually engaging designs without compromising performance."
+    },
+    {
+     "label": "Rapid Development:",
+     "text": "Features like hot reload allow instant updates, making development faster and more efficient with real-time UI changes."
+    },
+    {
+     "label": "Growing Ecosystem:",
+     "text": "Backed by Google, Flutter has a strong developer community, extensive libraries, and continuous updates, ensuring long-term reliability."
+    }
+   ],
+   "workflowTitle": "Flutter App Development Workflow",
+   "workflow": [
+    {
+     "title": "Requirement Analysis & UI Planning",
+     "desc": "Gather client requirements, define the app's core functionality, and design UI/UX with Flutter’s widget-based approach for a seamless experience."
+    },
+    {
+     "title": "App Architecture & State Management",
+     "desc": "Establish a clean architecture using Provider, Riverpod, or Bloc for efficient state management and scalable app development."
+    },
+    {
+     "title": "API Integration & Backend Connectivity",
+     "desc": "Connect the app to RESTful APIs or GraphQL, implement real-time data handling using Firebase Firestore, and ensure smooth network requests."
+    },
+    {
+     "title": "Performance Optimization",
+     "desc": "Optimize Flutter apps using efficient rendering techniques, lazy loading, and minimizing unnecessary widget rebuilds for smooth performance."
+    },
+    {
+     "title": "Testing & Debugging",
+     "desc": "Use Flutter’s built-in testing framework for unit, widget, and integration tests, and debug effectively with DevTools and Flutter Inspector."
+    },
+    {
+     "title": "Deployment & Maintenance",
+     "desc": "Publish apps to Google Play and App Store using Flutter’s build tools. Continuously monitor app performance with Firebase Crashlytics and analytics."
+    }
+   ]
+  },
+  {
+   "slug": "aws",
+   "name": "AWS",
+   "category": "DevOps & Cloud",
+   "heroHead": "Elevate Your Cloud Infrastructure with Expert AWS Solutions",
+   "heroSub": "STL specializes in scalable AWS solutions, empowering startups and enterprises with secure, high-performance cloud computing and seamless deployment.",
+   "whyTitle": "Why Choose AWS for Your Cloud Infrastructure?",
+   "why": [
+    {
+     "label": "Scalability & Flexibility:",
+     "text": "AWS provides on-demand scalability, allowing businesses to efficiently scale resources as their needs grow."
+    },
+    {
+     "label": "High Performance:",
+     "text": "With a global network of data centers and optimized computing power, AWS ensures fast, reliable, and low-latency performance."
+    },
+    {
+     "label": "Comprehensive Security:",
+     "text": "AWS offers industry-leading security features, including encryption, identity management, and compliance with top security standards."
+    },
+    {
+     "label": "Cost-Effective Solutions:",
+     "text": "AWS’s pay-as-you-go model helps businesses optimize costs by only paying for the resources they use."
+    },
+    {
+     "label": "Vast Ecosystem & Innovation:",
+     "text": "With continuous updates, AI-driven services, and an extensive range of integrations, AWS supports cutting-edge cloud solutions for businesses of all sizes."
+    }
+   ],
+   "workflowTitle": "AWS Cloud Deployment Workflow",
+   "workflow": [
+    {
+     "title": "Requirement Analysis & Cloud Strategy",
+     "desc": "Identify business needs, select the right AWS services, and define an architecture strategy to ensure scalability, security, and cost efficiency."
+    },
+    {
+     "title": "Infrastructure Design & Provisioning",
+     "desc": "Utilize AWS CloudFormation or Terraform to define and deploy scalable, automated infrastructure, ensuring high availability and resilience."
+    },
+    {
+     "title": "API Integration & Serverless Computing",
+     "desc": "Deploy scalable APIs using AWS API Gateway and Lambda functions, ensuring seamless integration with databases, microservices, and external systems."
+    },
+    {
+     "title": "Performance Optimization & Cost Efficiency",
+     "desc": "Optimize AWS resources using Auto Scaling, Load Balancers, and cost-management tools to improve performance and minimize expenses."
+    },
+    {
+     "title": "Security & Compliance",
+     "desc": "Implement IAM roles, encryption, and security groups to protect cloud resources while ensuring compliance with industry regulations."
+    },
+    {
+     "title": "Deployment & Monitoring",
+     "desc": "Use AWS CodeDeploy and CI/CD pipelines for automated deployments. Monitor applications with CloudWatch and maintain reliability with AWS Health Dashboard."
+    }
+   ]
+  },
+  {
+   "slug": "docker",
+   "name": "Docker",
+   "category": "DevOps & Cloud",
+   "heroHead": "Optimize Your Workflow with Docker Containerization",
+   "heroSub": "STL empowers businesses with seamless Docker solutions, enabling efficient application deployment, scalability, and infrastructure management with ease.",
+   "whyTitle": "Why Choose Docker for Your Application Deployment?",
+   "why": [
+    {
+     "label": "Containerization Efficiency:",
+     "text": "Docker allows applications to run consistently across different environments, reducing deployment issues and compatibility concerns."
+    },
+    {
+     "label": "Scalability & Portability:",
+     "text": "Easily scale your applications and move them across cloud providers or on-premise infrastructure with minimal effort."
+    },
+    {
+     "label": "Resource Optimization:",
+     "text": "Docker enables lightweight containers that use fewer system resources than traditional virtual machines, improving performance."
+    },
+    {
+     "label": "Rapid Deployment & Updates:",
+     "text": "With Docker images, you can quickly deploy, update, and roll back applications, streamlining CI/CD workflows."
+    },
+    {
+     "label": "Secure & Isolated Environment:",
+     "text": "Docker ensures better security by isolating applications in containers, preventing conflicts between dependencies."
+    }
+   ],
+   "workflowTitle": "Docker Containerization Workflow",
+   "workflow": [
+    {
+     "title": "Environment Setup & Dependency Management",
+     "desc": "Define application dependencies in a Dockerfile and manage configurations with Docker Compose for a consistent development environment."
+    },
+    {
+     "title": "Containerization & Image Creation",
+     "desc": "Build lightweight, portable Docker images with optimized layer caching for faster deployment and minimal storage overhead."
+    },
+    {
+     "title": "Networking & Service Orchestration",
+     "desc": "Configure Docker networking for seamless communication between containers, and orchestrate multi-container setups with Docker Compose or Kubernetes."
+    },
+    {
+     "title": "Performance Optimization",
+     "desc": "Reduce build times with multi-stage Docker builds, optimize resource utilization, and minimize image size for efficient deployment."
+    },
+    {
+     "title": "Security & Compliance",
+     "desc": "Secure Docker environments with best practices such as image vulnerability scanning, least privilege access, and secrets management."
+    },
+    {
+     "title": "Deployment & Monitoring",
+     "desc": "Deploy containers to cloud platforms like AWS, GCP, or Azure, and monitor performance using Docker Stats, Prometheus, or Grafana."
+    }
+   ]
+  },
+  {
+   "slug": "jenkins",
+   "name": "Jenkins",
+   "category": "DevOps & Cloud",
+   "heroHead": "Streamline Your Development Pipeline with Expert Jenkins Integration",
+   "heroSub": "STL specializes in optimizing CI/CD workflows with Jenkins, enabling startups and enterprises to automate builds, testing, and deployments efficiently.",
+   "whyTitle": "Why Choose Jenkins for Your CI/CD Pipeline?",
+   "why": [
+    {
+     "label": "Open-Source & Extensible:",
+     "text": "Jenkins is a free and highly customizable automation server with a vast plugin ecosystem to fit diverse CI/CD needs."
+    },
+    {
+     "label": "Scalability & Flexibility:",
+     "text": "Supports distributed builds, multiple environments, and cloud-based deployments, making it suitable for small and large teams."
+    },
+    {
+     "label": "Seamless Integration:",
+     "text": "Works with popular version control systems like Git, build tools like Maven and Gradle, and deployment platforms like Kubernetes and Docker."
+    },
+    {
+     "label": "Automated Testing & Deployment:",
+     "text": "Enables continuous integration and delivery with automated testing, reducing manual effort and deployment risks."
+    },
+    {
+     "label": "Active Community & Support:",
+     "text": "Backed by a strong developer community, Jenkins has extensive documentation, regular updates, and a wide range of plugins."
+    }
+   ],
+   "workflowTitle": "",
+   "workflow": []
+  },
+  {
+   "slug": "mongodb",
+   "name": "MongoDB",
+   "category": "Database",
+   "heroHead": "Power Your Applications with Scalable MongoDB Solutions",
+   "heroSub": "STL specializes in high-performance MongoDB database solutions, helping startups and enterprises manage data efficiently with scalability, flexibility, and reliability.",
+   "whyTitle": "Why Choose MongoDB for Your Database Needs?",
+   "why": [
+    {
+     "label": "Scalability & Flexibility:",
+     "text": "MongoDB’s schema-less design and horizontal scaling with sharding make it ideal for handling growing data needs."
+    },
+    {
+     "label": "High Performance:",
+     "text": "Optimized for high-speed read and write operations, MongoDB delivers low-latency performance for real-time applications."
+    },
+    {
+     "label": "Document-Oriented Structure:",
+     "text": "Unlike relational databases, MongoDB uses JSON-like documents, making it more natural and flexible for modern applications."
+    },
+    {
+     "label": "Robust Security Features:",
+     "text": "MongoDB offers encryption, authentication, and fine-grained access controls to ensure data security and compliance."
+    },
+    {
+     "label": "Cost-Effective & Open-Source:",
+     "text": "As an open-source solution with cost-efficient scaling, MongoDB provides a budget-friendly approach for startups and enterprises alike."
+    }
+   ],
+   "workflowTitle": "MongoDB Deployment Workflow",
+   "workflow": [
+    {
+     "title": "Requirement Analysis & Database Design",
+     "desc": "Identify data requirements, define schema design with collections and indexes, and plan an optimized database structure for scalability and efficiency."
+    },
+    {
+     "title": "Infrastructure Setup & Deployment",
+     "desc": "Deploy MongoDB on-premise, in the cloud, or using MongoDB Atlas. Configure replica sets and sharding for high availability and scalability."
+    },
+    {
+     "title": "API Integration & Data Access Layer",
+     "desc": "Connect MongoDB with backend applications using Mongoose, MongoDB drivers, or GraphQL. Ensure efficient data retrieval and indexing."
+    },
+    {
+     "title": "Performance Optimization & Indexing",
+     "desc": "Optimize query performance using indexes, aggregation pipelines, and caching strategies. Monitor slow queries with MongoDB Profiler."
+    },
+    {
+     "title": "Security & Data Protection",
+     "desc": "Implement authentication, authorization, and encryption for secure data access. Enforce role-based access controls and backup strategies."
+    },
+    {
+     "title": "Deployment & Monitoring",
+     "desc": "Use MongoDB Atlas or self-hosted tools for automated deployments. Monitor performance, replication, and database health with MongoDB Compass and Ops Manager."
+    }
+   ]
+  },
+  {
+   "slug": "mysql",
+   "name": "MySQL",
+   "category": "Database",
+   "heroHead": "Power Your Data with Robust MySQL Database Solutions",
+   "heroSub": "STL delivers scalable MySQL solutions, helping startups and enterprises manage structured data efficiently with high availability, security, and performance.",
+   "whyTitle": "Why Choose MySQL for Your Database Management?",
+   "why": [
+    {
+     "label": "Scalability & Flexibility:",
+     "text": "MySQL efficiently scales from small applications to large enterprise-level databases, supporting growing data needs."
+    },
+    {
+     "label": "High Performance:",
+     "text": "Optimized query execution, indexing, and caching ensure fast data retrieval and efficient processing."
+    },
+    {
+     "label": "Robust Security:",
+     "text": "MySQL offers advanced security features like encryption, access controls, and authentication to protect data integrity."
+    },
+    {
+     "label": "Cost-Effective & Open-Source:",
+     "text": "As an open-source database, MySQL provides a powerful, cost-effective solution with enterprise-grade capabilities."
+    },
+    {
+     "label": "Reliability & Compatibility:",
+     "text": "MySQL supports ACID compliance, high availability, and seamless integration with various programming languages and frameworks."
+    }
+   ],
+   "workflowTitle": "MySQL Database Deployment Workflow",
+   "workflow": [
+    {
+     "title": "Requirement Analysis & Database Planning",
+     "desc": "Identify data storage needs, design the relational schema, and define indexing strategies to ensure scalability, efficiency, and performance."
+    },
+    {
+     "title": "Database Setup & Configuration",
+     "desc": "Deploy MySQL on-premises or in the cloud (AWS RDS, Azure, or Google Cloud), configure storage options, and optimize settings for performance."
+    },
+    {
+     "title": "Data Modeling & Indexing",
+     "desc": "Design efficient tables, normalize database schemas, and implement indexing strategies to enhance query performance and data retrieval speed."
+    },
+    {
+     "title": "Performance Optimization & Query Tuning",
+     "desc": "Optimize database queries, use caching techniques, and leverage MySQL's query optimizer to ensure high-speed transactions and low latency."
+    },
+    {
+     "title": "Security & Backup Management",
+     "desc": "Implement user roles, encryption, and regular backups using MySQL replication and automated backup tools to ensure data security and disaster recovery."
+    },
+    {
+     "title": "Deployment & Monitoring",
+     "desc": "Deploy databases with CI/CD pipelines, monitor performance using MySQL Enterprise Monitor, and ensure uptime with failover strategies and health checks."
+    }
+   ]
+  },
+  {
+   "slug": "dynamodb",
+   "name": "DynamoDB",
+   "category": "Database",
+   "heroHead": "Scale Your Applications with High-Performance DynamoDB Solutions",
+   "heroSub": "STL specializes in fully managed NoSQL database solutions, enabling startups and enterprises to build fast, scalable, and highly available applications with AWS DynamoDB.",
+   "whyTitle": "Why Choose AWS DynamoDB for Your Database Needs?",
+   "why": [
+    {
+     "label": "Seamless Scalability:",
+     "text": "DynamoDB offers automatic scaling to handle any workload, from startups to enterprise-level applications, with no downtime."
+    },
+    {
+     "label": "Blazing Fast Performance:",
+     "text": "With single-digit millisecond response times, DynamoDB ensures high-speed read and write operations for demanding applications."
+    },
+    {
+     "label": "Fully Managed & Serverless:",
+     "text": "Eliminate infrastructure management with DynamoDB’s fully managed NoSQL database, allowing teams to focus on innovation."
+    },
+    {
+     "label": "Cost-Optimized Efficiency:",
+     "text": "Pay only for what you use with on-demand or provisioned capacity pricing, helping businesses optimize costs without compromising performance."
+    }
+   ],
+   "workflowTitle": "AWS DynamoDB Implementation Workflow",
+   "workflow": [
+    {
+     "title": "Data Modeling & Schema Design",
+     "desc": "Define efficient data models using partition keys and sort keys to optimize read and write operations while ensuring scalability."
+    },
+    {
+     "title": "Capacity Planning & Provisioning",
+     "desc": "Choose between on-demand and provisioned capacity modes based on workload requirements to ensure cost-efficiency and performance."
+    },
+    {
+     "title": "Indexing & Query Optimization",
+     "desc": "Utilize Global Secondary Indexes (GSI) and Local Secondary Indexes (LSI) to enhance query flexibility and improve performance."
+    },
+    {
+     "title": "Data Security & Access Control",
+     "desc": "Secure data with AWS IAM policies, encryption, and fine-grained access control using DynamoDB Streams and AWS KMS."
+    },
+    {
+     "title": "Backup & Disaster Recovery",
+     "desc": "Ensure data durability with automated backups, point-in-time recovery, and multi-region replication for disaster resilience."
+    },
+    {
+     "title": "Monitoring & Performance Tuning",
+     "desc": "Use Amazon CloudWatch and AWS X-Ray to monitor queries, track read/write capacity, and optimize performance dynamically."
+    }
+   ]
+  },
+  {
+   "slug": "figma",
+   "name": "Figma",
+   "category": "Design",
+   "heroHead": "Transform Your UI/UX Workflow with Figma’s Cutting-Edge Tools",
+   "heroSub": "STL specializes in intuitive Figma-based design solutions, enabling startups and enterprises to collaborate seamlessly, streamline prototyping, and build pixel-perfect user experiences.",
+   "whyTitle": "Why Choose Figma for UI/UX Design?",
+   "why": [
+    {
+     "label": "Seamless Team Collaboration:",
+     "text": "Work with designers, developers, and stakeholders in real time—no need for file transfers."
+    },
+    {
+     "label": "Powerful Auto Layout:",
+     "text": "Design flexible, responsive components that automatically adjust based on content changes."
+    },
+    {
+     "label": "Plugins & Integrations:",
+     "text": "Extend Figma’s capabilities with plugins for icons, illustrations, accessibility checks, and more."
+    },
+    {
+     "label": "Version Control & History:",
+     "text": "Access past versions of your designs without worrying about manual backups."
+    },
+    {
+     "label": "Design & Code Consistency:",
+     "text": "Use shared styles, grids, and variables to maintain consistency across teams."
+    }
+   ],
+   "workflowTitle": "Figma Design & Prototyping Workflow",
+   "workflow": [
+    {
+     "title": "Requirement Gathering & Wireframing",
+     "desc": "Understand project goals, define user personas, and create low-fidelity wireframes to establish the app's layout and structure."
+    },
+    {
+     "title": "UI Design & Component Creation",
+     "desc": "Design high-fidelity UI screens using Figma’s auto-layout, grids, and reusable components for a consistent and scalable design system."
+    },
+    {
+     "title": "Prototyping & Interaction Design",
+     "desc": "Create interactive prototypes, define user flows, and add micro-interactions to simulate real user experiences before development."
+    },
+    {
+     "title": "Design Collaboration & Feedback",
+     "desc": "Share designs with teams, collect feedback using Figma comments, and iterate based on usability testing insights."
+    },
+    {
+     "title": "Handoff to Developers",
+     "desc": "Use Figma’s inspect mode to provide developers with pixel-perfect specifications, assets, and design tokens for seamless implementation."
+    },
+    {
+     "title": "Design System & Maintenance",
+     "desc": "Maintain a scalable design system with reusable components, global styles, and version control for long-term consistency."
+    }
+   ]
+  },
+  {
+   "slug": "photoshop",
+   "name": "Photoshop",
+   "category": "Design",
+   "heroHead": "Unlock Your Creative Potential with Adobe Photoshop",
+   "heroSub": "STL specializes in advanced Photoshop solutions, helping designers and businesses create stunning visuals, seamless edits, and professional-grade digital content with ease.",
+   "whyTitle": "Why Choose Photoshop for Your Design Projects?",
+   "why": [
+    {
+     "label": "Powerful Editing Tools:",
+     "text": "Photoshop offers an extensive set of editing tools to create detailed and high-quality designs, from image manipulation to advanced retouching."
+    },
+    {
+     "label": "Advanced Layer Management:",
+     "text": "Easily manage layers, create complex compositions, and apply effects non-destructively, allowing for flexibility in design creation."
+    },
+    {
+     "label": "Seamless Integration:",
+     "text": "Photoshop integrates well with other Adobe products such as Illustrator, After Effects, and Lightroom, enhancing your workflow across various platforms."
+    },
+    {
+     "label": "Extensive File Compatibility:",
+     "text": "Photoshop supports a wide range of file formats, ensuring that your work can be easily shared, edited, and used in different projects."
+    },
+    {
+     "label": "Industry Standard:",
+     "text": "As the industry-leading software, Photoshop is trusted by professional designers, photographers, and artists, providing powerful tools for both creative and technical tasks."
+    }
+   ],
+   "workflowTitle": "Photoshop Design Workflow",
+   "workflow": [
+    {
+     "title": "Design Brief & Conceptualization",
+     "desc": "Gather client requirements, define design objectives, and create mood boards to establish a visual concept for the project."
+    },
+    {
+     "title": "Image Sourcing & Asset Creation",
+     "desc": "Gather high-quality images or create custom assets using Photoshop's powerful tools for drawing, painting, and photo manipulation."
+    },
+    {
+     "title": "Design Execution & Composition",
+     "desc": "Combine images, illustrations, and text using Photoshop’s layers and blending modes to create polished, cohesive designs."
+    },
+    {
+     "title": "Color Grading & Enhancement",
+     "desc": "Enhance visual appeal by adjusting colors, contrast, and saturation with Photoshop’s advanced color correction tools."
+    },
+    {
+     "title": "Final Touches & Detailing",
+     "desc": "Add textures, filters, or special effects, and refine details to give the design a professional and polished finish."
+    },
+    {
+     "title": "Export & Delivery",
+     "desc": "Export the final design in various formats (JPG, PNG, PSD) for different platforms and deliver to the client or team for use."
+    }
+   ]
+  }
+ ],
+ "services": [
+  {
+   "slug": "digital-product-design",
+   "name": "Digital Product Design",
+   "summary": "Transform your ideas into intuitive digital experiences. Our design process is user-centered, data-informed, and focused on creating real impact.",
+   "heroHead": "Elevate User Experiences with Digital Product Design",
+   "heroSub": "STL crafts intuitive and engaging digital interfaces by blending user research, usability testing, and iterative design—ensuring products that resonate with users and drive business success.",
+   "whyTitle": "Why Choose Digital Product Design?",
+   "why": [
+    {
+     "label": "User-Centered Approach:",
+     "text": "Digital product design focuses on understanding user needs and behaviors, ensuring the final product provides a seamless, intuitive experience."
+    },
+    {
+     "label": "Enhanced Usability:",
+     "text": "By conducting thorough usability testing, designers identify pain points and refine the product for better navigation and user satisfaction."
+    },
+    {
+     "label": "Responsive & Scalable Design:",
+     "text": "Digital product design ensures that the application is adaptable to various devices and screen sizes, offering a consistent experience across platforms."
+    },
+    {
+     "label": "Brand Consistency:",
+     "text": "By integrating brand elements into the design, digital product design enhances your brand’s identity, making your product visually appealing and recognizable."
+    },
+    {
+     "label": "Faster Time to Market:",
+     "text": "A well-designed product can accelerate development cycles, enabling faster releases and quick iterations based on user feedback."
+    }
+   ],
+   "workflowTitle": "Digital Product Design Workflow",
+   "workflow": [
+    {
+     "title": "Research & Discovery",
+     "desc": "Conduct in-depth user research and market analysis to understand user needs, pain points, and business objectives, laying the foundation for a successful design."
+    },
+    {
+     "title": "Wireframing & Prototyping",
+     "desc": "Create wireframes and interactive prototypes that showcase the structure and functionality of the product, ensuring it aligns with user needs and business goals."
+    },
+    {
+     "title": "Visual & UI Design",
+     "desc": "Design visually engaging user interfaces with a focus on aesthetics, user flow, and usability, ensuring a seamless and intuitive experience."
+    },
+    {
+     "title": "Usability Testing & Feedback",
+     "desc": "Perform usability testing to gather real-user feedback, identifying areas for improvement and validating design choices before final implementation."
+    },
+    {
+     "title": "Iterative Design & Refinement",
+     "desc": "Continuously refine and iterate on designs based on user feedback and testing, ensuring the product evolves to meet both user expectations and business goals."
+    },
+    {
+     "title": "Final Handoff & Implementation",
+     "desc": "Provide final designs with comprehensive guidelines for development, ensuring smooth implementation while maintaining design integrity."
+    }
+   ]
+  },
+  {
+   "slug": "software-architecture",
+   "name": "Software Architecture",
+   "summary": "Build future-proof systems with scalable architecture. We align your tech strategy with business goals to deliver long-term success.",
+   "heroHead": "Build Scalable Solutions with Robust Software Architecture",
+   "heroSub": "STL delivers modular, future-ready software architectures that drive system stability, scalability, and performance—empowering your business to grow with confidence.",
+   "whyTitle": "Why Choose a Software Architecture?",
+   "why": [
+    {
+     "label": "System Scalability & Flexibility:",
+     "text": "A software architect ensures that the system is designed to scale efficiently, handling growing user bases and data volumes without sacrificing performance."
+    },
+    {
+     "label": "Modularity & Maintainability:",
+     "text": "By using modular design principles, architects create systems that are easy to maintain, update, and expand, reducing long-term technical debt."
+    },
+    {
+     "label": "Optimal Performance:",
+     "text": "Software architects make sure that the system is optimized for speed, ensuring smooth performance by selecting the right technologies, algorithms, and infrastructure."
+    },
+    {
+     "label": "Risk Mitigation:",
+     "text": "With a comprehensive architectural plan, architects can identify potential risks early on, ensuring that security, compliance, and other critical factors are addressed before they become issues."
+    },
+    {
+     "label": "Alignment with Business Goals:",
+     "text": "A software architect ensures that the system is built in alignment with business objectives, enabling growth, flexibility, and better ROI."
+    }
+   ],
+   "workflowTitle": "Software Architecture Workflow",
+   "workflow": [
+    {
+     "title": "Requirement Analysis & Planning",
+     "desc": "Collaborate with stakeholders to gather requirements and plan the system architecture. This involves defining business objectives, technical constraints, and system performance goals."
+    },
+    {
+     "title": "Architecture Design & Modeling",
+     "desc": "Design scalable and modular software architectures using various architectural patterns (e.g., microservices, monolithic, layered), ensuring flexibility, maintainability, and performance."
+    },
+    {
+     "title": "Technology Stack Selection",
+     "desc": "Carefully choose the right technology stack (e.g., databases, frameworks, cloud solutions) based on project requirements, team expertise, and scalability considerations."
+    },
+    {
+     "title": "High Availability & Fault Tolerance",
+     "desc": "Design systems for high availability by implementing redundancy, failover mechanisms, and disaster recovery strategies to ensure minimal downtime and uninterrupted service."
+    },
+    {
+     "title": "Security & Compliance",
+     "desc": "Implement security best practices by incorporating encryption, access control, and secure communication protocols to safeguard sensitive data and comply with industry regulations."
+    },
+    {
+     "title": "Scalability & Performance Optimization",
+     "desc": "Design systems for horizontal and vertical scalability, optimize performance by identifying bottlenecks, and ensure the architecture can handle increasing user loads and data volumes efficiently."
+    },
+    {
+     "title": "Deployment & Monitoring",
+     "desc": "Deploy the system on various environments (e.g., cloud, on-premise), and set up continuous monitoring using tools like Prometheus or Grafana to ensure the system operates smoothly."
+    }
+   ]
+  },
+  {
+   "slug": "engineering-devops",
+   "name": "Engineering & DevOps",
+   "summary": "Automate, optimize, and scale with confidence. Our engineering teams embrace DevOps principles to streamline delivery and reduce downtime.",
+   "heroHead": "Accelerate Innovation with Digital Engineering & DevOps",
+   "heroSub": "STL bridges development and operations with automated CI/CD pipelines, cloud-native infrastructure, and agile engineering practices — empowering your teams to deliver faster, safer, and smarter.",
+   "whyTitle": "Why Choose Engineering & DevOps?",
+   "why": [
+    {
+     "label": "Seamless Integration:",
+     "text": "DevOps bridges the gap between development and operations, ensuring smooth collaboration for faster software delivery and continuous improvement."
+    },
+    {
+     "label": "Automation & Efficiency:",
+     "text": "With automated workflows for testing, deployment, and monitoring, DevOps improves the efficiency of your software delivery pipeline, reducing manual effort and human error."
+    },
+    {
+     "label": "Scalability & Flexibility:",
+     "text": "DevOps practices enable scalable infrastructure and software architectures, allowing you to meet growing demands while maintaining flexibility across environments."
+    },
+    {
+     "label": "Faster Time-to-Market:",
+     "text": "By combining development, testing, and deployment in a continuous cycle, DevOps accelerates the delivery process, enabling faster rollouts and iterative improvements."
+    },
+    {
+     "label": "Improved Reliability & Monitoring:",
+     "text": "DevOps integrates real-time monitoring and automated testing, ensuring higher system reliability, proactive issue resolution, and enhanced performance."
+    }
+   ],
+   "workflowTitle": "Engineering & DevOps Workflow",
+   "workflow": [
+    {
+     "title": "Infrastructure Automation",
+     "desc": "Automate infrastructure provisioning using tools like Terraform, Ansible, and CloudFormation to ensure consistency and scalability across environments."
+    },
+    {
+     "title": "Continuous Integration & Delivery (CI/CD)",
+     "desc": "Streamline code integration and delivery pipelines with tools like Jenkins, GitLab CI, and CircleCI for faster and more reliable software deployments."
+    },
+    {
+     "title": "Monitoring & Logging",
+     "desc": "Set up real-time monitoring and centralized logging with tools like Prometheus, Grafana, ELK Stack, and Splunk to proactively manage and troubleshoot systems."
+    },
+    {
+     "title": "Cloud-Native Architectures",
+     "desc": "Design and deploy cloud-native applications using microservices, Kubernetes, and containerization to improve scalability, resilience, and resource optimization."
+    },
+    {
+     "title": "Security & Compliance",
+     "desc": "Implement robust security practices including vulnerability scanning, threat detection, and compliance monitoring for applications and infrastructure."
+    },
+    {
+     "title": "Automated Testing & Validation",
+     "desc": "Establish automated testing frameworks for unit, integration, and end-to-end tests to ensure continuous quality assurance in your DevOps pipelines."
+    }
+   ]
+  },
+  {
+   "slug": "mobile-app-development",
+   "name": "Mobile App Development",
+   "summary": "We create sleek, high-performance apps for iOS and Android, tailored to your brand and built for long-term engagement.",
+   "heroHead": "Transform Your Vision with Mobile App Development",
+   "heroSub": "STL builds intuitive, high-performance mobile apps that enhance user engagement, streamline operations, and scale with your business — from concept to launch.",
+   "whyTitle": "Why Choose Mobile App Development?",
+   "why": [
+    {
+     "label": "Enhanced User Experience:",
+     "text": "Mobile app development allows you to create a tailored and engaging user experience with intuitive interfaces and optimized performance for smartphones and tablets."
+    },
+    {
+     "label": "Increased Brand Visibility:",
+     "text": "Having a mobile app helps to increase your brand’s visibility as it provides a direct platform to communicate with users and promotes your services/products at all times."
+    },
+    {
+     "label": "Offline Capabilities:",
+     "text": "Mobile apps offer offline functionality, allowing users to access certain features or data without the need for an internet connection."
+    },
+    {
+     "label": "Better Performance:",
+     "text": "Mobile apps are typically faster and more responsive than web apps, providing a smoother and more reliable experience for users."
+    },
+    {
+     "label": "Push Notifications:",
+     "text": "Mobile apps allow businesses to send personalized notifications directly to users, improving user engagement and promoting new content, updates, or promotions in real-time."
+    },
+    {
+     "label": "Access to Device Features:",
+     "text": "Mobile apps have full access to device features like the camera, GPS, accelerometer, and more, enabling the development of unique functionalities that enhance the user experience."
+    }
+   ],
+   "workflowTitle": "Mobile App Development Workflow",
+   "workflow": [
+    {
+     "title": "App Planning & Requirement Gathering",
+     "desc": "Begin with thorough planning by defining the app's features, goals, and target audience. Gather requirements and create a roadmap for development."
+    },
+    {
+     "title": "UI/UX Design",
+     "desc": "Create intuitive and engaging user interfaces by focusing on seamless UX design principles, ensuring a user-friendly experience on mobile devices."
+    },
+    {
+     "title": "App Development & Coding",
+     "desc": "Develop the application using modern frameworks and languages like React Native, Flutter, Swift, or Kotlin, ensuring fast and scalable mobile solutions."
+    },
+    {
+     "title": "Testing & Quality Assurance",
+     "desc": "Conduct thorough testing to ensure a bug-free app by performing unit tests, integration tests, and user acceptance tests (UAT) to guarantee the app's functionality and performance."
+    },
+    {
+     "title": "Deployment & Store Submission",
+     "desc": "Deploy your app to app stores like Google Play and the Apple App Store, ensuring it meets all store guidelines for submission and publication."
+    },
+    {
+     "title": "Maintenance & Updates",
+     "desc": "Continuously monitor and maintain your app to ensure smooth performance. Provide regular updates and new features based on user feedback and market trends."
+    }
+   ]
+  },
+  {
+   "slug": "staff-augmentation",
+   "name": "Staff Augmentation",
+   "summary": "Quickly extend your team with top engineering talent. Our flexible staffing solutions help you deliver faster and scale smarter.",
+   "heroHead": "Accelerate Your Growth with Expert Staff Augmentation",
+   "heroSub": "STL provides businesses with on-demand, specialized talent to drive success. Scale your team quickly, access critical skills, and adapt to project needs with ease.",
+   "whyTitle": "Why Choose STL for Staff Augmentation?",
+   "why": [
+    {
+     "label": "Access to Top Talent:",
+     "text": "STL provides on-demand experts in various domains, ensuring you have the right skill set for your projects."
+    },
+    {
+     "label": "Scalability & Flexibility:",
+     "text": "Easily scale your team up or down based on project requirements, ensuring you maintain agility and control over costs."
+    },
+    {
+     "label": "Cost-Effective Solution:",
+     "text": "Save on recruitment overhead and long-term employment costs while gaining immediate access to qualified professionals."
+    },
+    {
+     "label": "Speed to Market:",
+     "text": "With rapid deployment of skilled resources, we help you accelerate project timelines and improve time-to-market."
+    },
+    {
+     "label": "Seamless Integration:",
+     "text": "Our professionals integrate effortlessly with your existing team, ensuring smooth collaboration and a streamlined workflow."
+    }
+   ],
+   "workflowTitle": "Staff Augmentation Workflow",
+   "workflow": [
+    {
+     "title": "Talent Acquisition & Onboarding",
+     "desc": "STL identifies top-tier professionals to seamlessly integrate into your team, ensuring a quick and efficient onboarding process for immediate contribution."
+    },
+    {
+     "title": "Tailored Skillset Match",
+     "desc": "We match the right experts to your project needs, ensuring that you have the specific skill sets required to achieve your goals."
+    },
+    {
+     "title": "Seamless Integration & Collaboration",
+     "desc": "Our professionals integrate smoothly into your existing workflows, ensuring effective collaboration and achieving results faster."
+    },
+    {
+     "title": "Flexible Resource Scaling",
+     "desc": "Scale your team according to project requirements, allowing you to stay agile, meet deadlines, and manage costs effectively."
+    },
+    {
+     "title": "Cost-Effective Talent Solutions",
+     "desc": "Save on recruitment overhead and long-term employment costs while benefiting from specialized skills on demand for your projects."
+    },
+    {
+     "title": "Rapid Deployment & Flexibility",
+     "desc": "Quickly deploy experts to meet project deadlines with the flexibility to adjust your team as project demands evolve."
+    }
+   ]
+  }
+ ],
+ "industries": [
+  {
+   "slug": "real-estate-property-management",
+   "name": "Real Estate & Property Management",
+   "summary": "Leasing, furnished-housing and property operators run on inventory, schedules, documents and partner accounts spread across several tools. We build the systems that bring them together.",
+   "heroHead": "Systems for Leasing, Housing and Property Operations",
+   "heroSub": "Inventory across locations, delivery and pickup scheduling, lease terms and renewals, partner accounts, documents and reporting — in one application built around how the operation runs.",
+   "whyTitle": "What these businesses need to manage",
+   "why": [
+    {
+     "label": "Inventory across locations",
+     "text": "What is in which warehouse or unit, what is out on lease, what is due back and what needs repair — live, not in a spreadsheet updated on Fridays."
+    },
+    {
+     "label": "Scheduling and logistics",
+     "text": "Deliveries, setups, pickups and inspections planned against crews, vehicles and windows the customer agreed to."
+    },
+    {
+     "label": "Leases, renewals and returns",
+     "text": "Terms, dates and pricing tracked per agreement, with renewals and end-of-lease steps triggered automatically."
+    },
+    {
+     "label": "Partner and customer accounts",
+     "text": "Corporate-housing firms, relocation companies and individual customers each with their own pricing, contacts and history."
+    },
+    {
+     "label": "Documents",
+     "text": "Agreements, condition reports and photos attached to the record they belong to and findable later."
+    },
+    {
+     "label": "Reporting",
+     "text": "Utilisation, revenue and activity by location and partner, without a manual roll-up."
+    }
+   ],
+   "workflowTitle": "Typical systems we build here",
+   "workflow": [
+    {
+     "title": "Operations application",
+     "desc": "Orders, inventory, scheduling and accounts in one system with roles for office, warehouse and field."
+    },
+    {
+     "title": "Partner portal",
+     "desc": "Corporate and relocation partners place and track orders and pull their own reports."
+    },
+    {
+     "title": "Delivery and pickup workflow",
+     "desc": "Route sheets, mobile check-in, photos and signatures feeding straight back to the order."
+    },
+    {
+     "title": "Renewal and return automation",
+     "desc": "Notices, reminders and status changes driven by lease dates instead of a calendar someone watches."
+    },
+    {
+     "title": "Accounting integration",
+     "desc": "Invoices and payments synced with the finance system, entered once."
+    },
+    {
+     "title": "Location dashboards",
+     "desc": "Utilisation, revenue and open work per metro, refreshed from source."
+    }
+   ]
+  },
+  {
+   "slug": "construction",
+   "name": "Construction",
+   "summary": "Remodeling and construction firms coordinate estimates, schedules, crews, subcontractors and a great deal of paperwork per job. We build the tools that keep a project visible from quote to final invoice.",
+   "heroHead": "Project Systems for Construction and Remodeling Firms",
+   "heroSub": "Estimates, schedules, change orders, site documents, subcontractor coordination and job costing — tracked per project and visible to the office and the site at the same time.",
+   "whyTitle": "What these businesses need to manage",
+   "why": [
+    {
+     "label": "Estimates and quotes",
+     "text": "Consistent pricing built from materials, labour and margin, turned into a proposal the customer can approve."
+    },
+    {
+     "label": "Project schedule",
+     "text": "Phases, milestones and dependencies, with crews and subcontractors booked against them."
+    },
+    {
+     "label": "Change orders",
+     "text": "Scope changes captured, priced and approved before the work happens, not argued about after."
+    },
+    {
+     "label": "Site documents and photos",
+     "text": "Plans, permits, inspections and progress photos attached to the job and available on a phone on site."
+    },
+    {
+     "label": "Subcontractor coordination",
+     "text": "Who is on which job, when, with what paperwork — and what they are owed."
+    },
+    {
+     "label": "Job costing",
+     "text": "Estimated against actual per project, visible while it can still be acted on."
+    }
+   ],
+   "workflowTitle": "Typical systems we build here",
+   "workflow": [
+    {
+     "title": "Project management application",
+     "desc": "Jobs, phases, tasks, crews and documents in one place, with a mobile view for the site."
+    },
+    {
+     "title": "Estimating and proposals",
+     "desc": "Costed line items and templates producing a proposal the customer signs online."
+    },
+    {
+     "title": "Customer portal",
+     "desc": "Progress, photos, approvals and invoices for the homeowner or client, without the phone calls."
+    },
+    {
+     "title": "Change-order workflow",
+     "desc": "Request, price, approve, schedule — with a record of who agreed to what."
+    },
+    {
+     "title": "Accounting and supplier integration",
+     "desc": "Costs, invoices and payments flowing to the finance system automatically."
+    },
+    {
+     "title": "Job-cost dashboards",
+     "desc": "Margin per project and per phase, updated as costs land."
+    }
+   ]
+  },
+  {
+   "slug": "professional-services",
+   "name": "Professional Services",
+   "summary": "Firms that sell expertise — advisory, agencies, consultancies, specialist practices — run on engagements, time, documents and client communication. We build the systems that keep that work organised and billable.",
+   "heroHead": "Systems for Firms That Sell Expertise",
+   "heroSub": "Engagement tracking, client portals, document workflows, time and billing, and the reporting that shows which work is actually profitable.",
+   "whyTitle": "What these businesses need to manage",
+   "why": [
+    {
+     "label": "Engagements and matters",
+     "text": "Every piece of client work with its scope, status, people and deadlines in one record."
+    },
+    {
+     "label": "Client communication",
+     "text": "Requests, approvals and deliverables exchanged in a portal rather than lost in email."
+    },
+    {
+     "label": "Documents",
+     "text": "Versioned, permissioned and attached to the engagement they belong to."
+    },
+    {
+     "label": "Time and billing",
+     "text": "Effort captured as it happens and turned into invoices without a month-end scramble."
+    },
+    {
+     "label": "Profitability",
+     "text": "Which clients, services and people make money — visible by engagement, not just by year."
+    }
+   ],
+   "workflowTitle": "Typical systems we build here",
+   "workflow": [
+    {
+     "title": "Practice management application",
+     "desc": "Engagements, clients, people and documents in one system with role-based access."
+    },
+    {
+     "title": "Client portal",
+     "desc": "Status, documents, approvals and invoices for each client, securely."
+    },
+    {
+     "title": "Intake and onboarding workflow",
+     "desc": "Forms, checks and document collection automated from first contact to engagement start."
+    },
+    {
+     "title": "Time, billing and accounting integration",
+     "desc": "Captured effort flowing to invoices and the finance system."
+    },
+    {
+     "title": "Document automation",
+     "desc": "Standard letters, reports and agreements generated from the engagement record."
+    },
+    {
+     "title": "Profitability reporting",
+     "desc": "Margin by client, service and person, refreshed from source."
+    }
+   ]
+  },
+  {
+   "slug": "small-mid-sized-businesses",
+   "name": "Small & Mid-Sized Businesses",
+   "summary": "Growing companies outgrow spreadsheets and generic tools before they can justify enterprise software. We build the internal applications, automations and integrations that fit the gap.",
+   "heroHead": "Business Software Sized for a Growing Company",
+   "heroSub": "Internal applications, process automation, integrations and reporting — built to fit the business you are, priced and staged so they fit the business you are becoming.",
+   "whyTitle": "What these businesses need to manage",
+   "why": [
+    {
+     "label": "The process that outgrew the spreadsheet",
+     "text": "Orders, jobs, stock or customers tracked in files that now need more than one person and more than one location."
+    },
+    {
+     "label": "Tools that do not talk",
+     "text": "Accounting, CRM, e-commerce and email each holding a copy of the same data."
+    },
+    {
+     "label": "Repetitive admin",
+     "text": "Reminders, follow-ups, document generation and data entry that eat a day a week."
+    },
+    {
+     "label": "Visibility",
+     "text": "Knowing how the business is doing without waiting for month end."
+    },
+    {
+     "label": "Room to grow",
+     "text": "Systems that take on a second site, a new product line or more staff without being rebuilt."
+    }
+   ],
+   "workflowTitle": "Typical systems we build here",
+   "workflow": [
+    {
+     "title": "Internal business application",
+     "desc": "The core records and daily workflow in one system, sized to the team."
+    },
+    {
+     "title": "Process automation",
+     "desc": "The repetitive steps — notifications, documents, follow-ups — running on their own."
+    },
+    {
+     "title": "Integration layer",
+     "desc": "Existing tools connected so data is entered once."
+    },
+    {
+     "title": "Owner dashboard",
+     "desc": "The handful of numbers that matter, live."
+    },
+    {
+     "title": "Customer-facing portal or app",
+     "desc": "Where self-service reduces calls and wins work."
+    },
+    {
+     "title": "Staged roadmap",
+     "desc": "A plan that adds capability as the business can absorb it."
+    }
+   ]
+  },
+  {
+   "slug": "healthcare",
+   "name": "Healthcare",
+   "summary": "We help healthcare organizations digitize patient experiences, streamline workflows, and ensure compliance through secure, user-centric platforms. From telemedicine solutions to health record management, our digital services enhance care delivery and patient engagement.",
+   "heroHead": "Build Secure, Compliant Healthcare Platforms",
+   "heroSub": "STL builds secure, efficient, high-performance systems that help healthcare providers digitize patient experiences and stay compliant.",
+   "whyTitle": "",
+   "why": [],
+   "workflowTitle": "Healthcare Platform Implementation Workflow",
+   "workflow": [
+    {
+     "title": "Requirements & Compliance Analysis",
+     "desc": "Understand healthcare-specific needs and ensure compliance with standards like HIPAA, HL7, and GDPR for secure patient data handling."
+    },
+    {
+     "title": "Platform & Architecture Design",
+     "desc": "Design scalable, modular system architecture that supports integrations with EHRs, medical devices, telehealth, and analytics tools."
+    },
+    {
+     "title": "Secure Data Management",
+     "desc": "Implement strong data encryption, anonymization techniques, and access control to safeguard sensitive patient and provider information."
+    },
+    {
+     "title": "Integration with Healthcare Ecosystems",
+     "desc": "Connect with third-party services such as insurance systems, lab results, pharmacies, and wearable devices for a unified healthcare experience."
+    },
+    {
+     "title": "Testing & Regulatory Validation",
+     "desc": "Perform rigorous testing, including accessibility, performance, and compliance validation to meet regulatory standards before deployment."
+    },
+    {
+     "title": "Monitoring & Continuous Improvement",
+     "desc": "Use real-time monitoring, analytics, and patient feedback to ensure continuous platform improvement and better health outcomes."
+    }
+   ]
+  },
+  {
+   "slug": "finance",
+   "name": "Finance",
+   "summary": "Our solutions in the finance sector focus on secure transactions, data analytics, and intuitive interfaces for both B2B and B2C applications. We empower banks, fintechs, and financial institutions to deliver trustworthy and innovative digital experiences.",
+   "heroHead": "Power Financial Services with Secure, High-Performance Systems",
+   "heroSub": "STL helps financial institutions build secure, high-performance platforms for managing transactions, analytics, and customer data.",
+   "whyTitle": "",
+   "why": [],
+   "workflowTitle": "Financial Management Workflow",
+   "workflow": [
+    {
+     "title": "Budget Planning & Forecasting",
+     "desc": "Establish short-term and long-term financial goals, analyze income and expenditures, and create accurate budget forecasts."
+    },
+    {
+     "title": "Revenue Tracking & Invoicing",
+     "desc": "Monitor incoming payments, generate invoices, track overdue accounts, and ensure timely revenue collection."
+    },
+    {
+     "title": "Expense Management",
+     "desc": "Record, categorize, and analyze expenditures to maintain spending discipline and improve cost-efficiency."
+    },
+    {
+     "title": "Compliance & Taxation",
+     "desc": "Ensure compliance with financial regulations, prepare tax documents, and manage audits to avoid penalties and legal issues."
+    },
+    {
+     "title": "Financial Reporting & Analysis",
+     "desc": "Generate balance sheets, profit & loss statements, and cash flow reports to evaluate financial health and guide decisions."
+    },
+    {
+     "title": "Investment & Risk Management",
+     "desc": "Evaluate investment opportunities, assess financial risks, and diversify assets to ensure stability and growth."
+    }
+   ]
+  },
+  {
+   "slug": "e-commerce",
+   "name": "E-Commerce",
+   "summary": "We build scalable and personalized e-commerce platforms that drive conversions and enhance customer retention. From storefronts to inventory management and secure payments, our tech elevates digital commerce experiences across all devices.",
+   "heroHead": "Grow Online Revenue with Fast, Scalable E-Commerce Platforms",
+   "heroSub": "STL builds fast, secure, and scalable eCommerce platforms, delivering seamless user experiences and powerful backend systems to help brands grow in the digital marketplace.",
+   "whyTitle": "",
+   "why": [],
+   "workflowTitle": "E-Commerce Development Workflow",
+   "workflow": [
+    {
+     "title": "Product Catalog Setup",
+     "desc": "Define and structure your product data with categories, variants, pricing, and availability to ensure a smooth shopping experience."
+    },
+    {
+     "title": "User Authentication & Roles",
+     "desc": "Implement secure sign-up/login processes, customer accounts, and admin roles with JWTs and session management."
+    },
+    {
+     "title": "Shopping Cart & Checkout",
+     "desc": "Build a dynamic cart with quantity updates, discount codes, tax calculations, and a seamless, multi-step checkout flow."
+    },
+    {
+     "title": "Payment Gateway Integration",
+     "desc": "Integrate with trusted payment providers like Stripe, Razorpay, or PayPal to ensure secure and smooth transactions."
+    },
+    {
+     "title": "Order Management & Fulfillment",
+     "desc": "Track orders from placement to delivery with real-time status updates, stock deduction, and shipment management."
+    },
+    {
+     "title": "Customer Support & Feedback",
+     "desc": "Enable product reviews, customer inquiries, return/refund processes, and build loyalty with excellent post-sale support."
+    }
+   ]
+  },
+  {
+   "slug": "education",
+   "name": "Education",
+   "summary": "We design and develop interactive learning platforms, LMS tools, and mobile apps that make education accessible and engaging. Our solutions support virtual classrooms, assessments, and personalized learning paths for institutions and edtech startups.",
+   "heroHead": "Build Smart, Scalable Platforms for Digital Learning",
+   "heroSub": "STL builds dynamic, high-performance learning platforms for educational institutions, from LMS tools to student-facing apps.",
+   "whyTitle": "",
+   "why": [],
+   "workflowTitle": "Education Workflow",
+   "workflow": [
+    {
+     "title": "Curriculum Data Modeling",
+     "desc": "Structure your curriculum, courses, modules, and student records using efficient key-value modeling to ensure optimized performance and scalability across semesters and programs."
+    },
+    {
+     "title": "User Access & Roles Provisioning",
+     "desc": "Define access levels for students, teachers, and admins using AWS IAM and fine-grained authorization to manage learning paths, content visibility, and administrative privileges."
+    },
+    {
+     "title": "Assignment & Content Indexing",
+     "desc": "Use Global and Local Secondary Indexes to quickly query assignments, quizzes, video content, and grades by student, topic, or due date for seamless classroom interactions."
+    },
+    {
+     "title": "Real-Time Progress Tracking",
+     "desc": "Leverage DynamoDB Streams and Lambda triggers to capture and process real-time student activity logs, assessments, and learning milestones for dynamic progress updates."
+    },
+    {
+     "title": "Backup & Academic Data Retention",
+     "desc": "Implement automated backups, point-in-time recovery, and long-term storage strategies to retain student records and academic data in compliance with education policies."
+    },
+    {
+     "title": "Monitoring & Adaptive Optimization",
+     "desc": "Monitor usage with Amazon CloudWatch and optimize read/write throughput to scale with student load during peak hours like exam weeks or enrollment periods."
+    }
+   ]
+  },
+  {
+   "slug": "digital-banking",
+   "name": "Digital Banking",
+   "summary": "We empower financial institutions with secure, user-centric digital banking solutions—enabling seamless transactions, personalized experiences, and real-time access to services through modern web and mobile platforms.",
+   "heroHead": "Transform Financial Services with Secure Digital Banking Solutions",
+   "heroSub": "STL empowers banks and fintechs by delivering scalable, secure, and intuitive digital banking platforms.",
+   "whyTitle": "",
+   "why": [],
+   "workflowTitle": "Digital Banking Transformation Workflow",
+   "workflow": [
+    {
+     "title": "Seamless Digital Onboarding",
+     "desc": "Streamline account creation with e-KYC, digital signatures, and real-time verification to improve user experience and reduce onboarding time."
+    },
+    {
+     "title": "Personalized Customer Engagement",
+     "desc": "Use AI-driven insights to deliver tailored financial advice, product recommendations, and alerts across digital touchpoints."
+    },
+    {
+     "title": "Real-Time Fraud Detection",
+     "desc": "Monitor transactions continuously using machine learning to detect and block suspicious activity, ensuring security and compliance."
+    },
+    {
+     "title": "Omnichannel Banking Experience",
+     "desc": "Enable consistent and integrated banking experiences across web, mobile apps, ATMs, and contact centers for improved customer retention."
+    },
+    {
+     "title": "Core Banking Modernization",
+     "desc": "Upgrade legacy systems to scalable cloud-native platforms for faster processing, open banking integrations, and innovation enablement."
+    },
+    {
+     "title": "Data Analytics & Insights",
+     "desc": "Leverage big data and advanced analytics to gain insights into customer behavior, optimize offerings, and drive strategic decisions."
+    }
+   ]
+  }
+ ]
+}

@@ -1,29 +1,34 @@
-# React JS Startup and small business website template
+# React JS Landing Page Template
 
-[![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=yourname&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/akugbeStephen)
+**
 
-### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🛎️🛎️ Good news! New & improved [V2](https://github.com/issaafalkattan/react-landing-page-template-2021) is out  
 
-# Screenshot
-
-![mld edit](https://user-images.githubusercontent.com/43953425/212030864-cf3aa272-e070-4e1b-8e25-f488ca56873e.png)
+**
 
 
-
-The Live demo is available [Here](https://mld-prototype.netlify.app)
+### <a href="https://react-landing-page-template-93ne.vercel.app/">LIVE DEMO</a> 
 
 ## Description
+This is a ReactJS based landing page template, fit for a startup company/service with a one page view. The design is inspired by a template from <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
+All 'visual' data can be easily modified by changing the data.json file.
 
-This is a ReactJS based startup and small business website template. 
-It was designed using TailwindCSS and React. 
-The Contact form was made functional using EmailJS, to learn how to use EmailJS, you can check out the official documentation [here](https://www.emailjs.com/docs/) or follow this short tutorial [here](https://senuravihanjayadeva.medium.com/send-emails-using-react-through-emailjs-a9d4b21193a7) 
+## Make it Yours!
+### 1. Preps
+You will need to have <a href="https://nodejs.org/">Node JS</a> installed on your pc. 
 
-## How to use it
+### 2. Clone Files
+After cloning the files, you will have to run ```yarn``` followed by ```yarn start``` in the CLI
+### 3. Add your own data 
+Change the data in the ```data.json``` file as well as add any images to ```public/img/```
+You can also change styles by modifying the ```public/css``` files.
+If you need the contact form to work, you also need to create an EmailJS account, and modify the ```src/components/contact.jsx``` file to replace your own service ID, template ID and Public Key
 
-To use this template:
-1. Clone the repository to your local machine, 
-2. run `npm install` to install all the required dependencies and
-3. run `npm start` to view the website locally.
-Feel free to edit and make changes. 
+## Like this project?
+<a href="https://www.buymeacoffee.com/issaaf">Buy my a coffee ☕️</a>
 
-You can also Fork the repo and clone to your local machine, make desired changes and enjoy.
+## Credits
+##### Free CSS 
+<a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
+
+##### Issaaf kattan

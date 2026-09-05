@@ -2,41 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/STL.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <!-- Matches the header, not the logo. While this was the logo's navy,
+         Safari painted the toolbar AND the strip exposed when you overscroll
+         past the top of the page with it — a dark blue band sitting directly
+         above a white nav bar. -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts are linked here rather than @import-ed from index.css: an @import
+         is only discovered after the stylesheet downloads, which delays first
+         paint of every heading on the site. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Jost:wght@400;500&display=swap"
+    />
+
+    <!-- LCP element. Preloading it ahead of the JS bundle is the difference
+         between a ~1s and a ~3s largest-contentful-paint on mobile.
+
+         imagesrcset/imagesizes are what make the preload agree with the <img>.
+         Without them the preload named one fixed file, so a 390px phone
+         downloaded the 1600px variant here and the 800px one from the element:
+         the hint was costing more than it saved. -->
+    <!-- ...but only on the routes that actually show it. As a static tag this
+         fired on all 50 URLs, while only the eight top-level pages use this
+         photo: every service, solution, industry, technology and case-study
+         page downloaded a 1600px hero it then never rendered, which is what
+         Chrome's "preloaded but not used" warning was reporting.
+
+         The rule is positional rather than a list of paths, so it cannot fall
+         out of step with the router: one path segment or none means a listing
+         page (/, /solutions, /work, /contact, and unknown paths, which render
+         the 404 over this same photo); two segments means a detail page, which
+         brings its own. /about is the one top-level page with a different one.
+         Worst case if this is ever wrong is a preload too many or too few. -->
+    <script>
+      (function () {
+        var parts = location.pathname.split("/").filter(Boolean);
+        if (parts.length > 1 || parts[0] === "about") return;
+        var l = document.createElement("link");
+        l.rel = "preload";
+        l.as = "image";
+        l.href = "%PUBLIC_URL%/img/hero/intro-bg-1600.jpg";
+        l.imageSrcset =
+          "%PUBLIC_URL%/img/hero/intro-bg-800.jpg 800w, %PUBLIC_URL%/img/hero/intro-bg-1600.jpg 1600w, %PUBLIC_URL%/img/hero/intro-bg-2400.jpg 2400w";
+        l.imageSizes = "100vw";
+        l.setAttribute("fetchpriority", "high");
+        document.head.appendChild(l);
+      })();
+    </script>
+
+    <!-- .ico first with sizes="any" so legacy browsers take it and modern ones
+         skip straight to the SVG, which stays crisp on hi-dpi tabs. -->
+    <link rel="icon" href="%PUBLIC_URL%/img/favicon.ico" sizes="any" />
+    <link rel="icon" href="%PUBLIC_URL%/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/img/apple-touch-icon.png" />
+
+    <title>Sahajanand Technologies LLC | Custom Business Software, Automation &amp; Integration</title>
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Sahajanand Technologies designs and builds custom business software, workflow automation, integrations, reporting and practical AI — around the way your business actually works."
     />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="author" content="Sahajanand Technologies LLC" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Swaminarayan Construction LLC</title>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sahajanand Technologies LLC" />
+    <meta
+      property="og:description"
+      content="Custom software, business applications, integrations and automation that help organizations work smarter, operate efficiently, and grow."
+    />
+    <meta property="og:site_name" content="Sahajanand Technologies LLC" />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
