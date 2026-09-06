@@ -65,7 +65,7 @@ export default function Home() {
     <>
       <Seo
         title={`${company.name} | Custom Business Software, Automation & Integration`}
-        description="Sahajanand Technologies designs and builds custom business software, workflow automation, integrations, reporting and practical AI — around the way your business actually works."
+        description="Sahajanand Technologies designs and builds custom business software, workflow automation, integrations, reporting and practical AI, built around the way your business actually works."
         schema={{
           "@context": "https://schema.org",
           "@graph": [
@@ -149,7 +149,7 @@ export default function Home() {
         id="what-we-build"
         eyebrow="What we build"
         title="Technology that makes business operations better"
-        intro="Not a list of languages. The systems an operating business actually needs — and what each one does for it."
+        intro="Not a list of languages. The systems an operating business actually needs, and what each one does for it."
       >
         <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {solutions.map((s, i) => (
@@ -210,7 +210,7 @@ export default function Home() {
         tone="dark"
         eyebrow="From manual to digital"
         title="Replace manual work with better systems"
-        intro="This is what custom software is actually for. Not novelty — removing the work that should never have been manual."
+        intro="This is what custom software is actually for. Not novelty. Removing the work that should never have been manual."
       >
         <Reveal>
           <ol className="grid gap-px overflow-hidden rounded-surface border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
@@ -273,7 +273,7 @@ export default function Home() {
         tone="tint"
         eyebrow="Built for real business"
         title="Our work"
-        intro="Businesses we have worked with — what each one does, and what its operation has to manage every day."
+        intro="Businesses we have worked with, what each one does, and what its operation has to manage every day."
       >
         <ul className="grid gap-5 md:grid-cols-2">
           {work.map((w, i) => (
@@ -317,7 +317,7 @@ export default function Home() {
         tone="paper"
         eyebrow="Technology ecosystem"
         title="The modern software stack, under one roof"
-        intro={`${UNIQUE_TECH_COUNT} technologies across ${CATEGORIES.length} disciplines — web, mobile, cloud, data and AI — chosen so the system can be hosted, hired for and maintained for years. Pick a discipline to see what we build with.`}
+        intro={`${UNIQUE_TECH_COUNT} technologies across ${CATEGORIES.length} disciplines, covering web, mobile, cloud, data and AI, chosen so the system can be hosted, hired for and maintained for years. Pick a discipline to see what we build with.`}
       >
         <Reveal>
           <Suspense
@@ -338,7 +338,7 @@ export default function Home() {
         tone="tint"
         eyebrow="AI & automation"
         title="AI where it makes business sense"
-        intro="We use AI to solve practical business problems — not simply to add AI to an application. It goes where a person is reading, sorting, extracting or drafting the same thing all day."
+        intro="We use AI to solve practical business problems, not simply to add AI to an application. It goes where a person is reading, sorting, extracting or drafting the same thing all day."
       >
         <div className="grid gap-8 lg:grid-cols-5 lg:items-start">
           <Reveal className="lg:col-span-3">

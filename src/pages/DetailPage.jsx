@@ -113,7 +113,7 @@ export default function DetailPage({ kind }) {
           tone="dark"
           eyebrow="How we work"
           title={item.workflowTitle || (kind === "solution" ? "How we deliver it" : `${item.name} workflow`)}
-          intro="A predictable, staged delivery process — so you always know what happens next."
+          intro="A predictable, staged delivery process, so you always know what happens next."
         >
           <WorkflowSteps steps={item.workflow} />
         </Section>

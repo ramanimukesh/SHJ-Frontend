@@ -168,7 +168,7 @@ function Panel({
             STL assistant
           </p>
           <p className="truncate text-[12px] text-white/60">
-            Services, industries and tech — ask away
+            Services, industries and tech, ask away
           </p>
         </div>
 

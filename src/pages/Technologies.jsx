@@ -16,7 +16,7 @@ import Seo from "../components/Seo";
 const PRINCIPLES = [
   {
     title: "Chosen for your situation, not our habits",
-    text: "If your team already runs .NET on Azure, that is the right answer for you — and we build in it rather than talking you onto our preferred stack.",
+    text: "If your team already runs .NET on Azure, that is the right answer for you, and we build in it rather than talking you onto our preferred stack.",
   },
   {
     title: "Hireable and hostable in five years",
@@ -33,11 +33,11 @@ export default function Technologies() {
     <>
       <Seo
         title="Technology stack"
-        description={`The technologies Sahajanand Technologies builds on — ${UNIQUE_TECH_COUNT} across ${CATEGORIES.length} disciplines, from React, Angular and .NET to Azure, AWS, Kubernetes, PostgreSQL, TensorFlow and Power BI.`}
+        description={`The technologies Sahajanand Technologies builds on, ${UNIQUE_TECH_COUNT} across ${CATEGORIES.length} disciplines, from React, Angular and .NET to Azure, AWS, Kubernetes, PostgreSQL, TensorFlow and Power BI.`}
         schema={{
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "Sahajanand Technologies — technology stack",
+          name: "Sahajanand Technologies technology stack",
           numberOfItems: UNIQUE_TECH_COUNT,
           itemListElement: CATEGORIES.map((c, i) => ({
             "@type": "ListItem",
@@ -52,7 +52,7 @@ export default function Technologies() {
         image={hero}
         eyebrow="Technology ecosystem"
         title="One team across the modern software stack"
-        subtitle="Web, mobile, cloud, data and AI — engineered, tested and shipped by the same people, so the parts of your system actually fit together."
+        subtitle="Web, mobile, cloud, data and AI, engineered, tested and shipped by the same people, so the parts of your system actually fit together."
         crumbs={[{ label: "Home", to: "/" }, { label: "Technology" }]}
       >
         <dl className="flex flex-wrap gap-x-10 gap-y-6">

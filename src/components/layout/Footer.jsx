@@ -45,7 +45,7 @@ export default function Footer() {
           </h2>
           <p className="mx-auto mt-7 max-w-xl text-lg leading-relaxed text-ink-200/70">
             Tell us what you are trying to improve and we&apos;ll come back with the shape of an
-            engagement — even if it is a smaller one than you expected.
+            engagement, even if it is a smaller one than you expected.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             <Link to="/contact" className="btn-glow">

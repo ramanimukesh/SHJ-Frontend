@@ -21,7 +21,7 @@ const stats = [
 const VALUES = [
   {
     title: "The business first",
-    text: "Every engagement starts with the operation — who does what, where it stalls, which systems are in play — so the software fits the way you already work.",
+    text: "Every engagement starts with the operation, who does what, where it stalls, which systems are in play, so the software fits the way you already work.",
   },
   {
     title: "Built to scale",

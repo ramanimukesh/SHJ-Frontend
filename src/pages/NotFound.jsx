@@ -36,7 +36,7 @@ export default function NotFound() {
         image={hero}
         eyebrow="404"
         title="We couldn't find that page"
-        subtitle={`Nothing lives at ${pathname}. It may have moved, or the link may have a typo — here is everything that does exist.`}
+        subtitle={`Nothing lives at ${pathname}. It may have moved, or the link may have a typo. Here is everything that does exist.`}
         crumbs={[{ label: "Home", to: "/" }, { label: "Not found" }]}
       >
         <div className="flex flex-wrap gap-3">

@@ -1,7 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { GREETING, respond } from "./brain";
 
-const STORAGE_KEY = "stl.chat.v1";
+// Bump this whenever the greeting or reply wording changes. A conversation is
+// replayed verbatim from storage, so an open session kept showing the previous
+// greeting long after the copy was corrected.
+const STORAGE_KEY = "stl.chat.v2";
 
 /** Long enough to read as a reply rather than a lookup, short enough to not stall. */
 const THINKING_MS = 420;

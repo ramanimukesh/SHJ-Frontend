@@ -28,7 +28,7 @@ export const OPENING_CHIPS = [
 ];
 
 export const GREETING = reply(
-  `Hi — I'm the ${company.short} assistant. I can walk you through what we build, the industries we work in, our services, or the technologies behind them. What are you trying to improve?`,
+  `Hi, I'm the ${company.short} assistant. I can walk you through what we build, the industries we work in, our services, or the technologies behind them. What are you trying to improve?`,
   { chips: OPENING_CHIPS }
 );
 
@@ -99,7 +99,7 @@ function handoff(text) {
     return null;
 
   return reply(
-    `Happy to connect you. The fastest route is the contact form — it reaches the team directly. You can also call ${company.phone} or email ${company.email}.`,
+    `Happy to connect you. The fastest route is the contact form, which reaches the team directly. You can also call ${company.phone} or email ${company.email}.`,
     { links: [CONTACT_LINK] }
   );
 }
@@ -109,7 +109,7 @@ function pricing(text) {
 
   // There is no pricing on the site, so saying a number would be inventing one.
   return reply(
-    "We don't publish fixed pricing — engagements are scoped to the work, and it changes a lot between a design sprint, a full build, and staff augmentation. Tell the team your scope and timeline and they'll come back with an estimate.",
+    "We don't publish fixed pricing. Engagements are scoped to the work, and it changes a lot between a design sprint, a full build, and staff augmentation. Tell the team your scope and timeline and they'll come back with an estimate.",
     { links: [CONTACT_LINK], chips: ["What services do you offer?", "I'd like to talk to someone"] }
   );
 }
@@ -144,9 +144,9 @@ function entity(text) {
 
   const label = kindLabel(found.kind);
   const lead = found.category
-    ? `${found.name} — a ${found.category.toLowerCase()} technology we work with.`
+    ? `${found.name} is a ${found.category.toLowerCase()} technology we work with.`
     : found.kind === "solution"
-      ? `${found.name} — one of the kinds of system we build.`
+      ? `${found.name} is one of the kinds of system we build.`
       : `${found.name} is one of the ${label}s we cover.`;
 
   const detail = found.description ? ` ${found.description}` : "";
@@ -178,7 +178,7 @@ function smalltalk(text) {
     });
 
   if (has(text, "who are you", "what are you", "who is", "about you", "about stl", "about the company"))
-    return reply(`${company.intro} I'm the assistant on this site — I can point you at any of it.`, {
+    return reply(`${company.intro} I'm the assistant on this site, and I can point you at any of it.`, {
       links: [{ label: "About us", to: "/about" }],
       chips: OPENING_CHIPS.slice(0, 3),
     });
@@ -193,7 +193,7 @@ function smalltalk(text) {
 
 function fallback() {
   return reply(
-    "I didn't quite catch that one. I'm best on what we build, the industries we work in, our services and our tech stack — or I can put you in touch with the team.",
+    "I didn't quite catch that one. I'm best on what we build, the industries we work in, our services and our tech stack, or I can put you in touch with the team.",
     { chips: OPENING_CHIPS }
   );
 }

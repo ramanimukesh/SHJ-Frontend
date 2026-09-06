@@ -682,7 +682,7 @@
    "why": [
     {
      "label": "Seamless Team Collaboration:",
-     "text": "Work with designers, developers, and stakeholders in real time—no need for file transfers."
+     "text": "Work with designers, developers, and stakeholders in real time, with no need for file transfers."
     },
     {
      "label": "Powerful Auto Layout:",
@@ -793,7 +793,7 @@
    "name": "Digital Product Design",
    "summary": "Transform your ideas into intuitive digital experiences. Our design process is user-centered, data-informed, and focused on creating real impact.",
    "heroHead": "Elevate User Experiences with Digital Product Design",
-   "heroSub": "STL crafts intuitive and engaging digital interfaces by blending user research, usability testing, and iterative design—ensuring products that resonate with users and drive business success.",
+   "heroSub": "STL crafts intuitive and engaging digital interfaces by blending user research, usability testing, and iterative design, ensuring products that resonate with users and drive business success.",
    "whyTitle": "Why Choose Digital Product Design?",
    "why": [
     {
@@ -850,7 +850,7 @@
    "name": "Software Architecture",
    "summary": "Build future-proof systems with scalable architecture. We align your tech strategy with business goals to deliver long-term success.",
    "heroHead": "Build Scalable Solutions with Robust Software Architecture",
-   "heroSub": "STL delivers modular, future-ready software architectures that drive system stability, scalability, and performance—empowering your business to grow with confidence.",
+   "heroSub": "STL delivers modular, future-ready software architectures that drive system stability, scalability, and performance, empowering your business to grow with confidence.",
    "whyTitle": "Why Choose a Software Architecture?",
    "why": [
     {
@@ -911,7 +911,7 @@
    "name": "Engineering & DevOps",
    "summary": "Automate, optimize, and scale with confidence. Our engineering teams embrace DevOps principles to streamline delivery and reduce downtime.",
    "heroHead": "Accelerate Innovation with Digital Engineering & DevOps",
-   "heroSub": "STL bridges development and operations with automated CI/CD pipelines, cloud-native infrastructure, and agile engineering practices — empowering your teams to deliver faster, safer, and smarter.",
+   "heroSub": "STL bridges development and operations with automated CI/CD pipelines, cloud-native infrastructure, and agile engineering practices, empowering your teams to deliver faster, safer, and smarter.",
    "whyTitle": "Why Choose Engineering & DevOps?",
    "why": [
     {
@@ -968,7 +968,7 @@
    "name": "Mobile App Development",
    "summary": "We create sleek, high-performance apps for iOS and Android, tailored to your brand and built for long-term engagement.",
    "heroHead": "Transform Your Vision with Mobile App Development",
-   "heroSub": "STL builds intuitive, high-performance mobile apps that enhance user engagement, streamline operations, and scale with your business — from concept to launch.",
+   "heroSub": "STL builds intuitive, high-performance mobile apps that enhance user engagement, streamline operations, and scale with your business, from concept to launch.",
    "whyTitle": "Why Choose Mobile App Development?",
    "why": [
     {
@@ -1088,12 +1088,12 @@
    "name": "Real Estate & Property Management",
    "summary": "Leasing, furnished-housing and property operators run on inventory, schedules, documents and partner accounts spread across several tools. We build the systems that bring them together.",
    "heroHead": "Systems for Leasing, Housing and Property Operations",
-   "heroSub": "Inventory across locations, delivery and pickup scheduling, lease terms and renewals, partner accounts, documents and reporting — in one application built around how the operation runs.",
+   "heroSub": "Inventory across locations, delivery and pickup scheduling, lease terms and renewals, partner accounts, documents and reporting, in one application built around how the operation runs.",
    "whyTitle": "What these businesses need to manage",
    "why": [
     {
      "label": "Inventory across locations",
-     "text": "What is in which warehouse or unit, what is out on lease, what is due back and what needs repair — live, not in a spreadsheet updated on Fridays."
+     "text": "What is in which warehouse or unit, what is out on lease, what is due back and what needs repair. Live, not in a spreadsheet updated on Fridays."
     },
     {
      "label": "Scheduling and logistics",
@@ -1149,7 +1149,7 @@
    "name": "Construction",
    "summary": "Remodeling and construction firms coordinate estimates, schedules, crews, subcontractors and a great deal of paperwork per job. We build the tools that keep a project visible from quote to final invoice.",
    "heroHead": "Project Systems for Construction and Remodeling Firms",
-   "heroSub": "Estimates, schedules, change orders, site documents, subcontractor coordination and job costing — tracked per project and visible to the office and the site at the same time.",
+   "heroSub": "Estimates, schedules, change orders, site documents, subcontractor coordination and job costing, tracked per project and visible to the office and the site at the same time.",
    "whyTitle": "What these businesses need to manage",
    "why": [
     {
@@ -1170,7 +1170,7 @@
     },
     {
      "label": "Subcontractor coordination",
-     "text": "Who is on which job, when, with what paperwork — and what they are owed."
+     "text": "Who is on which job, when, with what paperwork, and what they are owed."
     },
     {
      "label": "Job costing",
@@ -1193,7 +1193,7 @@
     },
     {
      "title": "Change-order workflow",
-     "desc": "Request, price, approve, schedule — with a record of who agreed to what."
+     "desc": "Request, price, approve, schedule, with a record of who agreed to what."
     },
     {
      "title": "Accounting and supplier integration",
@@ -1208,7 +1208,7 @@
   {
    "slug": "professional-services",
    "name": "Professional Services",
-   "summary": "Firms that sell expertise — advisory, agencies, consultancies, specialist practices — run on engagements, time, documents and client communication. We build the systems that keep that work organised and billable.",
+   "summary": "Firms that sell expertise, advisory, agencies, consultancies, specialist practices, run on engagements, time, documents and client communication. We build the systems that keep that work organised and billable.",
    "heroHead": "Systems for Firms That Sell Expertise",
    "heroSub": "Engagement tracking, client portals, document workflows, time and billing, and the reporting that shows which work is actually profitable.",
    "whyTitle": "What these businesses need to manage",
@@ -1231,7 +1231,7 @@
     },
     {
      "label": "Profitability",
-     "text": "Which clients, services and people make money — visible by engagement, not just by year."
+     "text": "Which clients, services and people make money, visible by engagement, not just by year."
     }
    ],
    "workflowTitle": "Typical systems we build here",
@@ -1267,7 +1267,7 @@
    "name": "Small & Mid-Sized Businesses",
    "summary": "Growing companies outgrow spreadsheets and generic tools before they can justify enterprise software. We build the internal applications, automations and integrations that fit the gap.",
    "heroHead": "Business Software Sized for a Growing Company",
-   "heroSub": "Internal applications, process automation, integrations and reporting — built to fit the business you are, priced and staged so they fit the business you are becoming.",
+   "heroSub": "Internal applications, process automation, integrations and reporting, built to fit the business you are, priced and staged so they fit the business you are becoming.",
    "whyTitle": "What these businesses need to manage",
    "why": [
     {
@@ -1299,7 +1299,7 @@
     },
     {
      "title": "Process automation",
-     "desc": "The repetitive steps — notifications, documents, follow-ups — running on their own."
+     "desc": "The repetitive steps, notifications, documents, follow-ups, running on their own."
     },
     {
      "title": "Integration layer",
@@ -1466,7 +1466,7 @@
   {
    "slug": "digital-banking",
    "name": "Digital Banking",
-   "summary": "We empower financial institutions with secure, user-centric digital banking solutions—enabling seamless transactions, personalized experiences, and real-time access to services through modern web and mobile platforms.",
+   "summary": "We empower financial institutions with secure, user-centric digital banking solutions, enabling seamless transactions, personalized experiences, and real-time access to services through modern web and mobile platforms.",
    "heroHead": "Transform Financial Services with Secure Digital Banking Solutions",
    "heroSub": "STL empowers banks and fintechs by delivering scalable, secure, and intuitive digital banking platforms.",
    "whyTitle": "",

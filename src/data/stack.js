@@ -36,7 +36,7 @@ export const CATEGORIES = [
     label: "Frontend",
     short: "Frontend",
     glyph: "layout",
-    blurb: "The interface people actually operate — built to stay fast and legible with real data in it.",
+    blurb: "The interface people actually operate, built to stay fast and legible with real data in it.",
     items: [
       { name: "Angular", icon: "angular", slug: "angular", note: "Large, long-lived internal applications." },
       { name: "React", icon: "react", slug: "react", note: "Our default for interactive product UI." },
@@ -45,7 +45,7 @@ export const CATEGORIES = [
       { name: "Nuxt.js", icon: "nuxt", note: "Server-rendered Vue applications." },
       { name: "TypeScript", icon: "typescript", slug: "typescript", note: "Types across the whole front end, not just the edges." },
       { name: "JavaScript", icon: "javascript", note: "The language underneath all of it." },
-      { name: "HTML5", icon: "html5", note: "Semantic markup — the accessibility baseline." },
+      { name: "HTML5", icon: "html5", note: "Semantic markup, the accessibility baseline." },
       { name: "CSS3", icon: "css3", note: "Layout and motion without a framework tax." },
       { name: "Tailwind CSS", icon: "tailwind", note: "A design system expressed as constraints." },
       { name: "Bootstrap", icon: "bootstrap", note: "Fast, familiar UI for internal tools." },
@@ -56,7 +56,7 @@ export const CATEGORIES = [
     label: "Backend",
     short: "Backend",
     glyph: "server",
-    blurb: "The rules, records and integrations behind the screen — where the business logic actually lives.",
+    blurb: "The rules, records and integrations behind the screen, where the business logic actually lives.",
     items: [
       { name: "Java", icon: "java", slug: "java", note: "Enterprise services built to run for a decade." },
       { name: "Spring Boot", icon: "springboot", note: "Java services with the plumbing already solved." },
@@ -78,7 +78,7 @@ export const CATEGORIES = [
     label: "Mobile",
     short: "Mobile",
     glyph: "phone",
-    blurb: "Field, floor and on-the-road apps — including the ones that have to work with no signal.",
+    blurb: "Field, floor and on-the-road apps, including the ones that have to work with no signal.",
     items: [
       { name: "Android", icon: "android", note: "Native Android where the hardware matters." },
       { name: "Kotlin", icon: "kotlin", note: "The modern language for native Android." },
@@ -93,7 +93,7 @@ export const CATEGORIES = [
     label: "AI & Machine Learning",
     short: "AI & ML",
     glyph: "spark",
-    blurb: "Applied where a person reads, sorts, extracts or drafts the same thing all day — not for novelty.",
+    blurb: "Applied where a person reads, sorts, extracts or drafts the same thing all day, not for novelty.",
     items: [
       { name: "Python", icon: "python", note: "The working language of everything in this column." },
       { name: "TensorFlow", icon: "tensorflow", note: "Production model training and serving." },
@@ -105,7 +105,7 @@ export const CATEGORIES = [
       { name: "Large Language Models", glyph: "chat", color: "#0a90a6", note: "Retrieval over your own documents, not the open web." },
       { name: "Machine Learning", glyph: "trend", color: "#2f75c2", note: "Forecasting and classification on your history." },
       { name: "Deep Learning", glyph: "brain", color: "#db2777", note: "Where the pattern is too subtle for rules." },
-      { name: "NLP", glyph: "text", color: "#0c7385", note: "Reading unstructured text — email, notes, contracts." },
+      { name: "NLP", glyph: "text", color: "#0c7385", note: "Reading unstructured text, email, notes, contracts." },
       { name: "Computer Vision", glyph: "eye", color: "#4f46e5", note: "Reading documents, photos and site imagery." },
       { name: "AI Agents", glyph: "agent", color: "#059669", note: "Multi-step tasks with a person on the approval." },
       { name: "AI Automation", glyph: "loop", color: "#dc6803", note: "Removing the repetitive read-and-retype work." },
@@ -116,7 +116,7 @@ export const CATEGORIES = [
     label: "Databases",
     short: "Database",
     glyph: "database",
-    blurb: "Where the record of the business lives — chosen for how it will be queried, backed up and grown.",
+    blurb: "Where the record of the business lives, chosen for how it will be queried, backed up and grown.",
     items: [
       { name: "Microsoft SQL Server", logo: "sqlserver.svg", color: "#CC2927", note: "The estate standard in a lot of established businesses." },
       { name: "PostgreSQL", icon: "postgresql", note: "Our default relational database." },
@@ -134,7 +134,7 @@ export const CATEGORIES = [
     label: "Cloud",
     short: "Cloud",
     glyph: "cloud",
-    blurb: "Hosting you can hand to another team — sized to the load, documented, and yours to own.",
+    blurb: "Hosting you can hand to another team, sized to the load, documented, and yours to own.",
     items: [
       { name: "Microsoft Azure", logo: "azure.svg", color: "#0078D4", note: "Where the business already runs Microsoft 365." },
       { name: "AWS", logo: "aws.svg", wide: true, color: "#FF9900", slug: "aws", note: "The broadest option, and our most common one." },
@@ -150,7 +150,7 @@ export const CATEGORIES = [
     label: "DevOps",
     short: "DevOps",
     glyph: "infinity",
-    blurb: "How the work reaches production — repeatably, and without a person remembering the steps.",
+    blurb: "How the work reaches production, repeatably, and without a person remembering the steps.",
     items: [
       { name: "Git", icon: "git", note: "Version control on everything we hand over." },
       { name: "GitHub", icon: "github", note: "Review, history and automation in one place." },
@@ -167,7 +167,7 @@ export const CATEGORIES = [
     label: "QA & Testing",
     short: "Testing",
     glyph: "shield",
-    blurb: "Evidence that it still works — before your users are the ones who find out it doesn't.",
+    blurb: "Evidence that it still works, before your users are the ones who find out it doesn't.",
     items: [
       { name: "Selenium", icon: "selenium", note: "Browser automation across legacy estates." },
       { name: "Cypress", icon: "cypress", note: "Fast end-to-end tests for web applications." },
@@ -219,7 +219,7 @@ export const CATEGORIES = [
     label: "Design",
     short: "Design",
     glyph: "pen",
-    blurb: "Where the interface is decided — before it becomes expensive to change.",
+    blurb: "Where the interface is decided, before it becomes expensive to change.",
     items: [
       { name: "Figma", icon: "figma", slug: "figma", note: "Design, prototype and hand-off in one file." },
       { name: "Adobe XD", logo: "adobexd.svg", color: "#FF61F6", note: "Prototypes for teams already standardised on Adobe." },

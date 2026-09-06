@@ -20,7 +20,7 @@ export default function Industries() {
     <>
       <Seo
         title="Industries"
-        description="Tailored digital solutions for healthcare, finance, e-commerce, education, and digital banking — built around the regulations and workflows each sector actually runs on."
+        description="Tailored digital solutions for healthcare, finance, e-commerce, education, and digital banking, built around the regulations and workflows each sector actually runs on."
       />
 
       <PageHero

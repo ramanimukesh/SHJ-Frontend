@@ -67,7 +67,7 @@ export default function TechShowcase() {
 
       <div className="mt-16 flex flex-col gap-4 rounded-panel bg-brand-950 px-6 py-6 text-white sm:flex-row sm:items-center sm:justify-between sm:px-8">
         <p className="max-w-2xl text-[15px] leading-relaxed text-white/75">
-          Chosen for maintainability, hiring and hosting — not for a conference talk. If your
+          Chosen for maintainability, hiring and hosting, not for a conference talk. If your
           environment is standardised on something else, say so; we build in it.
         </p>
         <Link to="/technology" className="btn-glow shrink-0">

@@ -25,7 +25,7 @@ export const work = [
     approved: true,
 
     business:
-      "PrimeTime Leasing provides temporary furniture rental and furnished-housing packages — furniture, housewares, appliances and electronics — with delivery, setup and pickup. Customers are people relocating for work and the corporate-housing and relocation firms that place them. The company operates in seven metros including Atlanta, Charlotte, Raleigh, Tampa and Washington DC, from a headquarters in Duluth, Georgia.",
+      "PrimeTime Leasing provides temporary furniture rental and furnished-housing packages, furniture, housewares, appliances and electronics, with delivery, setup and pickup. Customers are people relocating for work and the corporate-housing and relocation firms that place them. The company operates in seven metros including Atlanta, Charlotte, Raleigh, Tampa and Washington DC, from a headquarters in Duluth, Georgia.",
 
     operations: [
       "Inventory across multiple warehouses and metros",
@@ -40,7 +40,7 @@ export const work = [
     headline: "A scanning service, built from scratch to launch",
     challenge: null,
     solution:
-      "STL designed and built PrimeTime Leasing's scanning service from scratch — the whole delivery, end to end. One team took it from the first conversation through design, build and launch, and stayed to run it: no hand-off between a design shop, a development vendor and a support desk.",
+      "STL designed and built PrimeTime Leasing's scanning service from scratch, the whole delivery, end to end. One team took it from the first conversation through design, build and launch, and stayed to run it: no hand-off between a design shop, a development vendor and a support desk.",
     result: null,
     technology: [],
   },
@@ -53,7 +53,7 @@ export const work = [
     approved: true,
 
     business:
-      "Trustpoint.One is a legal-services firm serving corporate legal departments, government agencies and law firms: eDiscovery, managed document review at scale, data mining after cyber incidents, legal talent placement and embedded legal consulting. Based in Sandy Springs, Georgia, it operates under ISO 27001, SOC 2 Type II and HIPAA — an environment where every document, reviewer and access decision has to be accounted for.",
+      "Trustpoint.One is a legal-services firm serving corporate legal departments, government agencies and law firms: eDiscovery, managed document review at scale, data mining after cyber incidents, legal talent placement and embedded legal consulting. Based in Sandy Springs, Georgia, it operates under ISO 27001, SOC 2 Type II and HIPAA, an environment where every document, reviewer and access decision has to be accounted for.",
 
     operations: [
       "Matter intake and scoping per client",
@@ -78,7 +78,7 @@ export const work = [
     approved: true,
 
     business:
-      "SaaSDealer runs an independent index of business software: a searchable catalog of more than two hundred SaaS products across two dozen categories, each with pricing read directly from the vendor's own page and dated, free plans and trials flagged, and a single honest sentence of description. Vendors list for free, affiliate links are disclosed, and prices the team could not verify are marked as such — a data operation as much as a directory.",
+      "SaaSDealer runs an independent index of business software: a searchable catalog of more than two hundred SaaS products across two dozen categories, each with pricing read directly from the vendor's own page and dated, free plans and trials flagged, and a single honest sentence of description. Vendors list for free, affiliate links are disclosed, and prices the team could not verify are marked as such, a data operation as much as a directory.",
 
     operations: [
       "Product catalog across categories, with vendor-submitted listings",
@@ -117,7 +117,7 @@ export const work = [
     headline: "Built from the ground up, end to end",
     challenge: null,
     solution:
-      "STL built Varni Construction's system from scratch, end to end — discovery, design, build, launch and support from one team. The business dealt with a single partner from the first conversation to go-live, and the same people who designed it are the ones who run it.",
+      "STL built Varni Construction's system from scratch, end to end, covering discovery, design, build, launch and support from one team. The business dealt with a single partner from the first conversation to go-live, and the same people who designed it are the ones who run it.",
     result: null,
     technology: [],
   },

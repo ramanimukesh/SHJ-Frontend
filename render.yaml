@@ -1,0 +1,29 @@
+# Render Blueprint for the static site.
+#
+# The reason this file exists: every client-side route on the live host returns
+# 404 (/solutions, /about, /service/... all fail) because a static host looks
+# for a file at that path and there isn't one. public/sitemap.xml points Google
+# at those same URLs, so the sitemap was advertising a list of 404s.
+#
+# The rewrite below hands unknown paths to index.html and lets the React router
+# resolve them. Render serves a real file when one exists, so the static pages
+# that must keep working on their own keep working:
+#   /card/mukesh          the address printed on the business card QR code
+#   /vcard/*.vcf          the contact file iOS opens directly
+#   /sitemap.xml
+# Verify those three by hand after the first deploy that applies this.
+#
+# NOTE: this only takes effect if the Render service is managed by a Blueprint.
+# The existing service was created through the dashboard, so until it is linked
+# to this file the same rule has to be added under
+# Settings > Redirects/Rewrites: Source /* , Destination /index.html , Rewrite.
+services:
+  - type: web
+    name: shj-frontend
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./build
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

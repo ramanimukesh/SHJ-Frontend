@@ -19,7 +19,7 @@ import Seo from "../components/Seo";
  */
 
 function DraftBadge() {
-  return <span className="badge border-gold-200 bg-gold-50 text-gold-800">Draft — not yet approved</span>;
+  return <span className="badge border-gold-200 bg-gold-50 text-gold-800">Draft, not yet approved</span>;
 }
 
 export function WorkList() {
@@ -34,7 +34,7 @@ export function WorkList() {
         image={hero}
         eyebrow="Our work"
         title="Built for Real Business"
-        subtitle="Operating businesses with inventory to track, matters to run, jobs to schedule, customers to serve and reports to produce — and the systems that keep them moving."
+        subtitle="Operating businesses with inventory to track, matters to run, jobs to schedule, customers to serve and reports to produce, and the systems that keep them moving."
         crumbs={[{ label: "Home", to: "/" }, { label: "Our work" }]}
       />
 
@@ -86,7 +86,7 @@ export function WorkDetail() {
   return (
     <>
       <Seo
-        title={`${item.client} — case study`}
+        title={`${item.client} case study`}
         description={item.business}
         image={imageFor(item.industry)}
         type="article"

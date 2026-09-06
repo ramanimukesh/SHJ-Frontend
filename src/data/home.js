@@ -28,7 +28,7 @@ export const PROBLEMS = [
   },
   {
     title: "Reports take a day to build",
-    text: "Someone exports, filters and formats every week — and the numbers are stale by the time they are read.",
+    text: "Someone exports, filters and formats every week, and the numbers are stale by the time they are read.",
     solution: "reporting-dashboards",
   },
   {
@@ -56,7 +56,7 @@ export const PROCESS = [
   },
   {
     title: "Design the system",
-    text: "The data, the screens and the architecture — as working prototypes you can react to, reviewed with the people who will use it every day.",
+    text: "The data, the screens and the architecture, as working prototypes you can react to, reviewed with the people who will use it every day.",
   },
   {
     title: "Build in stages",
@@ -64,7 +64,7 @@ export const PROCESS = [
   },
   {
     title: "Run it with you",
-    text: "Migration, training, a controlled go-live — then monitoring, support and the improvements that only appear in use.",
+    text: "Migration, training, a controlled go-live, then monitoring, support and the improvements that only appear in use.",
   },
 ];
 
@@ -72,7 +72,7 @@ export const PROCESS = [
 export const WHY = [
   {
     title: "We understand the business first",
-    text: "Every engagement begins with the operation — the workflow, the records, the exceptions — so the software fits the way you already work.",
+    text: "Every engagement begins with the operation, the workflow, the records, the exceptions, so the software fits the way you already work.",
   },
   {
     title: "Practical over fashionable",
@@ -84,7 +84,7 @@ export const WHY = [
   },
   {
     title: "One team, start to finish",
-    text: "Discovery, design, engineering, cloud and support from the same people — no hand-offs between vendors, no gap between what was promised and what shipped.",
+    text: "Discovery, design, engineering, cloud and support from the same people. No hand-offs between vendors, no gap between what was promised and what shipped.",
   },
   {
     title: "Secure by default",
@@ -99,11 +99,11 @@ export const WHY = [
 export const FAQ = [
   {
     q: "What kind of businesses do you work with?",
-    a: "Operating businesses — the ones with orders, jobs, inventory, customers and staff to coordinate. Property and furnished-housing operators, construction and remodeling firms, professional services, and small and mid-sized companies across sectors. If your process is your advantage and the off-the-shelf tools do not fit it, that is usually the conversation.",
+    a: "Operating businesses, the ones with orders, jobs, inventory, customers and staff to coordinate. Property and furnished-housing operators, construction and remodeling firms, professional services, and small and mid-sized companies across sectors. If your process is your advantage and the off-the-shelf tools do not fit it, that is usually the conversation.",
   },
   {
     q: "Do we need to replace the systems we already use?",
-    a: "Usually not. A large part of our work is connecting existing systems — accounting, CRM, scheduling — and modernizing the ones worth keeping. Replacement is a last resort, and when it is the right call it happens in stages so the business keeps running.",
+    a: "Usually not. A large part of our work is connecting existing systems, accounting, CRM, scheduling, and modernizing the ones worth keeping. Replacement is a last resort, and when it is the right call it happens in stages so the business keeps running.",
   },
   {
     q: "How long does a project take?",
@@ -123,6 +123,6 @@ export const FAQ = [
   },
   {
     q: "What happens after launch?",
-    a: "Monitoring, support and a cadence of improvements — the things that only become obvious once real work is flowing through the system. Most clients stay on a support arrangement; none are required to.",
+    a: "Monitoring, support and a cadence of improvements, the things that only become obvious once real work is flowing through the system. Most clients stay on a support arrangement; none are required to.",
   },
 ];

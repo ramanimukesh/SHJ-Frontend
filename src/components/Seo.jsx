@@ -70,7 +70,7 @@ export default function Seo({ title, description, image, type = "website", schem
     // The home page owns the bare company name; everything else is suffixed, so
     // a tab strip or a SERP listing stays scannable at any width.
     const fullTitle =
-      pathname === "/" ? title : `${title} | ${company.short} — ${company.name}`;
+      pathname === "/" ? title : `${title} | ${company.short} | ${company.name}`;
     const url = `${SITE_URL}${pathname}`;
     const ogImage = `${SITE_URL}${image || DEFAULT_IMAGE}`;
 

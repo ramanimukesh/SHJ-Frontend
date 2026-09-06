@@ -99,7 +99,7 @@ export default function Contact() {
       setForm(EMPTY);
       setStatus({
         state: "success",
-        message: "Thanks — your message is with us. We'll be in touch shortly.",
+        message: "Thanks, your message is with us. We'll be in touch shortly.",
       });
     } catch (err) {
       setStatus({
@@ -148,7 +148,7 @@ export default function Contact() {
         image={hero}
         eyebrow="Start a project"
         title="Let's talk about your project"
-        subtitle="Tell us what you are trying to improve. You will hear back from a person, with questions and a suggested shape for the work — not a brochure."
+        subtitle="Tell us what you are trying to improve. You will hear back from a person, with questions and a suggested shape for the work, not a brochure."
         crumbs={[{ label: "Home", to: "/" }, { label: "Contact" }]}
       />
 

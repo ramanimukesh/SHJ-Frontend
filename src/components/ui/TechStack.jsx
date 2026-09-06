@@ -318,7 +318,7 @@ export default function TechStack() {
             Nothing here matches “{query}”.
           </p>
           <p className="mx-auto mt-2 max-w-md text-[15px] leading-relaxed text-ink-600">
-            We work well beyond this list — if you run something that is not on it, that is
+            We work well beyond this list. If you run something that is not on it, that is
             usually a conversation rather than a problem.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
